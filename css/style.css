@@ -1,0 +1,132 @@
+
+body,html{height: 100%;}
+body{font-family:"Microsoft YaHei" Verdana, Arial, Helvetica , sans-serif;overflow: hidden;}
+.Layout{position: relative;width: 100%;overflow: hidden;height:100%;z-index:20;background:#f0f0f0;}
+::-webkit-scrollbar {width:0;}
+a{text-decoration: none;}
+.aligncenter{text-align: center;}
+.alignleft{text-align: left;}
+.alignright{text-align: right;}
+.nomar{margin:0!important;}
+.nomar-t{margin-top:0!important;}
+.nomart-b{margin-bottom: 0!important;}
+.noborder-t{border-top:0!important;}
+.noborder{border:0!important;}
+.nopaddL{padding-left:0!important;}
+.mart10{margin-top;10px!important;}
+.header{width:100%;background-color:#1a79d8;color:#fff;height:44px;line-height:44px;position:fixed;top:0;left:0;border-bottom:1px solid #074687;z-index:9999;font-size:20px;}
+.TopL,.TopR,.TopM{width:15%;height:100%;float: left;}
+.TopR{float:right;}
+.TopM{width:70%;float:left;text-align:center;line-height:44px;position: relative;}
+.Txthidden{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;display:inline-block;}
+.BtnIcon{font-size:0;line-height: 0;display: inline-block;height:100%;}
+.Aback,.opens{width:100%;height:44px;background: url('../img/back.png') 19px center no-repeat;background-size:13px;}
+.Add{width:100%;height:44px;background: url('../img/add.png') center center no-repeat;background-size:22px;}
+.arrow{width: 18px;height:10px;display: inline-block;background: url('../img/arrow.png') no-repeat;position:relative;right:-20px;transition:0.3s;background-size:15px;}
+.opens{background: url('../img/sl.png') 19px center no-repeat;background-size:23px;position:relative;}
+
+.ULdrop{width:170px;background: #fff;border:1px solid #074687;border-top:0;position: absolute;z-index: 9999;top:-243px;left:50%;margin-left:-85px;transition:top 0.1s;}
+.ULdrop li{display: block;line-height:40px;border-bottom: 1px solid #d4d4d4;}
+.ULdrop li:last-child{border-bottom:0;}
+.ULdrop li a{color:#666;font-size:15px;display: block;}
+.dropDown .ULdrop{top:44px;transition:top 0.1s;}
+.dropDown .arrow{transform:rotate(90deg);-webkit-transform:rotate(180deg);transition:0.3s;}
+
+.footer{width:100%;background: #1a79d8;height:55px;line-height:55px;position:fixed;bottom:0;left:0;border-top:1px solid #074687;z-index:9999;color: #fff;overflow: hidden;}
+.footer .Bthree{width:33%;height:59px;line-height:59px;border-right: 1px solid #67a6e5;float: left;}
+.footer .Bthree:last-child{border: 0;}
+.footer .Bthree a{display: inline-block;text-align: center;width:100%;height:100%;line-height:0.8em;color: #fff;font-size:0.8em;opacity: 0.7;position: relative;}
+.footer .Bthree a.active{opacity: 1;}
+.footer .Bthree a em{display:block;width:20px;height:32px;margin: 0 auto;margin-top:4px;margin-bottom:2px;background-size:20px;background-repeat: no-repeat;position:relative;bottom:-2px;}
+a .prompt{display:block;position:absolute;border-radius:50em;background:#f62323;color:#fff;padding:2px 6px;line-height:15px;top:5%;left:60%;margin-left:-6px;font-size:12px;z-index:5;}
+.ULdrop li a .prompt{top:12%;left: 68%;}
+.opens .prompt{padding:6px;top:15%;left:80%;}
+.footer .Btnok a em{background-image: url('../img/write.png');}/*通过*/
+.footer .Btnno a em{background-image:url('../img/no.png');}/*否决*/
+.footer .Btnshare a em{background-image:url('../img/share.png');}/*转审*/
+.footer .Btnmine a em{background-image:url('../img/mine.png');}/*我的申请*/
+.footer .Btnex a em{background-image:url('../img/edit1.png');width:25px;background-size:25px;position:relative;bottom:-3px;}/*我的审批*/
+.footer .Btnth a em{background-image:url('../img/through.png');width:26px;background-size:26px;position:relative;bottom:-4px;}/*我的经办*/
+.content{color:#666;width:100%;position:absolute;left: 0;bottom: 55px;top:44px;overflow:hidden;z-index: 1;}
+.Formlist{background: #fefefe;border:1px solid #c4c4c4;border-width:1px 0 1px 0;margin-bottom:10px;position:relative;}
+.Formlist:first-child{border-top:0;}
+.Formlist:last-child{margin-bottom: 0;border-bottom:0;}
+.Formlist li{border-bottom:1px solid #f2f2f2;padding:10px 30px 10px 15px;background:url("../img/li-arrow.png") no-repeat 94% center; background-size:10px;position: relative;z-index:2;}
+.Formlist li a{display:block;color:#666;position: relative;z-index:2;}
+.Formlist li:last-child{border-bottom:0;}
+.Formlist li p{line-height:25px;font-size:15px;}
+.Formlist li p span{padding:0 3px;}
+.Formlist li p:nth-child(2) span:nth-child(1){padding-right:15px;font-size: 14px;}
+.Formlist li:active{background:#379afe url("../img/li-arrow2.png") no-repeat 94% center;background-size:10px;color:#fff;}
+.Formlist li:active a{color:#fff;}
+.loading{font-size:13px;padding:0 0 15px 0;text-align: center;}
+.loading img{margin-right:5px;}
+/*申请详情*/
+.application{background:#fefefe;width:100%;border-top:1px solid #c4c4c4;border-bottom:1px solid #f2f2f2;padding:10px 0;margin-top:10px;position:relative;}
+.application table{width: 100%;}
+.application table th,.application table td{font-size:15px;height: 20px;padding:10px 0;}
+.application table th{color:#999;width:30%;padding-left:20px;}
+.application table td{color:#666;text-align: left;word-break:break-all;word-wrap: break-word;padding-right:10px;}
+.Aligntop th{vertical-align: top;}
+.Atitle{color:#666;border-bottom: 1px solid #f2f2f2;margin: 0 10px;padding:10px 10px 10px 17px;font-size:18px;}
+table.Aprocess th,table.Aprocess td{border-bottom: 1px solid #f2f2f2;}
+table.Aprocess th{border-bottom:1px solid #b4b4b4;padding-left: 0;width: auto;}
+table.Aprocess th:first-child{width: 30%;}
+table.Aprocess td{padding:6px 0;font-size:13px;vertical-align:top;line-height:25px;}
+table.Aprocess th:nth-child(1),table.Aprocess td:nth-child(1){padding-left:18px;}
+table.Aprocess tr.Nprocess td{color:#1a79d8;border-bottom: 1px solid #b4b4b4;}
+/*侧边栏*/
+.sidebar{width:60%;height:100%;position:absolute;left:0;top:0;background:#666;}
+.sidebar ul{padding-top:44px;}
+.sidebar ul li{color:#fff;display: block;line-height:30px;background:#999;padding:5px 10px;margin-bottom: 3px;border-bottom:1px solid #999;font-size:1em;}
+.sidebar ul li .prompt{border-radius:4px;height:20px;line-height:20px;padding:0 5px;margin:6px 20px 0 0;background:#333;font-size:13px;float: right;display:inline-block;}
+.sidebar.show + .Layout {
+    -webkit-transition: -webkit-transform 400ms;
+    -webkit-transform: translate3d(60%,0,0);
+    box-shadow: -2px 0 30px #333;
+}
+.sidebar.hide + .Layout {
+    -webkit-transition: -webkit-transform 400ms;
+    -webkit-transform: translate3d(0,0,0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

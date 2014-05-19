@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<title>LA移动版</title>
+		<link rel="stylesheet" type="text/css" href="css/app.css">
+    	<link rel="stylesheet" type="text/css" href="css/style.css">
+    	<script type="text/javascript" src="js/iscroll.js"></script>
+    	<script type="text/javascript">
+			var myScroll;
+			var myScroll;
+			function loaded () {
+				myScroll = new IScroll('#wrapper', { mouseWheel: true });
+			}			
+			document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);	
+		
+		document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+		
+		</script>
+	</head>
+	<body onload="loaded()">
+		<header class="header">
+			<div class="TopL"><a href="index.html" title="返回" class="BtnIcon Aback"></a></div>
+			<div class="TopM Txthidden">王振佳发起的加班申请</div>
+			<div class="TopR"></div>
+		</header>
+		<div class="content" id="wrapper">
+			<div id="scroller">
+				<section class="application">
+					<p class="Atitle">编号：<span>CG-2014-9999</span></p>
+					<table>
+						<tr>
+							<th>申请人：</th>
+							<td>王振佳</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<th>申请部门</th>
+							<td>明道北研中心</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<th>申请日期</th>
+							<td>2014-05-10 09:10:54</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<th>出差地点</th>
+							<td>广东东莞</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<th>出差日期</th>
+							<td><span>2014-05-11 </span>至 <span>2014-05-16</span></td>
+						</tr>
+					</table>
+					<table class="Aligntop">
+						<tr>
+							<th>出差是由</th>
+							<td><p>利用其开发者平台，通过其API接口，参考其C# SDK可以预先做一个</p></td>
+						</tr>
+					</table>
+					<table class="Aligntop">
+						<tr>
+							<th>备注</th>
+							<td><p>利用其开发者平台，通过其API接口，参考其C# SDK可以预先做一个</p></td>
+						</tr>
+					</table>
+				</section>	
+				<section class="application nomar-t noborder-t">
+					<p class="Atitle nomar noborder">审批流程</p>
+					<table class="Aprocess">
+						<thead>
+							<tr>
+								<th>操作人</th>
+								<th>操作</th>
+								<th>时间</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>王振佳</td>
+								<td>发起申请</td>
+								<td>2014-05-16 09:23</td>
+							</tr>
+							<tr>
+								<td>Andy liu</td>
+								<td>接收申请</td>
+								<td>2014-05-16 09:23</td>
+							</tr>
+							<tr class="Nprocess">
+								<td>赵阳</td>
+								<td>查看申请(当前)</td>
+								<td>2014-05-16 09:29</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="Bthree Btnok">
+				<a href="" class="active">
+					<em></em>
+					通过
+				</a>
+			</div>
+			<div class="Bthree Btnno">
+				<a href="#">
+					<em></em>
+					否决
+				</a>
+			</div>
+			<div class="Bthree Btnshare">
+				<a href="#">
+					<em></em>
+					转审
+				</a>
+			</div>
+		</footer>		
+	</body>
+</html>
