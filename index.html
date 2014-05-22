@@ -8,56 +8,44 @@
     	<link rel="stylesheet" type="text/css" href="css/style.css">
     	<script type="text/javascript" src="js/jquery.js"></script>
     	<script type="text/javascript" src="js/iscroll.js"></script>
+    	<script type="text/javascript" src="js/common.js"></script>
+    	<script type="text/javascript" src="js/update.js" ></script>
     	<script type="text/javascript">
-//	    	$(function(){
-//	    		$('.opens').click(function(){
-//					$(".sidebar").addClass("show");
-//				});
-//	    	});
-//	    	
-			var myScroll;
-			function loaded () {
+			var myScroll;			
+			$(document).ready(function(){
 				myScroll = new IScroll('#wrapper', { mouseWheel: true });
-			}			
-			document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);	
-			
-			var sidebar =$(".sidebar");
-			var canvas = document.getElementById("canvas"),
-			    spirit,
-			    startX,
-			    startY;
-			function touchStart(event) {
-			    //阻止网页默认动作（即网页滚动）
-			    event.preventDefault();
-			    var touch = event.touches[0];
-			    startX = touch.pageX;
-			    startY = touch.pageY;
-			}
-			canvas.addEventListener("touchstart", touchStart, false);
-			function touchMove(event) {
-			    event.preventDefault();
-			    var touch = event.touches[0],
-			        x = touch.pageX - startX,
-			        y = touch.pageY - startY;
-			    //这里是为了手指一定是横向滚动的,原理是计算X位置的偏移要比Y的偏移大
-			    if (Math.abs(x) > Math.abs(y)) {
-			        sidebar.addClass("show");
-			    }
-			}
-			canvas.addEventListener("touchmove", touchMove, false);
-			function touchEnd(event) {
-			    sidebar.removeClass("show");
-			}
-			canvas.addEventListener("touchend", touchEnd, false);
+				document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+				$('.opens').off('touchstart').on('touchstart',function(){
+					var sidebar = $('.sidebar');
+					if(sidebar.hasClass('show')){
+						sidebar.removeClass('show').addClass('hide');
+					}else{
+						sidebar.removeClass('hide').addClass('show');
+					}
+					
+				});
+			});
 		</script>
 	</head>
-<body onload="loaded()" id="canvas">
+<body  id="canvas">
 	<!--侧边栏begin-->
 	<aside class="sidebar">
 		<ul>
-			<li>已批准<em class="prompt">3</em></li>
-			<li>已审核</li>
+			<li class="userimg">
+				<img src="img/cdm.jpg">
+				<p>stvenhk</p>
+				<p>英皇娱乐高级总裁</p>
+			</li>
+			<li class="ypz">已批准<em class="prompt">3</em></li>
+			<li class="wsh current">未审核</li>
+			<li class="ybh">已驳回<em>(20)</em></li>
+			<li class="yfj">已否决</li>
+			<li class="yzs">已转审</li>
 		</ul>
+		<p class="LOut">
+			<span class="quit">登出</span>
+			<span class="change">切换账号</span>
+		</p>
 	</aside>
 	<!--侧边栏over-->
 	<div class="Layout">
@@ -70,7 +58,7 @@
 					<li><a href="#">已审核</a></li>
 				</ul>
 			</div>
-			<div class="TopR"><a href="#" title="添加" class="BtnIcon Add"></a></div>
+			<div class="TopR"><span title="添加" class="BtnIcon Add" onclick="pickDate()"></span></div>
 		</header>
 		<div class="content" id="wrapper">
 			<div id="scroller">
@@ -177,5 +165,7 @@
 			</div>
 		</footer>
 	</div>
+	
+	<div id="output"></div>
 </body>
 </html>

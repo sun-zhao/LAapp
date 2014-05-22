@@ -1,7 +1,7 @@
 
 body,html{height: 100%;}
 body{font-family:"Microsoft YaHei" Verdana, Arial, Helvetica , sans-serif;overflow: hidden;}
-.Layout{position: relative;width: 100%;overflow: hidden;height:100%;z-index:20;background:#f0f0f0;}
+.Layout{position: relative;width: 100%;overflow: hidden;height:100%;z-index:20;background:#fff;}
 ::-webkit-scrollbar {width:0;}
 a{text-decoration: none;}
 .aligncenter{text-align: center;}
@@ -76,18 +76,36 @@ table.Aprocess td{padding:6px 0;font-size:13px;vertical-align:top;line-height:25
 table.Aprocess th:nth-child(1),table.Aprocess td:nth-child(1){padding-left:18px;}
 table.Aprocess tr.Nprocess td{color:#1a79d8;border-bottom: 1px solid #b4b4b4;}
 /*侧边栏*/
-.sidebar{width:60%;height:100%;position:absolute;left:0;top:0;background:#666;}
-.sidebar ul{padding-top:44px;}
-.sidebar ul li{color:#fff;display: block;line-height:30px;background:#999;padding:5px 10px;margin-bottom: 3px;border-bottom:1px solid #999;font-size:1em;}
+.sidebar{width:100%;height:100%;position:absolute;left:0;top:0;background:url("../img/bg.jpg");background-size: 100%;}
+.sidebar ul{padding-top:30px;}
+.sidebar ul li,.LOut span{color:#fff;display: block;line-height:30px;padding:5px 10px 5px 37px;margin-bottom: 3px;font-size:14px;text-shadow: 1px 1px 1px #333;background-repeat: no-repeat;background-position: 14px center;background-size:18px;}
 .sidebar ul li .prompt{border-radius:4px;height:20px;line-height:20px;padding:0 5px;margin:6px 20px 0 0;background:#333;font-size:13px;float: right;display:inline-block;}
+.sidebar ul li em{font-size:12px;margin-left:3px;}
+.sidebar ul li.userimg{padding: 0;margin:0;margin-bottom: 30px;}
+.sidebar ul li.userimg img{border-radius:50px;width: 70px;height:70px;margin-left:30px;border:2px solid #3a3e47;}
+.sidebar ul li.userimg p{font-size:13px;padding-left:15px;line-height:20px;}
+.sidebar ul li.ypz{background-image: url("../img/icon1.png");}
+.sidebar ul li.wsh{background-image: url("../img/icon6.png");}
+.sidebar ul li.ybh{background-image: url("../img/icon7.png");}
+.sidebar ul li.yfj{background-image: url("../img/icon3.png");}
+.sidebar ul li.yzs{background-image: url("../img/icon5.png");}
+.sidebar ul li.current{background-color: #212c42;opacity: 0.7;}
+.LOut{position:absolute;bottom:19px;left:0px;}
+.LOut span{display: inline-block;padding:0;padding-left:35px;}
+.LOut span.quit{background-image: url("../img/icon2.png");background-size:16px;}
+.LOut span.change{background-image: url("../img/icon8.png");background-size:24px;padding-left:40px;background-position: 14px 8px;}
+
 .sidebar.show + .Layout {
-    -webkit-transition: -webkit-transform 400ms;
+	-webkit-transition: -webkit-transform 400ms;
+	height: 85%;
+	top:35px;
     -webkit-transform: translate3d(60%,0,0);
-    box-shadow: -2px 0 30px #333;
+    -webkit-transform: perspective(650px) rotateY(-50deg) translate3d(60%,0,0);
 }
 .sidebar.hide + .Layout {
     -webkit-transition: -webkit-transform 400ms;
     -webkit-transform: translate3d(0,0,0);
+    -webkit-transform: perspective(0) rotateY(0) translate3d(0,0,0);
 }
 
 
