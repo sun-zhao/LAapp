@@ -15,18 +15,13 @@
 				myScroll = new IScroll('#wrapper', { mouseWheel: true });
 			}			
 			document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);	
-		
-		document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
-		
 		</script>
 	</head>
 	<body onload="loaded()">
-		<header class="header">
-			<div class="TopL"><a href="index.html" title="返回" class="BtnIcon Aback"></a></div>
-			<div class="TopM Txthidden">王振佳发起的加班申请</div>
-			<div class="TopR"></div>
+		<header class="header headerTitle aligncenter">
+			王振佳发起的加班申请
 		</header>
-		<div class="content" id="wrapper">
+		<div class="content notop" id="wrapper">
 			<div id="scroller">
 				<section class="application">
 					<p class="Atitle">编号：<span>CG-2014-9999</span></p>
@@ -104,7 +99,15 @@
 				</section>
 			</div>
 		</div>
-		<footer class="footer">
+		<footer class="footer bottomnav clearfix aligncenter">
+			<span class="BtnIcon Back floatleft"></span>
+			<span class="BtnIcon croose"></span>
+			<span class="BtnIcon nocroose"></span>
+			<span class="BtnIcon Forward"></span>
+			<span class="BtnIcon return"></span>
+			<span class="BtnIcon annex floatright"></span>
+		</footer>	
+		<footer class="footer" style="display: none;">
 			<div class="Bthree Btnok">
 				<a href="" class="active">
 					<em></em>

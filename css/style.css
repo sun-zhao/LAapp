@@ -1,5 +1,5 @@
 
-body,html{height: 100%;}
+body,html{height: 100%;background-color: #f0f0f0;}
 body{font-family:"Microsoft YaHei" Verdana, Arial, Helvetica , sans-serif;overflow: hidden;}
 .Layout{position: relative;width: 100%;overflow: hidden;height:100%;z-index:20;background:#fff;}
 ::-webkit-scrollbar {width:0;}
@@ -14,7 +14,58 @@ a{text-decoration: none;}
 .noborder{border:0!important;}
 .nopaddL{padding-left:0!important;}
 .mart10{margin-top;10px!important;}
+/*margin*/
+.nomar{margin:0!important;}
+.mar-auto{margin:0 auto!important;}
+.nomar-t{margin-top:0!important}
+.nomarl{margin-left:0!important;}
+.nomarr{margin-right:0!important;}
+.mart5{margin-top:5px!important;}
+.mart10{margin-top:10px!important;}
+.mart15{margin-top:15px!important;}
+.mart20{margin-top:20px!important;}
+.mart30{margin-top:30px!important;}
+.mart50{margin-top:50px!important;}
+.marl10{margin-left:10px!important;}
+.marr10{margin-right:10px!important;}
+.marr15{margin-right:15px!important;}
+.marl5{margin-left:5px!important;}
+.marl20{margin-left:20px!important;}
+.marl30{margin-left:30px!important;}
+.color-black{color:#000;}
+.color-white{color:#fff;}
+.floatleft{float: left;}
+.floatright{float: right;}
+/*padding*/
+.nopadding{padding:0!important;}
+.p-top5{padding-top:5px!important;}
+.p-top10{padding-top:10px!important;}
+.p-top40{padding-top:40px!important;}
+.p-bt10{padding-bottom:10px!important;}
+.p-bt20{padding-bottom:20px!important;}
+/*font-size*/
+.font12{font-size:12px!important;}
+.font13{font-size:13px!important;}
+.font14{font-size:14px!important;}
+.font16{font-size:16px!important;}
+.font18{font-size:18px!important;}
+.font20{font-size:20px!important;}
+.font25{font-size:25px!important;}
+.font30{font-size:30px!important;}
+.l_th{text-decoration:line-through!important;}
+.txt_hidden{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;display:inline-block;}
+.block{display: block;}
+.goon{cursor: pointer;}
+/*clear*/
+.clear{clear:both;line-height:0;height:0;font-size:0;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{zoom:1}
+
+.aligncenter{text-align:center;}
+.alignright{text-align:right;}
+.alignleft{text-align:left;}
 .header{width:100%;background-color:#1a79d8;color:#fff;height:44px;line-height:44px;position:fixed;top:0;left:0;border-bottom:1px solid #074687;z-index:9999;font-size:20px;}
+.headerTitle{font-size:18px;height:35px;line-height: 35px;;}
 .TopL,.TopR,.TopM{width:15%;height:100%;float: left;}
 .TopR{float:right;}
 .TopM{width:70%;float:left;text-align:center;line-height:44px;position: relative;}
@@ -24,6 +75,22 @@ a{text-decoration: none;}
 .Add{width:100%;height:44px;background: url('../img/add.png') center center no-repeat;background-size:22px;}
 .arrow{width: 18px;height:10px;display: inline-block;background: url('../img/arrow.png') no-repeat;position:relative;right:-20px;transition:0.3s;background-size:15px;}
 .opens{background: url('../img/sl.png') 19px center no-repeat;background-size:23px;position:relative;}
+.Back,.goon,.annex,.croose,.nocroose,.Forward,.return{width:30px;height:40px;background: url('../img/back2.png') center center no-repeat;background-size:16px;margin:0 10px;}
+.goon{background: url('../img/goon2.png') center center no-repeat;background-size:16px;}
+.annex{background: url('../img/fj2.png') center center no-repeat;background-size:30px;}
+.croose{background: url('../img/write2.png') center center no-repeat;background-size:29px;}
+.nocroose{background: url('../img/no2.png') center center no-repeat;background-size:29px;}
+.Forward{background: url('../img/share2.png') center center no-repeat;background-size:26px;}
+.return{background: url('../img/return.png') center center no-repeat;background-size:27px;}
+
+.BtnONF{display:block;width:55px;height:28px;border-radius:40px;border:0;float: right;margin-right:15px;position: relative;cursor: pointer;}
+.BtnONF span{display: inline-block;height:24px;width:24px;border-radius:50px;background: #fff;position:absolute;}
+.BtnOn{background: #6bb5ff;}
+.BtnOn span{top:2px;right:2px;box-shadow: -1px 1px 3px #64a9ee;}
+.BtnOff{background: #fff;border:1px solid #e6e6e6;width:53px;height:26px;}
+.BtnOff span{border:1px solid #e6e6e6;width:23px;height:23px;box-shadow: -1px 1px 3px #bcbcbc;top:0px;right:29px;}
+
+
 
 .ULdrop{width:170px;background: #fff;border:1px solid #074687;border-top:0;position: absolute;z-index: 9999;top:-243px;left:50%;margin-left:-85px;transition:top 0.1s;}
 .ULdrop li{display: block;line-height:40px;border-bottom: 1px solid #d4d4d4;}
@@ -47,7 +114,12 @@ a .prompt{display:block;position:absolute;border-radius:50em;background:#f62323;
 .footer .Btnmine a em{background-image:url('../img/mine.png');}/*我的申请*/
 .footer .Btnex a em{background-image:url('../img/edit1.png');width:25px;background-size:25px;position:relative;bottom:-3px;}/*我的审批*/
 .footer .Btnth a em{background-image:url('../img/through.png');width:26px;background-size:26px;position:relative;bottom:-4px;}/*我的经办*/
+.bottomnav{background:#fff;border-top:1px solid #ebebeb;height: 40px;}
+
+
+
 .content{color:#666;width:100%;position:absolute;left: 0;bottom: 55px;top:44px;overflow:hidden;z-index: 1;}
+.notop{top:35px;bottom:40px;}
 .Formlist{background: #fefefe;border:1px solid #c4c4c4;border-width:1px 0 1px 0;margin-bottom:10px;position:relative;}
 .Formlist:first-child{border-top:0;}
 .Formlist:last-child{margin-bottom: 0;border-bottom:0;}
@@ -107,19 +179,20 @@ table.Aprocess tr.Nprocess td{color:#1a79d8;border-bottom: 1px solid #b4b4b4;}
     -webkit-transform: translate3d(0,0,0);
     -webkit-transform: perspective(0) rotateY(0) translate3d(0,0,0);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*表单填写*/
+.appedit{background:none;border-top:0;margin-top:0;padding-top:0;}
+.appedit table th,.appedit table td{padding:0;font-size:14px;background-color:#fff;border-bottom:1px solid #f0f0f0;line-height:45px;}
+.appedit table:first-child th,.appedit table:first-child td{background:none;border-bottom:1px solid #d5d5d5;}
+.appedit table:first-child th{width:21%;}
+.appedit table th:first-child{padding-left:10px;}
+.appedit table td select{width:100%;height: 100%;border:0;background: none;background: url("../img/li-arrow.png") no-repeat 91% center;background-size:10px;}
+.appedit table td select option{color:#1a79d8;font-size:15px;}
+.appedit table td input,.appedit table td textarea{width:100%;height: 100%;line-height:100%;border:0;background: none;text-align: right;padding-right:10px;}
+.appedit table.Remarks td,.appedit table.Remarks th{border:1px solid #d5d5d5;border-width:1px 0;}
+.appedit table.Remarks th{height:70px;vertical-align: top;}
+.appedit table.Remarks td textarea{height:auto;line-height: 20px;position:relative;top:5px;padding: 5px 10px 10px 0;}
+.appedit table.tableBt th,.appedit table.tableBt td{border-bottom:1px solid #d5d5d5;}
+.appedit table.tableON th{width:70%;height: 45px;}
 
 
 
