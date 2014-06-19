@@ -19,11 +19,17 @@ $(document).ready(function(){
 			$this.removeClass('current');
 			$maskB.css({"transform":"rotate(100deg)"});
 			$maskB.removeClass('current');
+			setTimeout(function(){
+				$('.content').css({'z-index':'15'});
+			},600);
 		}else{
-			$this.addClass('current');
-			$maskB.show(1,function(){
-				$maskB.addClass('current');
-			});
+			$('.content').css({'z-index':'0'});
+			setTimeout(function(){
+				$this.addClass('current');
+				$maskB.show(1,function(){
+					$maskB.addClass('current');
+				});
+			},200)
 		}
 	});
 	//点击放大镜展开搜索框

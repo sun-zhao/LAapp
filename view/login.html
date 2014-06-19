@@ -4,8 +4,8 @@
 		<meta charset="utf-8">
 	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	    <title>登录</title>
-	    <link rel="stylesheet" type="text/css" href="css/appstyles.css">
-		<script type="text/javascript" src="js/jquery.js"></script>
+	    <link rel="stylesheet" type="text/css" href="../css/appstyles.css">
+		<script type="text/javascript" src="../js/jquery.js"></script>
 		<script type="text/javascript">
 		//判断设备屏幕高度
 			function resizeH(){
@@ -26,10 +26,10 @@
 			<header class="header clearfix"></header>
 			<!--header over-->
 			<div class="p-top50">
-				<p class="aligncenter block"><img src="img/logo.png" width="128"></p>
+				<p class="aligncenter block"><img src="../img/logo.png" width="128"></p>
 				<div class="Circle mart15">
-					<span class="CircleIn"></span>
-					<span class="logo"><img src="img/circle2.png"></span>
+					<span class="CircleIn current"></span><!--加current就开始转了-->
+					<span class="logo"><img src="../img/circle2.png"></span>
 				</div>
 				<div class="loginInt">
 					<p><input type="text" placeholder="用户名"></p>
@@ -43,5 +43,21 @@
 				<!--滑动登录begin-->
 			</div>
 		</div>
+		<!--选择网络弹出begin-->
+		<div class="choosenet" style="display:block;">
+			<div class="choosenetin">
+				<ul>
+					<li>Mingdao Plus</li>
+					<li>梅花和明道</li>
+					<li>Mingdao Plus</li>
+					<li>梅花和明道</li>
+					<li>Mingdao Plus</li>
+					<li>梅花和明道</li>
+				</ul>
+			</div>
+			<span class="quitBtn aligncenter">取消</span>
+		</div>
+		<!--选择网络弹出over-->
+		<div class="mask" style="opacity:0.5;display:block;"></div>
 	</body>
 </html>
