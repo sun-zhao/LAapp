@@ -37,10 +37,21 @@
 		<!--header begin-->
 		<header class="header clearfix">
 			<div class="TopL"><span class="BtnIcon Calleft"></span></div>
-			<div class="TopM aligncenter"><span class="font16">待审核</span></div>
+			<div class="TopM aligncenter"><span class="block font16" id="ToggleDown">待审核 <em class="BtnIcon Icon-toggle"></em></span></div>
 			<div class="TopR" id="Search"><span class="BtnIcon TopSer"></span></div>
 		</header>
 		<!--header over-->
+		<!--审核状态选择 弹出begin-->
+		<div class="TopDown">
+			<div class="TopDownIn">
+				<ul>
+					<li class="current"><i class="BtnIcon Icon-wait"></i>待审核<em class="prompt" style="display: block;">1</em></li>
+					<li><i class="BtnIcon Icon-fj"></i>已否决<em class="prompt" style="display: none;">1</em></li>
+					<li><i class="BtnIcon Icon-cross"></i>已通过<em class="prompt" style="display: none;">1</em></li>
+				</ul>
+			</div>
+		</div>
+		<!--审核状态选择 弹出over-->
 		<!--content begin-->
 		<div class="content" id="wrapper">
 			<div id="scroller">

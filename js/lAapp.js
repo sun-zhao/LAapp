@@ -2,6 +2,18 @@ var myScroll;
 $(document).ready(function(){
 	myScroll = new IScroll('#wrapper', { mouseWheel: true });
 	document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+	//点击下拉出审核状态选择
+	$('#ToggleDown').off('touchstart').on('touchstart',function(){
+		$TopDown = $('.TopDown');
+		$this = $(this);
+		if($this.hasClass('current')){
+			$this.removeClass('current');
+			$TopDown.stop().animate({top:"-50px"},300);
+		}else{
+			$this.addClass('current');
+			$TopDown.stop().animate({top:"48px"},300);
+		}
+	});
 	//点击侧滑出左侧菜单
 	$('.opens').off('touchstart').on('touchstart',function(){
 		var sidebar = $('.sidebar');
