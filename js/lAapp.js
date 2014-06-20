@@ -100,4 +100,80 @@ $(document).ready(function(){
 		}
 		$(this).hide();
 	})
+	//设置流程页面滑动展开删除
+	$('li.hsaRevoke .LiOut','.process').off('touchstart').on('touchstart',function(){
+		event.preventDefault();
+		var startTouch  = event.touches[0];
+		startX = startTouch.pageX;
+		startY = startTouch.pageY;
+		var endX=startX;
+		$(this).off('touchmove').on('touchmove',function(){
+			event.preventDefault();
+			var moveTouch  = event.touches[0];
+			endX = moveTouch.pageX;
+			endY = moveTouch.pageY;
+		});
+		$(this).off('touchend').on('touchend',function(){
+			event.preventDefault();
+			x = endX - startX;
+			y = endY - startY;
+			if(Math.abs(x) > Math.abs(y)){
+				if(x<0){
+					$(this).addClass('active').animate({left:"-50px"},60);
+				}else{
+					$(this).removeClass('active').animate({left:"0"},60);
+				}
+			}
+		});
+	});
+	//开关状态切换
+	$('.BtnONF').off('touchstart').on('touchstart',function(){
+		event.preventDefault();
+		$this = $(this);
+		if($this.hasClass('BtnOff')){
+			$this.removeClass('BtnOff').addClass('BtnOn');
+		}else{
+			$this.removeClass('BtnOn').addClass('BtnOff');
+		}
+	});
+	//拖动查看详细审批流程
+	$('.processlist .choose').off('touchstart').on('touchstart',function(){
+		event.preventDefault();
+		$this = $(this);
+		if($this.hasClass('choosed')){
+			$this.removeClass('choosed');
+		}else{
+			$this.addClass('choosed').siblings().removeClass('choosed');
+		}		
+	});
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
