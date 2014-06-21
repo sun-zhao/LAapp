@@ -11,17 +11,17 @@
 			function resizeH(){
 				Wh = parseInt($(window).height());
 				var $login = $('.login');
-				if(Wh<=460){
-					$login.addClass('noh');
+				if(Wh>=460){
+					$login.removeClass('noh');
 				}
 			}
 			$(document).ready(function(){
 				resizeH();
 			});
 		</script>
-	</head>
+	</head>																																			
 	<body>
-		<div class="view login">
+		<div class="view login noh">
 			<!--header begin-->
 			<header class="header clearfix"></header>
 			<!--header over-->

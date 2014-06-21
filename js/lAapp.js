@@ -86,17 +86,32 @@ $(document).ready(function(){
 	//展开左侧边栏
 	$('.Calleft').off('touchstart').on('touchstart',function(){
 		var sidebar = $('.sidebar');
-		if(sidebar.hasClass('show')){
-			sidebar.removeClass('show').addClass('hide');
+		var $osname = plus.os.name;
+		if( $osname == 'Android'){
+			if(sidebar.hasClass('showA')){
+				sidebar.removeClass('showA').addClass('hideA');
+			}else{
+				$('#RemoveLeft').show();
+				sidebar.removeClass('hideA').addClass('showA');
+			}	
 		}else{
-			$('#RemoveLeft').show();
-			sidebar.removeClass('hide').addClass('show');
-		}	
+			if(sidebar.hasClass('show')){
+				sidebar.hide();
+				sidebar.removeClass('show').addClass('hide');
+			}else{
+				sidebar.show();
+				$('#RemoveLeft').show();
+				sidebar.removeClass('hide').addClass('show');
+			}
+		}		
 	});
 	$('#RemoveLeft').off('touchstart').on('touchstart',function(){
 		var sidebar = $('.sidebar');
-		if(sidebar.hasClass('show')){
-			sidebar.removeClass('show').addClass('hide')
+		var $osname = plus.os.name;
+		if($osname == 'Android'){
+			sidebar.addClass('hideA').removeClass('showA');
+		}else{
+			sidebar.addClass('hide').removeClass('show');
 		}
 		$(this).hide();
 	})

@@ -1,5 +1,5 @@
 /*reset*/
-html{background:none;color:#444;overflow-y:scroll;font-size:62.5%;}
+html{background:none;color:#444;font-size:62.5%;}
 body{font-size:1.2rem;font-family:verdana;line-height:1.8em; font-family:Microsoft YaHei,Tahoma,Arial; background-color:#f2f2f2;}
 body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, textarea, p, th, td, dl, dt, dd{margin:0;padding:0;}
 table{border-collapse:collapse;border-spacing:0;}
@@ -121,10 +121,7 @@ label.checkbox, label.radio, label.text{padding-left:4px;vertical-align:top;}
 .Icon-turn{width:17px;height:12px;background-image: url(../img/ico-zs.png);background-size:17px;}
 .prompt{border-radius:60em;height:15px;line-height:15px;padding:0 6px;margin:0 0 0 31px;background:#777;font-size:1.1rem;display:inline-block;position:relative;top:-2px;}
 .TopDown ul li .prompt{position:absolute;background: #e82827;color:#fff;padding:0 5px;top:30%;margin-top:-8px;left:33%;}
-
-
-
-
+.Icon-find{width:10px;height:10px;background: url(../img/ico-032.png) no-repeat;background-size:11px;}
 html,body{height:100%;overflow:hidden;background-color:#ddd;}
 .view,.mask{width:100%;height:100%;position:relative;}
 .mask{background: #444;opacity:0;position:absolute;top:0;left:0;z-index:20;display:none;}
@@ -206,31 +203,41 @@ html,body{height:100%;overflow:hidden;background-color:#ddd;}
 .LOut span .BtnIcon{margin:0 8px 0 25px;position:relative;top:1px;}
 .sidebar.show + .view,#RemoveLeft{
 	overflow: hidden;
-	-webkit--webkit-transition: -webkit-transform 400ms;
-	height: 80%;
-	top:60px;
+	-webkit-transition: -webkit-transform 400ms;
     -webkit-transform: translate3d(70%,0,0);
     -webkit-transform: perspective(650px) rotateY(-50deg) translate3d(60%,0,0);
+    height: 80%;
+	top:60px;
 }
 .sidebar.hide + .view{
-    -webkit--webkit-transition: -webkit-transform 400ms;
+    -webkit-transition: -webkit-transform 400ms;
     -webkit-transform: translate3d(0,0,0);
     -webkit-transform: perspective(0) rotateY(0) translate3d(0,0,0);
     overflow: hidden;
 }
+.sidebar.showA + .view{
+	overflow: hidden;
+	-webkit-transition: -webkit-transform 400ms;
+    -webkit-transform: translate3d(70%,0,0);
+}
+.sidebar.hideA + .view{
+    -webkit-transition: -webkit-transform 400ms;
+    overflow: hidden;
+}
+
 /*弹出选择表单*/
 .BottomBtn{width:100px;height:23px;padding-top:9px;position:absolute;background:url(../img/Bottom-btn.png);bottom:0;left:50%;margin-left:-50px;background-size:100px;z-index:30;text-align: center;}
 .BottomBtn .BtnIcon{-webkit-transform: rotate(0deg);-webkit-transition:0.2s;}
 .BottomBtn.current{background:url(../img/Bottom-btn2.png);background-size:100px;z-index:210;}
 .BottomBtn.current .BtnIcon{-webkit-transform: rotate(45deg);-webkit-transition:0.2s;}
 .formIcon{width:100%;height:100%;position:absolute;top:0;left:0;background: url(../img/bg3.jpg);background-size:cover;z-index:200;}
-.formIcon .SearchBox{display: block;background-color:#aaa;}
-.formIcon .SearchBox input{background: url(../img/ico-03-2-2.png) no-repeat 50% center;background-size:47px;color:#fff;text-indent:20px;}
+.formIcon .SearchBox{display:block;background-color:#aaa;}
+.formIcon .SearchBox input{background:url(../img/ico-03-2-2.png) no-repeat 50% center;background-size:47px;color:#fff;text-indent:20px;}
 .formIcon .SearchBox input:focus{background: none;}
 /*.formIcon .SearchBox input:focus{background: url(../img/ico-03-3.png) no-repeat 5% center;background-size:16px;text-indent:20px;}*/
 .formIconin{position:relative;width:100%;height:100%;}
-.formIconin-box{position:absolute;top:80px;bottom:80px;left:0;right:0px;overflow-y: scroll;z-index:999; text-align: center;}
-.formIconin-box li{display:inline-block;width:90px;text-align: center;color:#555;font-size:1.3rem;margin:20px 0 0 10px;}
+.formIconin-box{position:absolute;top:70px;bottom:80px;left:0;right:0px;overflow-y:scroll;z-index:999; text-align: center;}
+.formIconin-box li{display:inline-block;width:90px;text-align:center;color:#555;font-size:1.3rem;margin:20px 0 0 10px;}
 .formIconin-box li span{display:block;width:70px;height:70px;margin:0 auto;margin-bottom:5px;border-radius:50em;position: relative;}
 .formIconin-box li span .BtnIcon{width:30px;height:30px;background-size:30px;background-repeat:no-repeat;position: absolute;top:50%;left:50%;margin:-15px 0 0 -15px;-webkit-transition:0.2s;}
 .formIconin-box li:active span .BtnIcon{margin:-20px 0 0 -15px;-webkit-transition:0.2s;}
@@ -305,23 +312,22 @@ padding:7px 0 4px 10px;}
 .processlist li.choose .LiOut{background-image:none;height:auto;min-height:40px;}
 .processlist li.choosed .LiOut{background:#fff url(../img/choosed.png) no-repeat 96% center;background-size:14px;}
 .processlist li.choosed .Userprocess{color:#555;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*通讯录*/
+.contaceTab{width:150px;border:2px solid #fff;border-radius:5px;height:27px;margin:0 auto;margin-top:10px;}
+.contaceTab dd{display:inline-block;float:left;text-align:center;height:27px;line-height:27px;font-size:1.3rem;width:75px;text-shadow: none;}
+.contaceTab dd.current{background-color:#fff;color:#59a7f9;}
+.contact{position: absolute;overflow:hidden;left:0;right:0;bottom:0;top:40px;}
+.contactBox p.color-6{padding-left:15px;height:20px;line-height:20px;}
+.contactBox ul{border:1px solid #ddd;background: #fff;border-width:1px 0;}
+.contactBox ul li{border-bottom:1px solid #ecebeb;margin:0 15px;}
+.contactBox ul li:last-child{border:0;}
+.contactBox ul li img{width:34px;height:34px;border-radius:50em;margin:8px 10px 0 0;}
+.contactBox ul li div.floatleft p:first-child{color:#555;padding-top:5px;font-size:1.5rem;}
+.contactBox ul li div.floatleft p:last-child{color:#888;}
+.contactBox ul li div.floatleft p span:first-child{padding-right:10px;}
+.wordfind{position:absolute;width:15px;top:24px;right:4px;color:#59a7f9;text-align:center;z-index:20;}
+.wordfind li{height:14px;line-height:14px;font-size:1.1rem;position: relative;}
+.wordfind li em{width:29px;height:24px;background: url(../img/word-bg.png) no-repeat;background-size:29px;text-align:left;text-indent: 8px;line-height:24px;color:#fff;position:absolute;left:-29px;top:50%;margin-top:-13px;font-size:1.1rem;}
 
 
 
