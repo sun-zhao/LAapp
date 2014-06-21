@@ -120,12 +120,12 @@ label.checkbox, label.radio, label.text{padding-left:4px;vertical-align:top;}
 .Icon-return{width:18px;height:11.5px;background-image: url(../img/ico-ht.png);background-size:18px;}
 .Icon-turn{width:17px;height:12px;background-image: url(../img/ico-zs.png);background-size:17px;}
 .prompt{border-radius:60em;height:15px;line-height:15px;padding:0 6px;margin:0 0 0 31px;background:#777;font-size:1.1rem;display:inline-block;position:relative;top:-2px;}
-.TopDown ul li .prompt{position:absolute;background: #e82827;color:#fff;padding:0 5px;top:30%;margin-top:-8px;left:33%;}
+.TopDown ul li .prompt{position:absolute;background: #e82827;color:#fff;padding:0 4px;top:30%;margin-top:-8px;left:33%;}
 .Icon-find{width:10px;height:10px;background: url(../img/ico-032.png) no-repeat;background-size:11px;}
 html,body{height:100%;overflow:hidden;background-color:#ddd;}
 .view,.mask{width:100%;height:100%;position:relative;}
 .mask{background: #444;opacity:0;position:absolute;top:0;left:0;z-index:20;display:none;}
-.header{width:100%;height:48px;border-bottom:1px solid #a2a2a2;background:#59a7f9;position: fixed;top:0;left:0;color: #fff;text-shadow: 1px 1px 1px #5299e4;z-index:100;}
+.header{width:100%;height:48px;border-bottom:1px solid #a2a2a2;background:#59a7f9;position:absolute;top:0;left:0;color: #fff;text-shadow: 1px 1px 1px #5299e4;z-index:100;}
 .TopL,.TopR,.TopM{width:15%;height:100%;float: left;}
 .TopR{float:right;}
 .TopM{width:70%;float:left;text-align:center;line-height:50px;position: relative;}
@@ -139,12 +139,18 @@ html,body{height:100%;overflow:hidden;background-color:#ddd;}
 .TopDown{width:100%;height:60px;position:absolute;top:-50px;left:0;background:#fff;border-bottom:1px solid #6b6b6b;z-index:30;}
 .TopDown ul li{display:inline-block;width:32%;padding-top:13px;text-align: center;color:#747c86;position: relative;}
 .TopDown ul li.current,.TopDown ul li:active{color:#59a7f9;}
-.Icon-wait,.Icon-fj,.Icon-cross{display:block;width:20px;height:20px;margin:0 auto;background-size:20px;margin-bottom:4px;background-image: url(../img/ico-w1.png);}
+.Icon-wait,.Icon-fj,.Icon-cross,.Icon-history,.Icon-sure{display:block;width:20px;height:20px;margin:0 auto;background-size:20px;margin-bottom:4px;background-image: url(../img/ico-w1.png);}
 .Icon-fj{background-image: url(../img/ico-fj1.png);}
 .Icon-cross{background-image: url(../img/ico-c1.png);}
+.Icon-history{background-image: url(../img/history.png);}
+.Icon-sure{background-image: url(../img/ico-cr.png);}
 .current .Icon-wait,.TopDown ul li:active .Icon-wait{background-image: url(../img/ico-w2.png);}
 .current .Icon-fj,.TopDown ul li:active .Icon-fj{background-image: url(../img/ico-fj2.png);}
 .current .Icon-cross,.TopDown ul li:active .Icon-cross{background-image: url(../img/ico-c2.png);}
+.current .Icon-history,.TopDown ul li:active .Icon-history{background-image: url(../img/history_hover.png);}
+.current .Icon-sure,.TopDown ul li:active .Icon-sure{background-image: url(../img/ico-cr2.png);}
+
+
 .content{position:absolute;top:49px;left:0;right:0;bottom:0;overflow:hidden;background:url(../img/bgre.jpg) repeat;background-size:20px;}
 .list{background:#fff;}
 .list li{border-bottom:1px solid #ddd;border-top:1px solid #ddd;height:50px;margin-top:-1px;padding:0 35px 0 15px;background-image: url(../img/ico-04.png);background-position: 98% center;background-size:16px;background-repeat:no-repeat;color:#888;position: relative;}
