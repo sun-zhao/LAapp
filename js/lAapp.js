@@ -8,19 +8,10 @@ $(document).ready(function(){
 		$this = $(this);
 		if($this.hasClass('current')){
 			$this.removeClass('current');
-			$TopDown.stop().animate({top:"-50px"},300);
+			$TopDown.removeClass('current');
 		}else{
 			$this.addClass('current');
-			$TopDown.stop().animate({top:"48px"},300);
-		}
-	});
-	//点击侧滑出左侧菜单
-	$('.opens').off('touchstart').on('touchstart',function(){
-		var sidebar = $('.sidebar');
-		if(sidebar.hasClass('show')){
-			sidebar.removeClass('show').addClass('hide');
-		}else{
-			sidebar.removeClass('hide').addClass('show');
+			$TopDown.addClass('current');
 		}
 	});
 	//点击右侧扇形菜单
@@ -76,9 +67,9 @@ $(document).ready(function(){
 			y = endY - startY;
 			if(Math.abs(x) > Math.abs(y)){
 				if(x<0){
-					$(this).addClass('active').animate({left:"-50px"},60);
+					$(this).addClass('active');
 				}else{
-					$(this).removeClass('active').animate({left:"0"},60);
+					$(this).removeClass('active');
 				}
 			}
 		});

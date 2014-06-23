@@ -138,9 +138,10 @@ label.checkbox, label.radio, label.text{padding-left:4px;vertical-align:top;}
 /*.SearchBox.current{display: block;}*/
 .Icon-toggle{width:8px;height:5px;background:url(../img/arrow2.png) 0 bottom;background-size:8px;position:relative;top:-2px;right:-4px;-webkit-transition:0.4s;}
 .current .Icon-toggle{background-position:0 0;-webkit-transition:0.4s;}
-.TopDown{width:100%;height:60px;position:absolute;top:-50px;left:0;background:#fff;border-bottom:1px solid #6b6b6b;z-index:30;}
+.TopDown{width:100%;height:60px;position:absolute;top:-50px;left:0;background:#fff;border-bottom:1px solid #6b6b6b;z-index:30;-webkit-transition:0.2s;}
 .TopDown ul li{display:inline-block;width:32%;padding-top:13px;text-align: center;color:#747c86;position: relative;}
 .TopDown ul li.current,.TopDown ul li:active{color:#59a7f9;}
+.TopDown.current{top:48px;-webkit-transition:0.2s;}
 .Icon-wait,.Icon-fj,.Icon-cross,.Icon-history,.Icon-sure{display:block;width:20px;height:20px;margin:0 auto;background-size:20px;margin-bottom:4px;background-image: url(../img/ico-w1.png);}
 .Icon-fj{background-image: url(../img/ico-fj1.png);}
 .Icon-cross{background-image: url(../img/ico-c1.png);}
@@ -155,7 +156,7 @@ label.checkbox, label.radio, label.text{padding-left:4px;vertical-align:top;}
 
 .content{position:absolute;top:49px;left:0;right:0;bottom:0;overflow:hidden;background:url(../img/bgre.jpg) repeat;background-size:20px;}
 .list{background:#fff;}
-.list li{border-bottom:1px solid #ddd;border-top:1px solid #ddd;height:50px;margin-top:-1px;padding:0 35px 0 15px;background-image: url(../img/ico-04.png);background-position: 98% center;background-size:16px;background-repeat:no-repeat;color:#888;position: relative;}
+.list li{border-bottom:1px solid #ddd;border-top:1px solid #ddd;height:50px;margin-top:-1px;padding:0 35px 0 15px;background-image: url(../img/ico-04.png);background-position: 98% center;background-size:16px;background-repeat:no-repeat;color:#888;position: relative;transition:0.1s;-webkit-transition:0.1s;}
 .AppImg img{width:24px;height:24px;border:1px solid #f9f9f9;border-radius:20px;}
 .arrow1{width:12px;height:12px;background: url(../img/ico-05.png) no-repeat;position: absolute;background-size:12px;right:0;top:0;}
 .list li .AppImg{margin-top:13px;display:inline-block;margin-right:20px;}
@@ -164,7 +165,7 @@ label.checkbox, label.radio, label.text{padding-left:4px;vertical-align:top;}
 .list li.current .AppName{color:#fff;}
 .list li.current .AppImg img{border:1px solid #fff;}
 .list li p{line-height:16px;padding-top:6px;}
-
+.list li.active{left:-50px;transition:0.1s;-webkit-transition:0.1s;}
 
 
 
