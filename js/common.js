@@ -48,7 +48,7 @@ function back() {
 function clicked( id ) {
 	if ( window.plus ) {
 		var pre = "";//"http://192.168.1.178:8080/h5/";
-		plus.ui.createWindow( pre+id, {name:id,scalable:false} ).show( "slide-in-right", 300 );
+		plus.ui.createWindow( pre+id, {name:id,scalable:false} ).show( "zoom-out", 300 );
 	} else {
 		window.open( id );
 	}

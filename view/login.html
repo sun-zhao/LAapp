@@ -11,7 +11,7 @@
 			function resizeH(){
 				Wh = parseInt($(window).height());
 				var $login = $('.login');
-				if(Wh>=460){
+				if(Wh>460){
 					$login.removeClass('noh');
 				}
 			}
@@ -19,11 +19,14 @@
 				resizeH();
 			});
 		</script>
+		<style type="text/css">
+			html,body{background-color:#fff;}
+		</style>
 	</head>																																			
 	<body>
-		<div class="view login noh">
+		<div class="view login noh" style="height: auto;">
 			<!--header begin-->
-			<header class="header clearfix"></header>
+			<header class="header clearfix" style="position:fixed;"></header>
 			<!--header over-->
 			<div class="p-top50">
 				<p class="aligncenter block"><img src="../img/logo.png" width="128"></p>
@@ -38,13 +41,13 @@
 				<!--滑动登录begin-->
 				<div class="loginBtn mart40">
 					<span class="Logintext">Login ...</span>
-					<div class="loginBtnIn" style="width:25%;"><span class="BtnIcon Icon-login"></span></div>
+					<div class="loginBtnIn" style="width:18%;"><span class="BtnIcon Icon-login"></span></div>
 				</div>
 				<!--滑动登录begin-->
 			</div>
 		</div>
 		<!--选择网络弹出begin-->
-		<div class="choosenet" style="display:block;">
+		<div class="choosenet" style="display:none;">
 			<div class="choosenetin">
 				<ul>
 					<li>Mingdao Plus</li>
@@ -58,6 +61,6 @@
 			<span class="quitBtn aligncenter">取消</span>
 		</div>
 		<!--选择网络弹出over-->
-		<div class="mask" style="opacity:0.5;display:block;"></div>
+		<div class="mask" style="opacity:0.5;display:none;"></div>
 	</body>
 </html>

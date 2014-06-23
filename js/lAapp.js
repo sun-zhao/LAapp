@@ -161,6 +161,15 @@ $(document).ready(function(){
 			$this.addClass('choosed').siblings().removeClass('choosed');
 		}		
 	});
+	$('#sendAction').off('touchend').on('touchend',function(){
+		event.preventDefault();
+		clicked('formico.html');
+	});
+	$('#cancelSendAction').off('touchend').on('touchend',function(){
+		event.preventDefault();
+		back();
+	});
+	
 });
 
 
