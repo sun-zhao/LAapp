@@ -225,12 +225,12 @@ label.checkbox, label.radio, label.text{padding-left:4px;vertical-align:top;}
 .LOut span.current{background-color:#42a6fc;}
 .LOut span .BtnIcon{margin:0 8px 0 25px;position:relative;top:1px;}
 .sidebar.show + .view,#RemoveLeft{
+	height: 80%;
+	top:10%;
 	overflow: hidden;
 	-webkit-transition: -webkit-transform 400ms;
     -webkit-transform: translate3d(70%,0,0);
     -webkit-transform: perspective(650px) rotateY(-50deg) translate3d(60%,0,0);
-    height: 80%;
-	top:60px;
 }
 .sidebar.hide + .view{
     -webkit-transition: -webkit-transform 400ms;
@@ -239,6 +239,8 @@ label.checkbox, label.radio, label.text{padding-left:4px;vertical-align:top;}
     overflow: hidden;
 }
 .sidebar.showA + .view{
+	height: 90%;
+	top:5%;
 	overflow: hidden;
 	-webkit-transition: -webkit-transform 400ms;
     -webkit-transform: translate3d(70%,0,0);

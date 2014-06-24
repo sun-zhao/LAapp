@@ -93,13 +93,11 @@ $(document).ready(function(){
 			}else{
 				$('#RemoveLeft').show();
 				sidebar.removeClass('hideA').addClass('showA');
-			}	
+			}	 
 		}else{
 			if(sidebar.hasClass('show')){
-				sidebar.hide();
 				sidebar.removeClass('show').addClass('hide');
 			}else{
-				sidebar.show();
 				$('#RemoveLeft').show();
 				sidebar.removeClass('hide').addClass('show');
 			}
@@ -113,7 +111,9 @@ $(document).ready(function(){
 		}else{
 			sidebar.addClass('hide').removeClass('show');
 		}
-		$(this).hide();
+			$(this).hide();
+
+
 	})
 	//设置流程页面滑动展开删除
 	$('li.hsaRevoke','.process').off('touchstart').on('touchstart',function(){
