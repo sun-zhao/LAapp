@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <title>加班申请列表</title>
+	    <link rel="stylesheet" type="text/css" href="../css/appstyles.css">
+		<script type="text/javascript" src="../js/jquery.js"></script>
+		<script type="text/javascript" src="../js/iscroll.js"></script>
+		<script type="text/javascript" src="../js/lAapp.js"></script>
+	</head>
+	<body>
+		<div class="view">
+			<!--header begin-->
+			<header class="header clearfix">
+				<div class="TopL"></div>
+				<div class="TopM aligncenter"><span class="font17">加班记录</span></div>
+				<div class="TopR" id="Search"><span class="inlineblock font14 quit">取 消</span></div>
+			</header>
+			<!--header over-->
+			<div class="content" id="wrapper">
+				<div id="scroller">
+					<div class="editMain">
+						<ul class="editList process workovertime p-top10">
+							<li class="choose hsaRevoke"><!--有hsaRevoke时说明有删除的按钮然后才能左拖动-->
+								<div class="LiOut">
+									<div class="Inmask clearfix" style="display:none;">
+										<span class="floatleft">请选择审批人</span>
+									</div>
+									<div class="Userprocess txt_hidden clearfix">
+										<span class="color-6">2014-06-23 8:00 到 20:00 加班记录</span>
+									</div>
+								</div>
+								<span class="Revoke">删除</span>
+							</li>	
+							<li class="choose hsaRevoke"><!--有hsaRevoke时说明有删除的按钮然后才能左拖动-->
+								<div class="LiOut">
+									<div class="Inmask clearfix" style="display:none;">
+										<span class="floatleft">请选择审批人</span>
+									</div>
+									<div class="Userprocess txt_hidden clearfix">
+										<span class="color-6">2014-06-23 8:00 到 20:00 加班记录</span>
+									</div>
+								</div>
+								<span class="Revoke">删除</span>
+							</li>	
+							<li class="mart20"><div class="LiOut aligncenter font14 addstep"><span class="font18">+</span> 添加记录</div></li>
+						</ul>	
+						<span class="nextstep Submitstep aligncenter font18 mart20">提交申请</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

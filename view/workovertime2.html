@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <title>填写加班详情</title>
+	    <link rel="stylesheet" type="text/css" href="../css/appstyles.css">
+		<script type="text/javascript" src="../js/jquery.js"></script>
+		<script type="text/javascript" src="../js/iscroll.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+		<script type="text/javascript" src="../js/lAapp.js"></script>
+		<script type="text/javascript">
+				function pickDate() {
+					outSet( "打开系统日期选择框：");
+					plus.ui.pickDate( function( date ) {
+						outLine( date );
+					}, function ( e ) {
+						outSet( "取消日期选择！" );
+					}, {title:"请选择日期"} );
+				}
+				function pickTime() {
+					outSet( "打开系统时间选择框：");
+					plus.ui.pickTime( function ( time ) {
+						outLine( time );
+					}, function ( e ) {
+						outSet( "取消选择时间！" );
+					}, {title:"请选择时间"} );
+				}
+		</script>
+	</head>
+	<body>
+		<div class="view">
+			<!--header begin-->
+			<header class="header clearfix">
+				<div class="TopL"></div>
+				<div class="TopM aligncenter"><span class="font17">加班详情</span></div>
+				<div class="TopR" id="Search"><span class="inlineblock font14 quit">取 消</span></div>
+			</header>
+			<!--header over-->
+			<div class="content" id="wrapper">
+				<div id="scroller">
+					<div class="editMain">
+						<ul class="editList p-top10">
+							<li class="choose" >
+								<div class="LiOut">
+									<input type="text" placeholder="开始时间" onclick="pickDate();"/>
+								</div>
+							</li>
+							<li class="choose">
+								<div class="LiOut">
+									<input type="text" placeholder="结束时间" onclick="pickTime();"/>
+								</div>
+							</li>
+							<li class="mart10 autoHeight">
+								<div class="LiOut">
+									<!--<div contenteditable="true" class="article" ></div>-->
+									<textarea class="article" placeholder="" style="width:300px;overflow-y:visible"></textarea>
+									<div class="Inmask clearfix">
+										<span class="floatleft color-c">加班事由</span>
+									</div>
+								</div>
+								<p class="color-9">请点击空白区域，输入加班事由</p>
+							</li>
+						</ul>	
+						<span class="nextstep Submitstep aligncenter font18 mart20">保 存</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

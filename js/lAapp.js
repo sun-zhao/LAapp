@@ -8,10 +8,10 @@ $(document).ready(function(){
 		$this = $(this);
 		if($this.hasClass('current')){
 			$this.removeClass('current');
-			$TopDown.removeClass('current');
+			$TopDown.removeClass('active');
 		}else{
 			$this.addClass('current');
-			$TopDown.addClass('current');
+			$TopDown.addClass('active');
 		}
 	});
 	//点击右侧扇形菜单
@@ -107,7 +107,7 @@ $(document).ready(function(){
 		$(this).hide();
 	})
 	//设置流程页面滑动展开删除
-	$('li.hsaRevoke .LiOut','.process').off('touchstart').on('touchstart',function(){
+	$('li.hsaRevoke','.process').off('touchstart').on('touchstart',function(){
 		event.preventDefault();
 		var startTouch  = event.touches[0];
 		startX = startTouch.pageX;
@@ -125,9 +125,9 @@ $(document).ready(function(){
 			y = endY - startY;
 			if(Math.abs(x) > Math.abs(y)){
 				if(x<0){
-					$(this).addClass('active').animate({left:"-50px"},60);
+					$(this).addClass('active');
 				}else{
-					$(this).removeClass('active').animate({left:"0"},60);
+					$(this).removeClass('active');
 				}
 			}
 		});
