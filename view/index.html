@@ -53,14 +53,16 @@
 			</div>
 		</div>
 		<!--审核状态选择 弹出over-->
+		<!--搜索框begin-->
+		<div class="SearchBox">
+			<div class="SearchIn">
+				<input type="text" placeholder=""/>
+			</div>
+		</div>
+		<!--搜索框over-->
 		<!--content begin-->
 		<div class="content" id="wrapper">
 			<div id="scroller">
-				<!--搜索框begin-->
-				<div class="SearchBox">
-					<input type="text" placeholder=""/>
-				</div>
-				<!--搜索框over-->
 				<div class="aligncenter more" style="">下拉加载更多...</div>
 				<ul class="list">
 					<li class="clearfix current">
@@ -120,6 +122,11 @@
 				</ul>
 				<div class="aligncenter more color-9" style="padding-bottom:40px;">点击加载更多...</div>
 			</div>
+			<div class="maskOver" style="display:block;opacity:1;background:#fff;">
+				<div class="maskIN aligncenter">
+					<p>努力加载中...</p>
+				</div>
+			</div><!--最上层的放置点击遮罩层-->
 		</div>
 		<!--content over-->
 		<!--底部半圆按钮begin-->
@@ -127,7 +134,7 @@
 		<!--底部半圆按钮over-->
 	</div>
 	<div class="mask" id="RemoveLeft"></div>
-	<div class="maskOver" style="display:block;"</div><!--最上层的放置点击遮罩层-->
+	<div class="maskOver" style="display:none;"</div><!--最上层的放置点击遮罩层-->
 </body>
 </html>
 
