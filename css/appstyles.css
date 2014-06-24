@@ -130,7 +130,7 @@ label.checkbox, label.radio, label.text{padding-left:4px;vertical-align:top;}
 .maskOver{width:100%;height:100%;z-index:50;}
 .maskOverbg{background:url(../img/bgre.jpg) repeat;background-size:20px;opacity:1;}
 .maskIN{width:100%;height:100px;position: absolute;top:50%;margin-top:-50px;color:#ccc;}
-.header{width:100%;height:48px;border-bottom:1px solid #a2a2a2;background:#59a7f9;position:absolute;top:0;left:0;color: #fff;text-shadow: 1px 1px 1px #5299e4;z-index:100;}
+.header{width:100%;height:48px;border-bottom:1px solid #a2a2a2;background:#59a7f9;position:absolute;top:0;left:0;color: #fff;text-shadow: 1px 1px 1px #5299e4;z-index:100;overflow:hidden;}
 .TopL,.TopR,.TopM{width:15%;height:100%;float: left;}
 .TopR{float:right;}
 .TopM{width:70%;float:left;text-align:center;line-height:50px;position: relative;}
@@ -144,10 +144,19 @@ label.checkbox, label.radio, label.text{padding-left:4px;vertical-align:top;}
 /*.SearchBox.current{display: block;}*/
 .Icon-toggle{width:8px;height:5px;background:url(../img/arrow2.png) 0 bottom;background-size:8px;position:relative;top:-2px;right:-4px;transition:0.4s;-webkit-transition:0.4s;}
 .current .Icon-toggle{background-position:0 0;-webkit-transition:0.4s;}
-.TopDown{width:100%;height:60px;position:absolute;top:-50px;left:0;background:#fff;border-bottom:1px solid #6b6b6b;z-index:30;transition:0.2s;-webkit-transition:0.2s;}
-.TopDown ul li{display:inline-block;width:32%;padding-top:13px;text-align: center;color:#747c86;position: relative;}
+.TopDown{width:100%;height:60px;position:absolute;top:-50px;left:0;background:#fff;border-bottom:1px solid #6b6b6b;z-index:30;transition:0.2s;-webkit-transition:0.2s;text-align:center;}
+.TopDown ul li{display:inline-block;width:110px;padding-top:13px;text-align:center;color:#747c86;position: relative;}
 .TopDown ul li.current,.TopDown ul li:active{color:#59a7f9;}
 .TopDown.active{top:48px;-webkit-transition:0.2s;}
+@media screen and (max-width:320px){
+	.TopDown ul li{width:100px;}
+}
+@media screen and (min-width:321px) and (max-width:390px){
+	.TopDown ul li{width:110px;}
+}
+@media screen and (min-width:540px){
+	.TopDown ul li{width:130px;}
+}
 .Icon-wait,.Icon-fj,.Icon-cross,.Icon-history,.Icon-sure{display:block;width:20px;height:20px;margin:0 auto;background-size:20px;margin-bottom:4px;background-image: url(../img/ico-w1.png);}
 .Icon-fj{background-image: url(../img/ico-fj1.png);}
 .Icon-cross{background-image: url(../img/ico-c1.png);}
