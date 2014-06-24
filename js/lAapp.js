@@ -4,14 +4,29 @@ $(document).ready(function(){
 	document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 	//点击下拉出审核状态选择
 	$('#ToggleDown').off('touchstart').on('touchstart',function(){
+		$SearchBox = $('.SearchBox');
 		$TopDown = $('.TopDown');
 		$this = $(this);
+		$SearchBox.removeClass('current');
 		if($this.hasClass('current')){
 			$this.removeClass('current');
 			$TopDown.removeClass('active');
 		}else{
 			$this.addClass('current');
 			$TopDown.addClass('active');
+		}
+	});
+	//点击放大镜展开搜索框
+	$('#Search').off('touchstart').on('touchstart',function(){
+		$SearchBox = $('.SearchBox');
+		$TopDown = $('.TopDown');
+		$ToggleDown = $('#ToggleDown');
+		$TopDown.removeClass('active');
+		$ToggleDown.removeClass('current');
+		if($SearchBox.hasClass('current')){
+			$SearchBox.removeClass('current');
+		}else{
+			$SearchBox.addClass('current');	
 		}
 	});
 	//点击右侧扇形菜单
@@ -35,19 +50,7 @@ $(document).ready(function(){
 			},200)
 		}
 	});
-	//点击放大镜展开搜索框
-	$('#Search').off('touchstart').on('touchstart',function(){
-		var SearchBox = $('.SearchBox');
-		if(SearchBox.hasClass('current')){
-			SearchBox.removeClass('current');
-			SearchBox.slideUp(100);
-			//SearchBox.stop().animate({height:"0",marginTop:"0",marginBottom:"0"},60);
-		}else{
-			SearchBox.addClass('current');
-			SearchBox.slideDown(100);
-			//SearchBox.stop().animate({height:"30px",marginTop:"5px",marginBottom:"5px"},60);
-		}
-	});
+	
 	//向左滑动li展开撤销
 	$('li','.list').off('touchstart').on('touchstart',function(){
 		event.preventDefault();
@@ -55,6 +58,12 @@ $(document).ready(function(){
 		startX = startTouch.pageX;
 		startY = startTouch.pageY;
 		var endX=startX;
+		$SearchBox = $('.SearchBox');
+		$TopDown = $('.TopDown');
+		$ToggleDown = $('#ToggleDown');
+		$TopDown.removeClass('active');
+		$ToggleDown.removeClass('current');
+		$SearchBox.removeClass('current');
 		$(this).off('touchmove').on('touchmove',function(){
 			event.preventDefault();
 			var moveTouch  = event.touches[0];
