@@ -263,9 +263,9 @@ label.checkbox, label.radio, label.text{padding-left:4px;vertical-align:top;}
 /*.formIcon .SearchBox input:focus{background: url(../img/ico-03-3.png) no-repeat 5% center;background-size:16px;text-indent:20px;}*/
 .formIconin{position:relative;width:100%;height:100%;}
 .formIconin-box{position:absolute;top:80px;bottom:70px;left:20px;right:20px;overflow-y:scroll;z-index:999; text-align: center;}
-.formIconin-box li{display:inline-block;width:32%;text-align:center;color:#555;font-size:1.3rem;margin:10px 0 10px 0;}
-.formIconin-box li span{display:block;width:65px;height:65px;margin:0 auto;margin-bottom:5px;border-radius:50em;position: relative;}
-.formIconin-box li span .BtnIcon{width:30px;height:30px;background-size:30px;background-repeat:no-repeat;position: absolute;top:50%;left:50%;margin:-13px 0 0 -15px;-webkit-transition:0.2s;}
+.formIconin-box li{display:inline-block;width:0;text-align:center;color:#555;font-size:1.3rem;margin:10px 0 10px 0;overflow: hidden;-webkit-transition:width 0.2s, height 0.2s, -webkit-transform 0.2s;}
+.formIconin-box li span{display:block;width:0;height:0;margin:0 auto;margin-bottom:5px;border-radius:50em;position: relative;-webkit-transition:width 0.2s, height 0.2s, -webkit-transform 0.2s;}
+.formIconin-box li span .BtnIcon{width:0;height:0;background-size:30px;background-repeat:no-repeat;position: absolute;top:50%;left:50%;margin:-13px 0 0 -15px;-webkit-transition:width 0.2s, height 0.2s, -webkit-transform 0.2s;}
 .formIconin-box li:active span .BtnIcon{margin:-20px 0 0 -15px;-webkit-transition:0.2s;}
 .f-ico1{background-image: url(../img/f-ico1.png);}
 .f-ico2{background-image: url(../img/f-ico2.png);}
@@ -273,6 +273,10 @@ label.checkbox, label.radio, label.text{padding-left:4px;vertical-align:top;}
 .f-ico4{background-image: url(../img/f-ico4.png);}
 .f-ico5{background-image: url(../img/f-ico5.png);}
 .f-ico6{background-image: url(../img/f-ico6.png);}
+.formIconin-box.current li{width:32%;overflow: visible;}
+.formIconin-box.current li span{width:65px;height:65px;}
+.formIconin-box.current li span .BtnIcon{width:30px;height:30px;}
+
 /*form*/
 .formOut{padding:5px;}
 .formOut section.form{padding:10px;background-color:#fff;box-shadow: 1px 1px 1px #ccc;}
