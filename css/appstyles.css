@@ -97,7 +97,7 @@ label.checkbox, label.radio, label.text{padding-left:4px;vertical-align:top;}
 .bg-08{background-color:#;}
 .bg-09{background-color:#;}
 .more span{display: inline-block;color:#777;}
-.more .loading{width:25px;height:25px;background:url(../img/loading1.png) no-repeat center center;background-size:17px;margin-right:5px;}
+.more .loading{width:25px;height:25px;background:url(../img/loading1.png) no-repeat center center;background-size:20px;margin-right:5px;}
 .more.up .loading{-webkit-transform:rotate(-180deg);-webkit-transition:0.6s;}
 .more.wait .loading{background:url(../img/loading2.png) no-repeat center center;background-size:25px;-webkit-animation:spin 800ms infinite linear;}
 .more span:nth-child(2){text-align:left;line-height:16px;}
@@ -135,8 +135,8 @@ label.checkbox, label.radio, label.text{padding-left:4px;vertical-align:top;}
 .view,.mask{width:100%;height:100%;position:relative;}
 .mask,.maskOver{background: #444;opacity:0;position:absolute;top:0;left:0;z-index:20;display:none;}
 .maskOver{width:100%;height:100%;z-index:50;}
-.maskOverbg{background:url(../img/bgre.jpg) repeat;background-size:20px;opacity:1;}
-.maskIN{width:100%;height:94px;position: absolute;top:150px;}
+.maskOverbg{background:0;opacity:1;overflow:hidden;}
+.maskIN{width:100%;height:100%;position:absolute;top:49px;background:url(../img/bgre.jpg) repeat;background-size:20px;padding-top:150px;}
 .header{width:100%;height:48px;border-bottom:1px solid #a2a2a2;background:#59a7f9;position:absolute;top:0;left:0;color: #fff;text-shadow: 1px 1px 1px #5299e4;z-index:100;overflow:hidden;}
 .TopL,.TopR,.TopM{width:15%;height:100%;float: left;}
 .TopR{float:right;}
