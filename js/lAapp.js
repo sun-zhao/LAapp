@@ -29,6 +29,17 @@ $(document).ready(function(){
 			$SearchBox.addClass('current');	
 		}
 	});
+	//搜索框焦点事件
+	var $serint = $('.SearchBox input');
+	$serint.blur(function(){
+		$this=$(this);
+		var val = $serint.val();
+		if(val != ""){
+			$this.addClass('nobg');
+		}else{
+			$this.removeClass('nobg');
+		}
+	});
 	//点击右侧扇形菜单
 	$('.BottomRBtn').off('touchstart').on('touchstart',function(){
 		$this = $(this);
