@@ -38,7 +38,7 @@ label.checkbox, label.radio, label.text{padding-left:4px;vertical-align:top;}
 .mart5{margin-top:5px!important;}
 .mart10{margin-top:10px!important;}
 .mart15{margin-top:15px!important;}
-.mart20{margin-top:20px!important;}
+.mart20{margin-top:2.0rem!important;}
 .mart30{margin-top:30px!important;}
 .mart40{margin-top:40px!important;}
 .mart50{margin-top:50px!important;}
@@ -191,9 +191,8 @@ label.checkbox, label.radio, label.text{padding-left:4px;vertical-align:top;}
 .list li.active{left:-50px;transition:0.1s;-webkit-transition:0.1s;}
 .Revoke{width:50px;height:100%;line-height:5rem;text-align:center;background: #dc424e;font-size:1.5rem;color:#fff;position:absolute;right:-50px;top:0;z-index: 10;}
 /*login*/
-.login{background-color:#fff;padding-top:30%;}
+.login{background-color:#fff;}
 .login .header{background: url(../img/loginheader.jpg) repeat;background-size:3px;height:50px;}
-.noh{padding-top:20%;}
 .noh .header{display: none;}
 .Circle{width:100px;height:100px;background:#ede8e6;margin:0 auto;border-radius:50px;position: relative;z-index:1;}
 .CircleIn{display:block;width:92px;height:92px;position: absolute;top:4px;left:4px;background: url(../img/circle.png) no-repeat;background-size:92px;}
@@ -203,21 +202,22 @@ label.checkbox, label.radio, label.text{padding-left:4px;vertical-align:top;}
 	100%{-webkit-transform:rotate(359deg)}
 }
 .Circle .logo,.Circle .logo img{width:87px;height:87px;position:absolute;z-index: 20;top:3.5px;left:3px;border-radius:50em;}
-.loginInt{width:60%;margin:0 auto;margin-top:30px;font-size:1.2rem;}
+.loginInt{width:60%;margin:0 auto;font-size:1.2rem;}
 .noh .loginInt{margin-top:10px;}
 .loginInt p{margin-top:10px;height:30px;}
 .loginInt p input{border:0;border-bottom:1px solid #bbb;width:100%;color:#999;border-radius:0;line-height:30px;height:100%;text-align: center;}
 .loginBtn{width:60%;height:35px;border-radius:40px;margin:0 auto;position: relative;background-color:#fff;border:2px solid #59a7f9;}
 .loginBtnIn{width:100%;height:35px;background-color:#fff;border-radius:40px;position:absolute;top:0px;left:0px;line-height:35px;text-align: center;}
 .Icon-login{width:70px;height:70px;background: url(../img/loginarrow.png) no-repeat center 20px;background-size:35px;position:absolute;right:-18px;top:-20px;}
-.Logintext{color:#0366cc;height:35px;line-height:35px;position: absolute;left:50%;margin-left:-20px;width:70px;font-size:1.2rem;}
+.Logintext{color:#7cb9fa;height:35px;line-height:35px;position: absolute;left:50%;margin-left:-20px;width:70px;font-size:1.2rem;}
 .choosenet{width:270px;background:#fff;position:absolute;left:50%;margin-left:-135px;z-index:40;border-radius:5px;top:27%;}
 .choosenet ul li{margin:0 13px;border-bottom:1px solid #ccc;height:50px;line-height:50px;font-size:1.4rem;text-indent:5px;position:relative;}
 .choosenet ul li:last-child{border-bottom: 0;}
 .choosenet .quitBtn{display:block;height:50px;line-height:50px;font-size:1.5rem;color:#fff;background:#888;border-radius:0 0 4px 4px;position:relative;z-index:100;}
 .choosenet ul li:active{color:#5299e4;}
 .choosenet .choosenetin{max-height:180px;overflow-y: scroll;}
-
+.logintab{height:100%;}
+/*.view.totop{margin-top:-10%;transition:0.3s;}*/
 /*侧边栏*/
 .sidebar{width:100%;height:100%;position:absolute;left:0;top:0;background:#333;}
 .sidebar ul{padding-top:60px;}

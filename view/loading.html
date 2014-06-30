@@ -8,21 +8,35 @@
 		<script type="text/javascript" src="../js/jquery.js"></script>
 		<script type="text/javascript" src="../js/iscroll.js"></script>
 		<script type="text/javascript" src="../js/lAapp.js"></script>
-		<style>
-			.view_img{background:url(../img/loading2.jpg) no-repeat;background-size:110%;-webkit-transition:1s;transition:1s;}
-			.view_small{background-size:100%;-webkit-transition:1s;transition:1s;}
-		</style>
-		<script>
-				setTimeout(function(){
-					$('.view_img').addClass('view_small');
-				},10);
-		</script>
 	</head>
 	<body>
-		<div class="view" style="background: url(../img/loading.jpg) no-repeat;background-size:cover;display: none;">
-			<img src="../img/login_loading_bg.png" width="50%" style="position: absolute;top:30%;left:50%;margin-left:-25%;">
-			<img src="../img/loading_login.gif" width="50%" style="position:absolute;top:30%;left:50%;margin-left:-25%;">
+		<!--第一次进入未登录时  begin-->
+		<div class="view login" style="display:none;">
+			<table class="logintab" width="100%">
+				<tr>
+					<td class="aligncenter"><img src="../img/slogan.png" width="160"></td>
+				</tr>
+				<tr>
+					<td class="aligncenter"><p><img src="../img/l-logo.png" width="120"></p></td>
+				</tr>
+			</table>
 		</div>
-		<div class="view view_img"></div>
+		<!--第一次进入未登录时  over-->
+		<!--登录后进入  begin-->
+		<div class="view login">
+			<table class="logintab" width="100%">
+				<tr>
+					<td>
+						<div class="Circle">
+							<span class="CircleIn current"></span><!--加current就开始转了-->
+							<span class="logo"><img src="../img/circle2.png"></span>
+						</div>
+						<p class="aligncenter mart20 color-6 font14">欢迎回来</p>
+					</td>
+				</tr>
+				<tr><td class="aligncenter"><p><img src="../img/l-logo.png" width="120"></p></td></tr>
+			</table>
+		</div>
+		<!--登录后进入  begin-->
 	</body>
 </html>

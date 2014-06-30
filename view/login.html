@@ -7,16 +7,15 @@
 	    <link rel="stylesheet" type="text/css" href="../css/appstyles.css">
 		<script type="text/javascript" src="../js/jquery.js"></script>
 		<script type="text/javascript">
-		//判断设备屏幕高度
-			function resizeH(){
-				Wh = parseInt($(window).height());
-				var $login = $('.login');
-				if(Wh>460){
-					$login.removeClass('noh');
-				}
-			}
-			$(document).ready(function(){
-				resizeH();
+		//判断输入框获得焦点，然后改变页面的margin-top
+			$(function(){
+				$Int = $('.loginInt input');
+				$Int.focus(function(){
+					$('.view').addClass('totop');
+				});
+				$Int.blur(function(){
+					$('.view').removeClass('totop');
+				});
 			});
 		</script>
 		<style type="text/css">
@@ -24,24 +23,41 @@
 		</style>
 	</head>																																			
 	<body>
-		<div class="view login noh" style="height:auto;">
-			<div>
-				<p class="aligncenter block"><img src="../img/logo.png" width="128"></p>
-				<div class="Circle mart15">
-					<span class="CircleIn current"></span><!--加current就开始转了-->
-					<span class="logo"><img src="../img/circle2.png"></span>
-				</div>
-				<div class="loginInt">
-					<p><input type="text" placeholder="用户名"></p>
-					<p><input type="password" placeholder="密码"></p>
-				</div>
-				<!--滑动登录begin-->
-				<div class="loginBtn mart40">
-					<span class="Logintext">滑动登录...</span>
-					<div class="loginBtnIn" style="width:18%;"><span class="BtnIcon Icon-login"></span></div>
-				</div>
-				<!--滑动登录begin-->
-			</div>
+		<div class="view login">
+			<table class="logintab" width="100%">
+				<tr>
+					<td class="aligncenter"><span><img src="../img/logo.png" width="128"></span></td>
+				</tr>
+				<tr>
+					<td>
+						<div class="Circle">
+							<span class="CircleIn current"></span><!--加current就开始转了-->
+							<span class="logo"><img src="../img/circle2.png"></span>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="loginInt">
+							<p><input type="text" placeholder="用户名"></p>
+							<p><input type="password" placeholder="密码"></p>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<!--滑动登录begin-->
+						<div class="loginBtn">
+							<span class="Logintext">滑动登录...</span>
+							<div class="loginBtnIn" style="width:18%;"><span class="BtnIcon Icon-login"></span></div>
+						</div>
+						<!--滑动登录begin-->
+					</td>
+				</tr>
+				<tr>
+					<td class="aligncenter"><p><img src="../img/l-logo.png" width="120"></p></td>
+				</tr>
+			</table>
 		</div>
 		<!--选择网络弹出begin-->
 		<div class="choosenet" style="display:none;">
