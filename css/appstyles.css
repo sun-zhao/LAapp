@@ -286,7 +286,7 @@ label.checkbox, label.radio, label.text{padding-left:4px;vertical-align:top;}
 
 /*form*/
 .formOut{padding:5px;}
-.formOut section.form{padding:10px;background-color:#fff;box-shadow: 1px 1px 1px #ccc;}
+.formOut section.form{padding:10px;background-color:#fff;box-shadow: 2px 2px 2px #ccc;}
 .formOut section.form table{width:100%;}
 .formOut section.form table th{color:#888;height:30px;text-align: right;width:21%;vertical-align:top;}
 .formOut section.form table td{color:#666;text-align: left;padding-left:10px;vertical-align:top;}
@@ -315,7 +315,7 @@ label.checkbox, label.radio, label.text{padding-left:4px;vertical-align:top;}
 .BottomRbox .btn2 span{top:45px;left:15px;}
 .BottomRbox .btn3 span{top:40px;left:30px;}
 .BottomRbox .btn4 span{top:18px;left:40px;}
-.BottomRbox .btn:active .BtnIcon{-webkit-transform:rotate(30deg);-webkit-transition:0.2s;}
+.BottomRbox .btn:active .BtnIcon{-webkit-transform:rotate(30deg);-webkit-transition:0.2s;transform:rotate(30deg);transition:0.2s;}
 /*表单填写*/
 .editList li{margin-top:-1px;}
 .LiOut{height:40px;line-height:40px;background: #fff;border:1px solid #ccc;border-width:1px 0;position:relative;}
@@ -382,6 +382,33 @@ padding:7px 0 4px 10px;}
 .cost .LiOut p{line-height:20px;padding:0 40px 0 10px;color:#888}
 .cost .LiOut p span.floatleft{color:#666;}
 .cost .LiOut p:last-child{color:#aaa;}
+.line{height:25px;line-height: 25px;color:#888;background-color:#fff;border-bottom:1px solid #ccc;margin:5px 0;text-indent:10px;font-size:1.2rem;}
+.formOut .editList li.choose .LiOut{background-image: none;}
+.formOut .score .Inmask span:nth-child(2){padding-right:10px;}
+.formOut .score li .Inmask{position:relative;height:25px;line-height:25px;font-size:1.2rem;}
+.formOut .score li.choose .LiOut{height:auto;line-height:20px;border-top:0;}
+.formOut .score li.choose .LiOut ol{margin:0 0px 0 23px;}
+.formOut .score li.choose .LiOut ol li{font-size: 1rem;margin:1px 0;color:#888;}
+.formOut .editList li{margin-top:0;}
+.formOut .editMain{margin-bottom:5px;}
+.dropdown{width:12px;height:12px;background:url(../img/arrow.png) no-repeat;background-size:8px;top:10px;left:-10px;position: relative;-webkit-transform: rotate(90deg);transform:rotate(90deg);-webkit-transition:0.2s;transition:0.2s;}
+.current .dropdown{-webkit-transform: rotate(-90deg);transform:rotate(-90deg);}
+/*#score{height: 0;overflow: hidden;}
+#score.current{height:auto;overflow: visible;}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
