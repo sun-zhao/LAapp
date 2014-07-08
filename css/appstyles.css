@@ -318,6 +318,30 @@ label.checkbox, label.radio, label.text{padding-left:4px;vertical-align:top;}
 .BottomRbox .btn3 span{top:40px;left:30px;}
 .BottomRbox .btn4 span{top:18px;left:40px;}
 .BottomRbox .btn:active .BtnIcon{-webkit-transform:rotate(30deg);-webkit-transition:0.2s;transform:rotate(30deg);transition:0.2s;}
+.BottomRBtn{background-color:#69b0fa;width:103px;height:103px;border-radius:50px;position: absolute;z-index:20;right:-51px;bottom:-51px;box-shadow: -1px -1px 2px #8a99cc;opacity:0.9;}
+.BottomRBtnL.current{background-color:#3674b5;box-shadow: -1px -1px 2px #4b5ea4;}
+.BottomRBtnL.current .edit{-webkit-transform: rotate(80deg);-webkit-transition:0.2s;}
+.BottomRboxL{position:fixed;bottom:0;left:0;right:0;z-index:10;border-top:1px solid #ccc;}
+.BottomRboxL.current{-webkit-transform:rotate(0deg)!important;-webkit-transition:0.6s;-webkit-transform:scale(1.5);}
+.BottomRboxL .btn{display:inline-block;width:25%;padding-top:8px;height:37px;line-height:1.5rem;text-align:center;font-size:1rem;float:left;color:#59a7f9;background:#fff;}
+.BottomRboxL .btn1{color:#02cf77;}
+.BottomRboxL .btn2{color:#ff502b;}
+.BottomRboxL .btn3{color:#fea701;}
+.BottomRboxL .btn4{color:#37b8ef;}
+.BottomRboxL .btn:active,.BottomRboxL .btn.current{background:#59a7f9;color:#fff;}
+.BottomRboxL .btn3 .BtnIcon{margin:2px 0 1px 0;background-repeat: no-repeat;}
+.BottomRboxL .btn4 .BtnIcon{margin:2px 0 0 0;}
+.BottomRboxL .btn span{width:40px;display:inline-block;line-height:10px;font-size:1.2rem;}
+.BottomRboxL .btn:active .BtnIcon{-webkit-transform:rotate(30deg);-webkit-transition:0.2s;}
+.BottomRboxL .btnline{float: none;margin:0;width:100%;}
+.BottomRboxL .Icon-ok{width:14px;height:14px;background-image: url(../img/ico-ok-2.png);background-size:14px;}
+.BottomRboxL .Icon-no{width:14px;height:14px;background-image: url(../img/ico-fj-2.png);background-size:14px;}
+.BottomRboxL .Icon-return{width:18px;height:11.5px;background-image: url(../img/ico-ht-2.png);background-size:18px;}
+.BottomRboxL .Icon-turn{width:17px;height:12px;background-image: url(../img/ico-zs2.png);background-size:17px;}
+.BottomRboxL .btn:active .Icon-ok,.BottomRboxL .btn.current .Icon-ok{width:14px;height:14px;background-image: url(../img/ico-ok.png);background-size:14px;}
+.BottomRboxL .btn:active .Icon-no,.BottomRboxL .btn.current .Icon-no{width:14px;height:14px;background-image: url(../img/ico-fj.png);background-size:14px;}
+.BottomRboxL .btn:active .Icon-return,.BottomRboxL .btn.current .Icon-return{width:18px;height:11.5px;background-image: url(../img/ico-ht.png);background-size:18px;}
+.BottomRboxL .btn:active .Icon-turn,.BottomRboxL .btn.current .Icon-turn{width:17px;height:12px;background-image: url(../img/ico-zs.png);background-size:17px;}
 /*表单填写*/
 .editList li{margin-top:-1px;}
 .LiOut{height:40px;line-height:40px;background: #fff;border:1px solid #ccc;border-width:1px 0;position:relative;}
