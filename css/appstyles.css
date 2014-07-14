@@ -272,7 +272,7 @@ label.checkbox, label.radio, label.text{padding-left:4px;vertical-align:top;}
 .formIcon .SearchBox input:focus{background: none;}
 /*.formIcon .SearchBox input:focus{background: url(../img/ico-03-3.png) no-repeat 5% center;background-size:16px;text-indent:20px;}*/
 .formIconin{position:relative;width:100%;height:100%;}
-.formIconin-box{position:absolute;top:80px;bottom:70px;left:20px;right:20px;z-index:999; text-align: center;overflow: hidden;}
+.formIconin-box{position:absolute;top:80px;bottom:70px;left:20px;right:20px;z-index:999; text-align:center;overflow: hidden;}
 .formIconin-box li{display:inline-block;width:32%;text-align:center;color:#555;font-size:1.3rem;margin:10px 0 10px 0;-webkit-transition:width 0.2s, height 0.2s, -webkit-transform 0.2s;opacity: 0;}
 .formIconin-box li span{display:block;width:65px;height:65px;margin:0 auto;margin-bottom:5px;border-radius:50em;position: relative;-webkit-transition:width 0.2s, height 0.2s, -webkit-transform 0.2s;}
 .formIconin-box li span .BtnIcon{width:30px;height:30px;background-size:30px;background-repeat:no-repeat;position: absolute;top:50%;left:50%;margin:-13px 0 0 -15px;-webkit-transition:width 0.2s, height 0.2s,-webkit-transform 0.2s;}
@@ -283,7 +283,7 @@ label.checkbox, label.radio, label.text{padding-left:4px;vertical-align:top;}
 .f-ico4{background-image: url(../img/f-ico4.png);}
 .f-ico5{background-image: url(../img/f-ico5.png);}
 .f-ico6{background-image: url(../img/f-ico6.png);}
-.formIconin-box.current li{opacity:1;-webkit-transition:0.2s;-transition:0.2s;}
+.formIconin-box.current li{opacity:1;-webkit-transition:2s;-transition:2s;}
 .list li .AppImg .BtnIcon{width:15px;height:15px;position:absolute;top:50%;left:50%;margin:-7px 0 0 -7px;background-size:15px;background-repeat: no-repeat;}
 
 
