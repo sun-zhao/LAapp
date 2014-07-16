@@ -410,6 +410,7 @@ padding:7px 0 4px 10px;}
 .cost .LiOut p span.floatleft{color:#666;}
 .cost .LiOut p:last-child{color:#aaa;}
 .line{height:25px;line-height: 25px;color:#59a7f9;background-color:#fff;border-bottom:1px solid #ccc;margin:5px 0;padding:0 10px;font-size:1.2rem;}
+.borderline{border-bottom:1px solid #ccc;height:1px;line-height:1px;background:none;margin:3px 0;}
 .formOut .editList li.choose .LiOut{background-image: none;}
 .formOut .score .Inmask span:nth-child(2){padding-right:10px;}
 .formOut .score li .Inmask{position:relative;height:25px;line-height:25px;font-size:1.2rem;}
