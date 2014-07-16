@@ -380,6 +380,9 @@ padding:7px 0 4px 10px;}
 .process li.active .LiOut{left:-50px;-webkit-transition:0.2s;}
 .workovertime .Userprocess{width:93%;text-indent:10px;}
 .workovertime li{margin-top:-1px;}
+.attachment .Userprocess span{padding:0;}
+.attachment .Userprocess img{border-radius:0;margin:0;}
+.attachment .Userprocess span.floatright{margin-right:10px;}
 /*通讯录*/
 .contaceTab{width:150px;border:2px solid #fff;border-radius:5px;height:27px;margin:0 auto;margin-top:10px;}
 .contaceTab dd{display:inline-block;float:left;text-align:center;height:27px;line-height:27px;font-size:1.3rem;width:75px;text-shadow: none;}
