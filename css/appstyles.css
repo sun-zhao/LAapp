@@ -433,10 +433,9 @@ padding:7px 0 4px 10px;}
 .fj-btn{background-color:#ff502b;}
 .fj-crrose{background-color:#02cf77;}
 /*附件*/
-.attachment-frame img{max-width: 100%;}
-
-
-
+.AttchImg img{max-width: 95%;margin:5px;box-shadow: -1px 2px 2px #333;}
+.workovertime li.current .LiOut{background-color:#42a6fc;}
+.workovertime li.current .Userprocess span{color:#fff;}
 
 
 
