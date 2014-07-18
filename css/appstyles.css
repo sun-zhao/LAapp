@@ -175,7 +175,6 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .current .Icon-history,.TopDown ul li:active .Icon-history{background-image: url(../img/history_hover.png);}
 .current .Icon-sure,.TopDown ul li:active .Icon-sure{background-image: url(../img/ico-cr2.png);}
 
-
 .content{position:absolute;top:49px;left:0;right:0;bottom:0;overflow:hidden;background:url(../img/bgre.jpg) repeat;background-size:20px;}
 .list{background:#fff;}
 .list li{border-bottom:1px solid #ddd;border-top:1px solid #ddd;height:50px;margin-top:-1px;padding:0 35px 0 15px;background-image: url(../img/ico-04.png);background-position: 98% center;background-size:16px;background-repeat:no-repeat;color:#888;position: relative;transition:0.1s;-webkit-transition:0.1s;}
@@ -356,6 +355,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .editList li.choose .LiOut{background:#fff url(../img/arrow.png) no-repeat 96% 15px;background-size:8px;}
 .editList li.autoHeight div.LiOut{height:auto;min-height:40px;}
 .editList li .color-9{text-align:center;}
+.Inmask select{width:70%;color:#888;font-size:1.4rem;position:relative;top:-1px;}
 .textnumber{position: absolute;color:#c6c6c6;right:12px;bottom:11px;line-height:14px;height:14px;}
 .uploadimg{height:44px;padding:5px 12px;border-top:1px solid #ccc;}
 .uploadimg img{width:44px;height:44px;margin-right:2px;}
@@ -375,7 +375,8 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .processlist li .Userprocess{font-size:1.4rem;max-width:85%;position:relative;word-break:break-all;word-wrap:break-word;height:auto;min-height:30px;line-height:25px;
 padding:7px 0 4px 10px;}
 .processlist li.choose .LiOut{background-image:none;height:auto;min-height:40px;}
-.processlist li.choosed .LiOut{background:#fff url(../img/choosed.png) no-repeat 96% center;background-size:14px;}
+.processlist li.choosed .LiOut,.contactBox ul li.choosed{background:#fff url(../img/choosed.png) no-repeat 96% center;background-size:14px;}
+.contactBox ul li.choosed{background-position: 90% center;}
 .processlist li.choosed .Userprocess{color:#555;}
 .process li .LiOut{left:0;-webkit-transition:0.2s;}
 .process li.active .LiOut{left:-50px;-webkit-transition:0.2s;}
@@ -394,14 +395,14 @@ padding:7px 0 4px 10px;}
 .contact{position: absolute;overflow:hidden;left:0;right:0;bottom:0;top:40px;}
 .contactBox p.color-6{padding-left:15px;height:20px;line-height:20px;}
 .contactBox ul{border:1px solid #ddd;background: #fff;border-width:1px 0;}
-.contactBox ul li{border-bottom:1px solid #ecebeb;margin:0 15px;}
+.contactBox ul li{border-bottom:1px solid #ecebeb;padding:0 15px;}
 .contactBox ul li:last-child{border:0;}
 .contactBox ul li img{width:34px;height:34px;border-radius:50em;margin:8px 10px 0 0;}
 .contactBox ul li div.floatleft p:first-child{color:#555;padding-top:5px;font-size:1.5rem;}
 .contactBox ul li div.floatleft p:last-child{color:#888;}
 .contactBox ul li div.floatleft p span:first-child{padding-right:10px;}
 .wordfind{position:absolute;width:15px;top:24px;right:4px;color:#59a7f9;text-align:center;z-index:20;}
-.wordfind li{height:14px;line-height:14px;font-size:1.1rem;position: relative;}
+.wordfind li{height:18px;line-height:18px;font-size:1.1rem;position: relative;}
 .wordfind li em{width:29px;height:24px;background: url(../img/word-bg.png) no-repeat;background-size:29px;text-align:left;text-indent: 8px;line-height:24px;color:#fff;position:absolute;left:-29px;top:50%;margin-top:-13px;font-size:1.1rem;}
 /*评分,报销*/
 .score .Inmask span:nth-child(2){padding-right:40px;}
