@@ -43,7 +43,7 @@
 								<div class="LiOut">
 									<!--<div contenteditable="true" class="article"></div>-->
 									<textarea class="article"></textarea>
-									<div class="Inmask clearfix">
+									<div class="Inmask clearfix color error">
 										<span class="floatleft color-c">采购事项</span>
 										<span>必填</span>
 									</div>
@@ -61,6 +61,7 @@
 								</div>
 								<p class="color-9">请点击空白区域，输入备注</p>
 							</li>
+							
 							<li class="choose mart10 autoHeight upimg">
 								<div class="LiOut">
 									<div class="Inmask clearfix">
@@ -78,6 +79,46 @@
 								<p class="color-9">您最多可上传6张图片</p>
 							</li>
 						</ul>	
+						<!--多选begin-->
+						<ul class="editList process processlist doubleCheck p-top10">
+							<li><p class="color-8 marl10">选择多种付款方式</p></li>
+							<li class="choose mart5"><!--加choosed选中当前流程-->
+								<div class="LiOut">
+									<div class="Userprocess clearfix">
+										<em>银行付款</em>
+									</div>
+									<span class="Check"></span>
+								</div>
+							</li>
+							<li class="choose"><!--加choosed选中当前流程-->
+								<div class="LiOut">
+									<div class="Userprocess clearfix">
+										<em>支票</em>
+									</div>
+									<span class="Check"></span>
+								</div>
+							</li>
+						</ul>
+						<!--多选over-->
+						<!--单选begin-->
+						<ul class="editList process processlist p-top10">
+							<li><p class="color-8 marl10">选择性别</p></li>
+							<li class="choose mart5"><!--加choosed选中当前流程-->
+								<div class="LiOut">
+									<div class="Userprocess clearfix">
+										<em>男</em>
+									</div>
+								</div>
+							</li>
+							<li class="choose"><!--加choosed选中当前流程-->
+								<div class="LiOut">
+									<div class="Userprocess clearfix">
+										<em>女</em>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<!--单选over-->
 						<span class="nextstep aligncenter font18 mart20">下一步</span>
 					</div>
 				</div>

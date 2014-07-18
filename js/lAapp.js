@@ -172,6 +172,16 @@ $(document).ready(function(){
 			$this.addClass('choosed').siblings().removeClass('choosed');
 		}		
 	});
+	//多选择
+	$('.processlist.doubleCheck .choose').off('touchstart').on('touchstart',function(){
+		event.preventDefault();
+		$this = $(this);
+		if($this.hasClass('choosed')){
+			$this.removeClass('choosed');
+		}else{
+			$this.addClass('choosed');
+		}		
+	});
 	$('#sendAction').off('touchend').on('touchend',function(){
 		event.preventDefault();
 		clicked('formico.html');
@@ -180,7 +190,6 @@ $(document).ready(function(){
 		event.preventDefault();
 		back();
 	});
-	
 });
 
 

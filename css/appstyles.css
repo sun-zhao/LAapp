@@ -1,6 +1,6 @@
 /*reset*/
 html{background-color:#fff;color:#444;font-size:62.5%;}
-body{font-size:1.2rem;font-family:verdana;line-height:1.8em; font-family:Microsoft YaHei,Tahoma,Arial; background-color:#f2f2f2;}
+body{font-size:1.2rem;font-family:verdana;line-height:1.8em;font-family:Microsoft YaHei,Tahoma,Arial; background-color:#f2f2f2;}
 html,body{height:100%;background-color:#ddd;}
 body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, textarea, p, th, td, dl, dt, dd,pre{margin:0;padding:0;}
 table{border-collapse:collapse;border-spacing:0;}
@@ -27,7 +27,7 @@ a:hover{text-decoration:none;}
 .alignleft{text-align:left;}
 .forcewrap{word-wrap:break-word;word-break:break-all;text-overflow:hidden;overflow:hidden;}
 .borderless{border: none;}
-label.checkbox, label.radio, label.text{padding-left:4px;vertical-align:top;}
+label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .breakword{word-wrap:break-word;}
 /*margin*/
 .nomar{margin:0!important;}
@@ -85,6 +85,7 @@ label.checkbox, label.radio, label.text{padding-left:4px;vertical-align:top;}
 .color-9{color:#999;}
 .color-cb{color:#cbcbcb;}
 .color-c{color:#ccc!important;}
+.error,.error span{color:#bd2c00!important;}
 .nobg{background:none!important;}
 .nobgimg{background-image:none!important;}
 .bg-01{background-color:#ff1f5e;}
@@ -93,9 +94,9 @@ label.checkbox, label.radio, label.text{padding-left:4px;vertical-align:top;}
 .bg-04{background-color:#00cf77;}
 .bg-05{background-color:#3ab9f0;}
 .bg-06{background-color:#70d4d4;}
-.bg-07{background-color:#;}
+/*.bg-07{background-color:#;}
 .bg-08{background-color:#;}
-.bg-09{background-color:#;}
+.bg-09{background-color:#;}*/
 .more span{display: inline-block;color:#777;}
 .more .loading{width:25px;height:25px;background:url(../img/loading1.png) no-repeat center center;background-size:20px;margin-right:5px;-webkit-transition:0.3s;transition:0.3s;}
 .more.up .loading{-webkit-transform:rotate(-180deg);-webkit-transition:0.3s;transition:0.3s;}
@@ -296,7 +297,7 @@ label.checkbox, label.radio, label.text{padding-left:4px;vertical-align:top;}
 .formOut section.form header{border-bottom: 1px solid #ddd;padding:5px 0;position:relative;top:-5px;}
 .formOut section.form header img{width:37px;height:37px;border-radius:50px;}
 .formOut section.form header span{display:inline-block;height:37px;line-height:37px;margin-right:10px;}
-.formOut section.form table tr.nowstep td{color:#59a7f9;}
+.formOut section.form table.nowstep td{color:#59a7f9;}
 .formOut section.form:nth-child(2) table tr td:first-child{padding:0;}
 /*右侧扇形菜单*/
 .BottomRBtn{background-color:#69b0fa;width:103px;height:103px;border-radius:50px;position: absolute;z-index:20;right:-51px;bottom:-51px;box-shadow: -1px -1px 2px #8a99cc;opacity:0.9;}
@@ -378,6 +379,9 @@ padding:7px 0 4px 10px;}
 .processlist li.choosed .Userprocess{color:#555;}
 .process li .LiOut{left:0;-webkit-transition:0.2s;}
 .process li.active .LiOut{left:-50px;-webkit-transition:0.2s;}
+.Check{display:block;width:18px;height:18px;border:1px solid #ccc;position: absolute;top:10px;left:90.5%;}
+.doubleCheck li.choosed .LiOut{background-image: none;}
+.doubleCheck li.choosed .LiOut .Check{background:url(../img/choosed.png) no-repeat center center;border-color: #59a7f9;background-size: 14px;}
 .workovertime .Userprocess{width:93%;text-indent:10px;}
 .workovertime li{margin-top:-1px;}
 .attachment .Userprocess span{padding:0;}
