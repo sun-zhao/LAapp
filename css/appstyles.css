@@ -85,7 +85,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .color-9{color:#999;}
 .color-cb{color:#cbcbcb;}
 .color-c{color:#ccc!important;}
-.error,.error span{color:#bd2c00!important;}
+.error,.error span,.has-error,.has-error span{color:#bd2c00!important;}
 .nobg{background:none!important;}
 .nobgimg{background-image:none!important;}
 .bg-01{background-color:#ff1f5e;}
@@ -349,9 +349,14 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .editList li input,.editList li textarea,.editList li .article{background:transparent;width:100%;line-height:30px;border:0;position: relative;z-index:5;text-indent:12px;color:#888;overflow-y:visible;}
 .editList li textarea{min-height:30px;line-height:20px;height:80px;}
 .editList li .article{min-height:30px;line-height:20px;}
-.editList li .Inmask{width:100%;height:40px;line-height:40px;text-align: right;position:absolute;top:0;left:0;font-size:1.4rem;}
+.editList li .Inmask{width:100%;height:40px;line-height:40px;text-align: right;position:absolute;top:0;left:0;font-size:1.4rem;background-color: #fff;z-index:10;}
 .editList li .Inmask span{color:#ccc;padding-right:10px;}
 .editList li .Inmask span.floatleft{padding:0 0 0 10px;color:#888;}
+.editList li textarea + .Inmask{height:80px;}
+.LiOut.hideInmask .Inmask,.LiOut.hideInmask .textnumber,.LiOut.has-error .Inmask,.LiOut.error .Inmask.Txterror{display: none;}/*隐藏默认信息*/
+.LiOut.has-error .Inmask.Txterror{display: block;text-align: left;padding-left: 10px;}
+
+
 .editList li.choose .LiOut{background:#fff url(../img/arrow.png) no-repeat 96% 15px;background-size:8px;}
 .editList li.autoHeight div.LiOut{height:auto;min-height:40px;}
 .editList li .color-9{text-align:center;}
