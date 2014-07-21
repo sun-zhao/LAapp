@@ -355,7 +355,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .editList li textarea + .Inmask{height:80px;}
 .LiOut.hideInmask .Inmask,.LiOut.hideInmask .textnumber,.LiOut.has-error .Inmask,.LiOut.error .Inmask.Txterror{display: none;}/*隐藏默认信息*/
 .LiOut.has-error .Inmask.Txterror{display: block;text-align: left;padding-left: 10px;}
-
+.editList li.choose .Inmask{width:90%;}
 
 .editList li.choose .LiOut{background:#fff url(../img/arrow.png) no-repeat 96% 15px;background-size:8px;}
 .editList li.autoHeight div.LiOut{height:auto;min-height:40px;}
