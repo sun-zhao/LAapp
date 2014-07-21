@@ -388,6 +388,8 @@ padding:7px 0 4px 10px;}
 .Check{display:block;width:18px;height:18px;border:1px solid #ccc;position: absolute;top:10px;left:90.5%;}
 .doubleCheck li.choosed .LiOut{background-image: none;}
 .doubleCheck li.choosed .LiOut .Check{background:url(../img/choosed.png) no-repeat center center;border-color: #59a7f9;background-size: 14px;}
+.doubleCheck .error{display: none;}
+.doubleCheck .has-error .error{display: inline-block;}
 .workovertime .Userprocess{width:93%;text-indent:10px;}
 .workovertime li{margin-top:-1px;}
 .attachment .Userprocess span{padding:0;}
