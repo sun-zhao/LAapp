@@ -2,7 +2,7 @@
 html{background-color:#fff;color:#444;font-size:62.5%;}
 body{font-size:1.2rem;font-family:verdana;line-height:1.8em;font-family:Microsoft YaHei,Tahoma,Arial; background-color:#f2f2f2;}
 html,body{height:100%;background-color:#ddd;}
-body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, textarea, p, th, td, dl, dt, dd,pre{margin:0;padding:0;}
+body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, textarea, p, th, td, dl, dt, dd,pre,i{margin:0;padding:0;}
 table{border-collapse:collapse;border-spacing:0;}
 img{border:none;}
 address, caption, cite, code, dfn, em, th, var, b, i{font-style:normal;font-weight:normal;}
