@@ -411,9 +411,10 @@ padding:7px 0 4px 10px;}
 .wordfind{position:absolute;width:15px;top:24px;right:4px;color:#59a7f9;text-align:center;z-index:20;}
 .wordfind li{height:14px;line-height:14px;font-size:1.1rem;position: relative;}
 .wordfind li em{width:29px;height:24px;background: url(../img/word-bg.png) no-repeat;background-size:29px;text-align:left;text-indent: 8px;line-height:24px;color:#fff;position:absolute;left:-29px;top:50%;margin-top:-13px;font-size:1.1rem;}
-.wordfind_main{position:absolute;top:0;width:123px;border-left:1px solid #888;right:0;bottom:0;background-color: #fff;z-index:20;}
+.wordfind_main{position:absolute;top:0;width:123px;border-left:1px solid #888;right:-125px;bottom:0;background-color: #fff;z-index:20;-webkit-transition:0.2s;transition:0.2s;}
 .wordfind_main span{display: inline-block;width:40px;height:40px;line-height:40px;text-align: center;background-color: #f5f5f5;font-size:1.8rem;color:#666;border:1px solid #aaa;border-width:0 1px 1px 0;margin-left: -0px;float: left;}
 .wordfind_main span.active{background-color: #347cdc;color: #fff;-webkit-transition:0.2s;transition:0.2s;}
+.showM + .wordfind_main{-webkit-transition:0.2s;transition:0.2s;right:0;}
 /*评分,报销*/
 .score .Inmask span:nth-child(2){padding-right:40px;}
 .score .Inmask span:nth-child(2) em,.score .Inmask span:first-child em i{color:#59a7f9;padding-right:3px;font-size:1.3rem;}
