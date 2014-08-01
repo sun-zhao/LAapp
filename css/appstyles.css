@@ -394,8 +394,8 @@ ul.contactBox  li.choosed{background-position: 90% center;}
 .attachment .Userprocess span{padding:0;}
 .attachment .Userprocess img{border-radius:0;margin:0;}
 .attachment .Userprocess span.floatright{margin-right:10px;}
-.list li.current,li.current .LiOut{background-color:#42a6fc!important;color:#fff;transition:0.2s;-webkit-transition:0.2s;}
-.editList li.current .LiOut .Userprocess{color:#fff;}
+.list li.current,li.current .LiOut .Inmask,li.current .LiOut{background-color:#42a6fc!important;color:#fff;transition:0.2s;-webkit-transition:0.2s;}
+.editList li.current .LiOut .Userprocess,li.current .LiOut .Inmask span{color:#fff;}
 .editList li.current .LiOut .Check{background-color: #fff;}
 /*通讯录*/
 .contaceTab{width:150px;border:2px solid #fff;border-radius:5px;height:27px;margin:0 auto;margin-top:10px;}
