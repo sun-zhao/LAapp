@@ -185,7 +185,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .list li .AppName em{color:#888;}
 .list li.cross p:nth-child(4) span.floatright{color:#00cf77;}
 .list li.nocross p:nth-child(4) span.floatright{color:#e6004f;}
-.list li.current{background-color:#42a6fc;color:#fff;}
+
 .list li.current .AppName,.list li.current.cross p:nth-child(3) span.floatright,.list li.current.nocross p:nth-child(3) span.floatright{color:#fff;}
 .list li.current .AppImg img{border:1px solid #fff;}
 .list li p{line-height:16px;padding-top:6px;}
@@ -356,7 +356,6 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .LiOut.hideInmask .Inmask,.LiOut.hideInmask .textnumber,.LiOut.has-error .Inmask,.LiOut.error .Inmask.Txterror,.LiOut .Inmask.Txterror{display: none;}/*隐藏默认信息*/
 .LiOut.has-error .Inmask.Txterror{display: block;text-align: left;padding-left: 10px;}
 .editList li.choose .Inmask{width:90%;}
-
 .editList li.choose .LiOut{background:#fff url(../img/arrow.png) no-repeat 96% 15px;background-size:8px;}
 .editList li.autoHeight div.LiOut{height:auto;min-height:40px;}
 .editList li .color-9{text-align:center;}
@@ -395,6 +394,9 @@ ul.contactBox  li.choosed{background-position: 90% center;}
 .attachment .Userprocess span{padding:0;}
 .attachment .Userprocess img{border-radius:0;margin:0;}
 .attachment .Userprocess span.floatright{margin-right:10px;}
+.list li.current,.editList li.current .LiOut{background-color:#42a6fc;color:#fff;transition:0.2s;-webkit-transition:0.2s;}
+.editList li.current .LiOut .Userprocess{color:#fff;}
+.editList li.current .LiOut .Check{background-color: #fff;}
 /*通讯录*/
 .contaceTab{width:150px;border:2px solid #fff;border-radius:5px;height:27px;margin:0 auto;margin-top:10px;}
 .contaceTab dd{display:inline-block;float:left;text-align:center;height:27px;line-height:27px;font-size:1.3rem;width:75px;text-shadow: none;}
