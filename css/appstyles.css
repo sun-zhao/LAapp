@@ -394,7 +394,7 @@ ul.contactBox  li.choosed{background-position: 90% center;}
 .attachment .Userprocess span{padding:0;}
 .attachment .Userprocess img{border-radius:0;margin:0;}
 .attachment .Userprocess span.floatright{margin-right:10px;}
-.list li.current,.editList li.current .LiOut{background-color:#42a6fc;color:#fff;transition:0.2s;-webkit-transition:0.2s;}
+.list li.current,li.current .LiOut{background-color:#42a6fc!important;color:#fff;transition:0.2s;-webkit-transition:0.2s;}
 .editList li.current .LiOut .Userprocess{color:#fff;}
 .editList li.current .LiOut .Check{background-color: #fff;}
 /*通讯录*/
