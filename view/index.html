@@ -13,14 +13,14 @@
 	<script type="text/javascript" src="../js/lAapp.js"></script>
 </head>
 <body>
-	<div class="maskOver maskOverbg" style="display:none;">
+	<div class="maskOver maskOverbg" style="display:">
 		<div class="maskIN aligncenter">
 			<p><img src="../img/loading.gif" width="81"/></p>
 			<p class="color-8">努力加载中...</p>
 		</div>
 	</div><!--最上层的放置点击遮罩层-->
 	<!--侧边栏begin-->
-	<aside class="sidebar">
+	<aside class="sidebar show">
 		<ul>
 			<li class="userimg">
 				<span class="userimg"><img src="../img/cdm.jpg"></span>
@@ -37,13 +37,14 @@
 		<p class="LOut p-top50">
 			<span class="quit current"><i class="BtnIcon Icon-out"></i>登出</span>
 			<span class="change"><i class="BtnIcon Icon-change"></i>切换账号</span>
+			<span class="change"><i class="BtnIcon Icon-change nobg"></i>查看更新</span>
 		</p>
 	</aside>
 	<!--侧边栏over-->
 	<div class="view">
 		<!--header begin-->
 		<header class="header clearfix">
-			<div class="TopL"><span class="BtnIcon Calleft"></span></div>
+			<div class="TopL"><span class="BtnIcon Calleft"><em class="prompt"></em></span></div>
 			<div class="TopM aligncenter"><span class="block font16" id="ToggleDown">待审核 <em class="BtnIcon Icon-toggle"></em></span></div>
 			<div class="TopR" id="Search"><span class="BtnIcon TopSer"></span></div>
 		</header>
