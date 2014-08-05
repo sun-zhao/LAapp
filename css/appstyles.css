@@ -217,6 +217,14 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .choosenet .quitBtn{display:block;height:50px;line-height:50px;font-size:1.5rem;color:#fff;background:#888;border-radius:0 0 4px 4px;position:relative;z-index:100;}
 .choosenet ul li:active{color:#5299e4;}
 .choosenet .choosenetin{max-height:180px;overflow-y: scroll;}
+.update{width:240px;margin-left: -120px;}
+.update .choosenetin{padding:15px;color:#666;min-height:190px;}
+.update .choosenetin p.font14{color:#333;}
+.update .choosenetin p{padding-bottom:5px;}
+.update .bottomB{border-top:1px solid #aaa;position:relative;}
+.update .bottomB span.quitBtn{height:35px;line-height:35px;position:relative;width:50%;float:left;border-radius:0;background-color: #fff;color:#444;border-radius:0 0 0 4px;}
+.update .bottomB span.quitBtn.current{background-color:#347cdc;color:#fff;}
+.update .bottomB span.quitBtn:last-child{border-radius:0 0 4px 0;border-left:1px solid #aaa;position:absolute;top:0;right:0;}
 .logintab{height:100%;}
 /*.view.totop{margin-top:-10%;transition:0.3s;}*/
 /*侧边栏*/
