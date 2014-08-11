@@ -330,7 +330,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .BottomRbox .btn3 span{top:40px;left:30px;}
 .BottomRbox .btn4 span{top:18px;left:40px;}
 .BottomRbox .btn:active .BtnIcon{-webkit-transform:rotate(30deg);-webkit-transition:0.2s;transform:rotate(30deg);transition:0.2s;}
-.BottomRBtn{background-color:#69b0fa;width:103px;height:103px;border-radius:50px;position: absolute;z-index:40;right:-51px;bottom:-51px;box-shadow: -1px -1px 2px #8a99cc;opacity:0.9;}
+.BottomRBtn{background-color:#69b0fa;width:103px;height:103px;border-radius:50px;position: absolute;z-index:45;right:-51px;bottom:-51px;box-shadow: -1px -1px 2px #8a99cc;opacity:0.9;}
 .BottomRBtnL.current{background-color:#3674b5;box-shadow: -1px -1px 2px #4b5ea4;}
 .BottomRBtnL.current .edit{-webkit-transform: rotate(80deg);-webkit-transition:0.2s;}
 .BottomRboxL{position:fixed;bottom:0;left:0;right:0;z-index:10;border-top:1px solid #ccc;}
