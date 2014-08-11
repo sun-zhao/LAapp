@@ -218,7 +218,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .choosenet ul li{margin:0 13px;border-bottom:1px solid #ccc;height:50px;line-height:50px;font-size:1.4rem;text-indent:5px;position:relative;}
 .choosenet ul li:last-child{border-bottom: 0;}
 .choosenet .quitBtn{display:block;height:50px;line-height:50px;font-size:1.5rem;color:#fff;background:#888;border-radius:0 0 4px 4px;position:relative;z-index:100;}
-.choosenet ul li:active{color:#5299e4;}
+.choosenet ul li.current{color:#5299e4;background: none;}
 .choosenet .choosenetin{max-height:180px;overflow-y: scroll;}
 .update{width:240px;margin-left: -120px;}
 .update .choosenetin{padding:15px;color:#666;min-height:190px;}
@@ -310,12 +310,12 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .formOut section.form table.nowstep td{color:#59a7f9;}
 .formOut section.form:nth-child(2) table tr td:first-child{padding:0;}
 /*右侧扇形菜单*/
-.BottomRBtn{background-color:#69b0fa;width:103px;height:103px;border-radius:50px;position: absolute;z-index:20;right:-51px;bottom:-51px;box-shadow: -1px -1px 2px #8a99cc;opacity:0.9;}
+.BottomRBtn{background-color:#69b0fa;width:103px;height:103px;border-radius:50px;position: absolute;z-index:999;right:-51px;bottom:-51px;box-shadow: -1px -1px 2px #8a99cc;opacity:0.9;}
 .BottomRBtn.current{background-color:#3674b5;box-shadow: -1px -1px 2px #4b5ea4;}
 .BottomRBtn.current .edit{-webkit-transform: rotate(80deg);-webkit-transition:0.2s;}
-.BottomRbox{width:360px;height:360px;position:absolute;-webkit-transform: rotate(90deg);right:-180px;bottom:-180px;-webkit-transition:0.3s;z-index:10;display: none;}
-.BottomRboxOut{opacity:0.8;width:360px;height:360px;position:absolute;right:-180px;bottom:-180px;z-index:2;-webkit-transform: rotate(100deg);-webkit-transition:0.6s;background:url(../img/rightbox.png) no-repeat left top;display:none;}
-.BottomRboxOut.current{z-index:10!important;-webkit-transform: rotate(0deg)!important;-webkit-transition:0.2s;-webkit-transform:scale(1.5);}
+.BottomRbox{width:360px;height:360px;position:absolute;-webkit-transform:rotate(90deg);right:-180px;bottom:-180px;-webkit-transition:0.3s;z-index:20;display: none;}
+.BottomRboxOut{opacity:0.8;width:360px;height:360px;position:absolute;right:-180px;bottom:-180px;z-index:10;-webkit-transform: rotate(100deg);-webkit-transition:0.6s;background:url(../img/rightbox.png) no-repeat left top;display:none;}
+.BottomRboxOut.current{z-index:20;-webkit-transform: rotate(0deg)!important;-webkit-transition:0.2s;-webkit-transform:scale(1.5);}
 .BottomRbox.current{-webkit-transform:rotate(0deg)!important;-webkit-transition:0.6s;-webkit-transform:scale(1.5);}
 .BottomRbox .btn{width:43px;height:43px;line-height:43px;border-radius:50em;position:absolute;text-align: center;font-size:1rem;color:#888;}
 .BottomRbox .btn1{background-color:#02cf77;top:15px;left:132px;}
@@ -330,7 +330,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .BottomRbox .btn3 span{top:40px;left:30px;}
 .BottomRbox .btn4 span{top:18px;left:40px;}
 .BottomRbox .btn:active .BtnIcon{-webkit-transform:rotate(30deg);-webkit-transition:0.2s;transform:rotate(30deg);transition:0.2s;}
-.BottomRBtn{background-color:#69b0fa;width:103px;height:103px;border-radius:50px;position: absolute;z-index:20;right:-51px;bottom:-51px;box-shadow: -1px -1px 2px #8a99cc;opacity:0.9;}
+.BottomRBtn{background-color:#69b0fa;width:103px;height:103px;border-radius:50px;position: absolute;z-index:40;right:-51px;bottom:-51px;box-shadow: -1px -1px 2px #8a99cc;opacity:0.9;}
 .BottomRBtnL.current{background-color:#3674b5;box-shadow: -1px -1px 2px #4b5ea4;}
 .BottomRBtnL.current .edit{-webkit-transform: rotate(80deg);-webkit-transition:0.2s;}
 .BottomRboxL{position:fixed;bottom:0;left:0;right:0;z-index:10;border-top:1px solid #ccc;}
