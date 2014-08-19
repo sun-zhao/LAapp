@@ -49,10 +49,10 @@ $(document).ready(function(){
 			$maskB.css({"transform":"rotate(100deg)"});
 			$maskB.removeClass('current');
 			setTimeout(function(){
-				$('.content').css({'z-index':'15'});
+//				$('.content').css({'z-index':'15'});
 			},600);
 		}else{
-			$('.content').css({'z-index':'0'});
+//			$('.content').css({'z-index':'0'});
 			setTimeout(function(){
 				$this.addClass('current');
 				$maskB.show(1,function(){

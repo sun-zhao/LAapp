@@ -390,6 +390,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .processlist li .Userprocess{font-size:1.4rem;max-width:85%;position:relative;word-break:break-all;word-wrap:break-word;height:auto;min-height:30px;line-height:25px;
 padding:7px 0 4px 10px;}
 .processlist li.choose .LiOut{background-image:none;height:auto;min-height:40px;}
+.process_de li.choose .LiOut{height:45px;}
 .processlist li.choosed .LiOut,ul.contactBox li.choosed{background:#fff url(../img/choosed.png) no-repeat 96% center;background-size:14px;}
 ul.contactBox  li.choosed{background-position: 90% center;}
 .processlist li.choosed .Userprocess{color:#555;}
