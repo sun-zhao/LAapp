@@ -63,36 +63,43 @@ $(document).ready(function(){
 	});
 	
 	//向左滑动li展开撤销
-	$('li','.list').off('touchstart').on('touchstart',function(){
-		event.preventDefault();
-		var startTouch  = event.touches[0];
-		startX = startTouch.pageX;
-		startY = startTouch.pageY;
-		var endX=startX;
-		$SearchBox = $('.SearchBox');
-		$TopDown = $('.TopDown');
-		$ToggleDown = $('#ToggleDown');
-		$TopDown.removeClass('active');
-		$ToggleDown.removeClass('current');
-		$SearchBox.removeClass('current');
-		$(this).off('touchmove').on('touchmove',function(){
-			event.preventDefault();
-			var moveTouch  = event.touches[0];
-			endX = moveTouch.pageX;
-			endY = moveTouch.pageY;
-		});
-		$(this).off('touchend').on('touchend',function(){
-			event.preventDefault();
-			x = endX - startX;
-			y = endY - startY;
-			if(Math.abs(x) > Math.abs(y)){
-				if(x<0){
-					$(this).addClass('active');
-				}else{
-					$(this).removeClass('active');
-				}
-			}
-		});
+//	$('li','.list').off('touchstart').on('touchstart',function(){
+//		event.preventDefault();
+//		var startTouch  = event.touches[0];
+//		startX = startTouch.pageX;
+//		startY = startTouch.pageY;
+//		var endX=startX;
+//		$SearchBox = $('.SearchBox');
+//		$TopDown = $('.TopDown');
+//		$ToggleDown = $('#ToggleDown');
+//		$TopDown.removeClass('active');
+//		$ToggleDown.removeClass('current');
+//		$SearchBox.removeClass('current');
+//		$(this).off('touchmove').on('touchmove',function(){
+//			event.preventDefault();
+//			var moveTouch  = event.touches[0];
+//			endX = moveTouch.pageX;
+//			endY = moveTouch.pageY;
+//		});
+//		$(this).off('touchend').on('touchend',function(){
+//			event.preventDefault();
+//			x = endX - startX;
+//			y = endY - startY;
+//			if(Math.abs(x) > Math.abs(y)){
+//				if(x<0){
+//					$(this).addClass('active');
+//				}else{
+//					$(this).removeClass('active');
+//				}
+//			}
+//		});
+//	});
+	$('.app_list li').off('touchstart').on('touchstart',function(){
+		if($(this).hasClass('show_preview')){
+			$(this).removeClass('show_preview')
+		}else{
+			$(this).addClass('show_preview').siblings().removeClass('show_preview');
+		}
 	});
 	//展开左侧边栏
 	$('.Calleft').off('touchstart').on('touchstart',function(){
