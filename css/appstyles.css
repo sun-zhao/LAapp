@@ -210,7 +210,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .preview table th{width:80px;text-align: right;line-height:25px;}
 .app_list li.current{background: url(../img/li_bg2.jpg) left top repeat-x;}
 /*login*/
-.login{background: url(../img/login_bg.jpg);background-size:cover;}
+.login{background: url(../img/login_bg.jpg) repeat;}
 .login .header{background: url(../img/loginheader.jpg) repeat;background-size:3px;height:50px;}
 .noh .header{display: none;}
 .Circle{width:100px;height:100px;background:#ede8e6;margin:0 auto;border-radius:50px;position: relative;z-index:1;}
@@ -221,13 +221,12 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 	100%{-webkit-transform:rotate(359deg)}
 }
 .Circle .logo,.Circle .logo img{width:87px;height:87px;position:absolute;z-index: 20;top:3.5px;left:3px;border-radius:50em;}
-.loginInt{width:70%;margin:0 auto;font-size:1.2rem;border-radius:5px;box-shadow: 0 0 5px #aaa;background-color:#fff;}
+.loginInt{width:75%;margin:0 auto;font-size:1.2rem;background-color:#fff;}
 .noh .loginInt{margin-top:10px;}
 .logo_gif{width:70px;position: fixed;bottom:20px;left:50%;margin-left:-35px;}
 /*.loginInt p{height:40px;}*/
-.loginInt p:first input{border-bottom:1px solid #aaa;}
-.loginInt p:nth-child(2) input{border-radius:0 0 5px 5px;}
-.loginInt p input{border:0;border-bottom:1px solid #bbb;width:100%;color:#999;line-height:40px;height:40px;text-align:center;background: none;}
+.loginInt p input{border-radius:3px;border:1px solid #777;width:100%;color:#333;line-height:40px;height:40px;text-align:left;background: none;margin-bottom:10px;text-indent:10px;font-size:18px;}
+.loginInt p input:focus{border-color:#57a5f3;}
 .loginBtn{width:60%;height:35px;border-radius:40px;margin:0 auto;position:relative;background-color:#fff;border:2px solid #59a7f9;}
 .loginBtnIn{width:100%;height:35px;background-color:#efefef;border-radius:40px;position:absolute;top:0px;left:0px;line-height:35px;text-align: center;}
 .Icon-login{width:70px;height:70px;background: url(../img/loginarrow.png) no-repeat center 20px;background-size:35px;position:absolute;right:-18px;top:-20px;}
@@ -247,7 +246,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .update .bottomB span.quitBtn.current{background-color:#4587c4;color:#fff;}
 .update .bottomB span.quitBtn:last-child{border-radius:0 0 4px 0;border-left:1px solid #aaa;position:absolute;top:0;right:0;}
 .logintab{height:100%;}
-.view.totop{margin-top:-50%;transition:0.5s;-webkit-transition:0.5s;}
+.view.totop .logintab{margin-top:-30%;transition:0.5s;-webkit-transition:0.5s;}
 /*侧边栏*/
 .sidebar{width:100%;height:100%;position:absolute;left:0;top:0;background: url(../img/sidebar_bg.jpg);background-size:cover;}
 .sidebar ul{padding-top:60px;}
@@ -396,8 +395,8 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .uploadimg img{width:44px;height:44px;margin-right:2px;}
 .uploadimg img:last-child{margin-right:0;}
 .editList li.upimg .LiOut .Inmask{position:relative;}
-.nextstep{display:block;margin:0 40px;background:#4587c4;border-radius:4px;height:45px;line-height: 45px;color:#fff;}
-.logintab .nextstep{text-shadow:1px 0 0.5px #000;}
+.nextstep{display:block;margin:0 40px;background:#57a5f3;border-radius:4px;height:45px;line-height: 45px;color:#fff;}
+/*.logintab .nextstep{text-shadow:1px 0 0.5px #000;}*/
 .Submitstep{background: #2ecd71;}
 .process li{position: relative;}
 .Userprocess{width:95%;height:40px;line-height:40px;color:#aaa;}

@@ -8,14 +8,14 @@
 		<script type="text/javascript" src="../js/jquery.js"></script>
 		<script type="text/javascript">
 		//判断输入框获得焦点，然后改变页面的margin-top
-			$(function(){
-				$Int = $('.loginInt input');
-				$Int.focus(function(){
-					$('.view').addClass('totop');
-				});
-				$Int.blur(function(){
-					$('.view').removeClass('totop');
-				});
+//			$(function(){
+//				$Int = $('.loginInt input');
+//				$Int.focus(function(){
+//					$('.view').addClass('totop');
+//				});
+//				$Int.blur(function(){
+//					$('.view').removeClass('totop');
+//				});
 			});
 		</script>
 		<style type="text/css">
@@ -24,30 +24,31 @@
 	</head>																																			
 	<body>
 		<div class="view login">
-			<table class="logintab" width="100%">
+			<table class="logintab" width="100%" style="display:none;">
 				<tr>
 					<td class="aligncenter p-top50"><span><img src="../img/logo2.png" width="210"></span></td>
 				</tr>
 				<tr><td class="p-top30"></td></tr>
 			</table>
-			<span class="logo_gif"><img src="../img/loading_login.gif" width="60"></span>
-			<table class="logintab" width="100%" style="display:none;">
-				<tr><td class="p-top50"><p class="aligncenter"><img src="../img/logo2.png" width="210"></p></td></tr>
+			<span class="logo_gif" style="display:none;"><img src="../img/loading_login.gif" width="60"></span>
+			<table class="logintab" width="100%">
+				<tr><td class="p-top30"><p class="aligncenter"><img src="../img/logo2.png" width="210"></p></td></tr>
 				<tr>
-					<td>
+					<td class="p-bt20">
 						<div>
 							<div class="Circle mart20" style="display:none;">
 								<span class="CircleIn current"></span><!--加current就开始转了-->
 								<span class="logo"><img src="../img/circle2.png"></span>
 							</div>
-							<div class="loginInt mart30">
-								<p><input type="text" placeholder="用户名"></p>
-								<p><input type="password" placeholder="密码"></p>
+							<div class="loginInt">
+								<p><input type="text" placeholder="请输入用户名"></p>
+								<p><input type="password" placeholder="请输入密码"></p>
 							</div>
-							<span class="nextstep aligncenter font12 mart15">欢 迎 登 陆</span>
+							<span class="nextstep aligncenter font20 mart15">登录</span>
 						</div>
 					</td>
 				</tr>
+				<tr><td class="aligncenter p-top50"><img src="../img/login_loading_bg.png" width="50"></td></tr>
 			</table>
 		</div>
 		<!--选择网络弹出begin-->
