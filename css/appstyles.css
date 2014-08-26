@@ -454,9 +454,12 @@ ul.contactBox li.word-title{background: none;border:0;padding-left: 10px;}
 .score .Inmask span:nth-child(2){padding-right:40px;}
 .score .Inmask span:nth-child(2) em,.score .Inmask span:first-child em i{color:#59a7f9;padding-right:3px;font-size:1.3rem;}
 .score .Inmask span:first-child em{padding-left:10px;}
+.score li ul li{margin-left:10px;color:#888;}
 .score .ol{margin:0 10px 0 20px;}
 .score .ol li{background:none;margin-bottom:10px;color:#666;font-size:1.3rem;}
 .score .ol li:last-child{margin-bottom:20px;}
+
+
 .editList select{border:0;height:42px;line-height:42px;outline: none;background:none;}
 .score select{position:absolute;width:100%;left:110px;color:#59a7f9;font-size:1.4rem;z-index:10;}
 .score select option em{color:#59a7f9;padding-right:4px;}
