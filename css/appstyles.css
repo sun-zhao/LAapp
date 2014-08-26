@@ -411,6 +411,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 padding:7px 0 4px 10px;}
 .processlist li.choose .LiOut{background-image:none;height:auto;min-height:40px;}
 .process_de li.choose .LiOut{height:45px;}
+.process_de li .Userprocess{line-height:30px;}
 .processlist li.choosed .LiOut,ul.contactBox li.choosed{background:#fff url(../img/choosed.png) no-repeat 96% center;background-size:14px;}
 ul.contactBox  li.choosed{background-position: 90% center;}
 .processlist li.choosed .Userprocess{color:#555;}
@@ -453,11 +454,11 @@ ul.contactBox li.word-title{background: none;border:0;padding-left: 10px;}
 .score .Inmask span:nth-child(2){padding-right:40px;}
 .score .Inmask span:nth-child(2) em,.score .Inmask span:first-child em i{color:#59a7f9;padding-right:3px;font-size:1.3rem;}
 .score .Inmask span:first-child em{padding-left:10px;}
-.score ol{margin:0 10px 0 35px;}
-.score ol li{background:none;margin-bottom:10px;list-style-type:decimal!important;color:#666;font-size:1.5rem;}
-.score ol li:last-child{margin-bottom:20px;}
+.score .ol{margin:0 10px 0 20px;}
+.score .ol li{background:none;margin-bottom:10px;color:#666;font-size:1.3rem;}
+.score .ol li:last-child{margin-bottom:20px;}
 .editList select{border:0;height:42px;line-height:42px;outline: none;background:none;}
-.score select{position:absolute;width:100%;left:110px;color:#59a7f9;font-size:1.4rem;}
+.score select{position:absolute;width:100%;left:110px;color:#59a7f9;font-size:1.4rem;z-index:10;}
 .score select option em{color:#59a7f9;padding-right:4px;}
 .cost .LiOut p{line-height:20px;padding:0 40px 0 10px;color:#888}
 .cost .LiOut p span.floatleft{color:#666;}
