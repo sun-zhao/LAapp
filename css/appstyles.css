@@ -221,11 +221,11 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 	100%{-webkit-transform:rotate(359deg)}
 }
 .Circle .logo,.Circle .logo img{width:87px;height:87px;position:absolute;z-index: 20;top:3.5px;left:3px;border-radius:50em;}
-.loginInt{width:75%;margin:0 auto;font-size:1.2rem;background-color:#fff;}
+.loginInt{width:75%;margin:0 auto;font-size:1.2rem;}
 .noh .loginInt{margin-top:10px;}
 .logo_gif{width:70px;position: fixed;bottom:20px;left:50%;margin-left:-35px;}
 /*.loginInt p{height:40px;}*/
-.loginInt p input{border-radius:3px;border:1px solid #777;width:100%;color:#333;line-height:40px;height:40px;text-align:left;background: none;margin-bottom:10px;text-indent:10px;font-size:18px;}
+.loginInt p input{border-radius:3px;border:1px solid #777;width:100%;color:#333;line-height:40px;height:40px;text-align:left;background: none;margin-bottom:10px;text-indent:10px;font-size:18px;background-color:#fff;}
 .loginInt p input:focus{border-color:#57a5f3;}
 .loginBtn{width:60%;height:35px;border-radius:40px;margin:0 auto;position:relative;background-color:#fff;border:2px solid #59a7f9;}
 .loginBtnIn{width:100%;height:35px;background-color:#efefef;border-radius:40px;position:absolute;top:0px;left:0px;line-height:35px;text-align: center;}
