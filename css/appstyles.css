@@ -53,7 +53,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .marl20{margin-left:20px!important;}
 .marl30{margin-left:30px!important;}
 .color-black{color:#000;}
-.color-white{color:#fff!important;text-shadow:1px 1px 0.5px #999;}
+.color-white{color:#fff!important;}
 .floatleft{float: left;}
 .floatright{float: right;}
 /*padding*/
@@ -138,12 +138,12 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .TopDown ul li .prompt{position:absolute;background: #e82827;color:#fff;padding:0 4px;top:30%;margin-top:-8px;left:33%;}
 .Icon-find{width:10px;height:10px;background: url(../img/ico-032.png) no-repeat;background-size:11px;}
 .view,.mask{width:100%;height:100%;position:relative;}
-.has_bg{background:url(../img/bgre.jpg);background-size:cover;}
+.view{background:url(../img/bgre.jpg) repeat;background-size:15px;}
 .mask,.maskOver{background-color:#444;opacity:0;position:fixed;top:0;left:0;z-index:20;display:none;}
 .maskOver{width:100%;height:100%;z-index:50;}
 .maskOverbg{background:0;opacity:1;overflow:hidden;}
 .maskIN{width:100%;height:100%;position:absolute;top:49px;background:url(../img/bgre.jpg) repeat;background-size:20px;padding-top:150px;}
-.header{width:100%;height:48px;box-shadow:-1px 1px 2px #000;background:#2d3039;position:absolute;top:0;left:0;color: #fff;text-shadow: 1px 1px 1px #000;z-index:100;overflow:hidden;}
+.header{width:100%;height:48px;box-shadow:-1px 1px 2px #57a5f3;background:#57a5f3;position:absolute;top:0;left:0;color: #fff;z-index:100;overflow:hidden;}
 .TopL,.TopR,.TopM{width:15%;height:100%;float: left;}
 .TopR{float:right;}
 .TopM{width:70%;float:left;text-align:center;line-height:50px;position: relative;}
@@ -157,7 +157,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 /*.SearchBox.current{display: block;}*/
 .Icon-toggle{width:8px;height:5px;background:url(../img/arrow2.png) 0 bottom;background-size:8px;position:relative;top:-2px;right:-4px;transition:0.4s;-webkit-transition:0.4s;}
 .current .Icon-toggle{background-position:0 0;-webkit-transition:0.4s;}
-.TopDown{width:100%;height:60px;position:absolute;top:-50px;left:0;background:#fff;border-bottom:1px solid #6b6b6b;z-index:30;transition:0.2s;-webkit-transition:0.2s;text-align:center;}
+.TopDown{width:100%;height:60px;position:absolute;top:-50px;left:0;background:#fff;border-bottom:1px solid #ccc;z-index:30;transition:0.2s;-webkit-transition:0.2s;text-align:center;}
 .TopDown ul li{display:inline-block;width:110px;padding-top:13px;text-align:center;color:#747c86;position: relative;}
 .TopDown ul li.current,.TopDown ul li:active{color:#59a7f9;}
 .TopDown.active{top:48px;-webkit-transition:0.2s;}
@@ -248,7 +248,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .logintab{height:100%;}
 .view.totop .logintab{margin-top:-30%;transition:0.5s;-webkit-transition:0.5s;}
 /*侧边栏*/
-.sidebar{width:100%;height:100%;position:absolute;left:0;top:0;background: url(../img/sidebar_bg.jpg);background-size:cover;}
+.sidebar{width:100%;height:100%;position:absolute;left:0;top:0;background:#333;}
 .sidebar ul{padding-top:60px;}
 .sidebar ul li,.LOut span{color:#fff;display: block;line-height:30px;padding:5px 10px 5px 37px;margin-bottom:3px;font-size:14px;background-repeat: no-repeat;background-position: 14px center;background-size:18px;text-shadow: 1px 1px 1px #373d52;}
 .sidebar ul li.userimg{padding: 0;margin:0;margin-bottom: 30px;}
