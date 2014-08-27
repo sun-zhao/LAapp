@@ -98,7 +98,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .bg-04{background-color:#00cf77;}
 .bg-05{background-color:#3ab9f0;}
 .bg-06{background-color:#70d4d4;}
-.bg-07{background-color:#970c69;}
+.bg-07{background-color:#a13e96;}
 .bg-08{background-color:#006566;}
 .bg-09{background-color:#5f8c63;}
 .bg-10{background-color:#c594d5;}
@@ -171,6 +171,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .TopDown ul li.current{border-bottom:2.5px solid #2b97df;}
 .TopDown ul li.current,.TopDown ul li:active{color:#59a7f9;}
 .TopDown.active{top:48px;-webkit-transition:0.2s;}
+.TopDown.two ul li{width:49%;}
 @media screen and (max-width:320px){
 	.TopDown ul li{width:100px;}
 }
@@ -313,10 +314,10 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .formIcon .SearchBox input:focus{background: none;}*/
 /*.formIcon .SearchBox input:focus{background: url(../img/ico-03-3.png) no-repeat 5% center;background-size:16px;text-indent:20px;}*/
 .formIconin{position:relative;width:100%;height:100%;}
-.formIconin-box{position:absolute;top:55px;bottom:0;left:5px;right:5px;z-index:200; text-align:center;overflow: hidden;}
-.formIconin-box li{display:inline-block;width:100px;height:88px;padding-top:12px;text-align:center;color:#fff;font-size:1.3rem;margin:0 0 -5px -3px;-webkit-transition:width 0.1s, height 0.1s, -webkit-transform 0.1s;opacity: 1;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;background: url(../img/form-bg.jpg);background-size:cover;}
-.formIconin-box li span{display:block;width:55px;height:55px;margin:0 auto;margin-bottom:5px;border-radius:50em;position: relative;-webkit-transition:width 0.2s, height 0.2s, -webkit-transform 0.2s;}
-.formIconin-box li span .BtnIcon{width:30px;height:30px;background-size:30px;background-repeat:no-repeat;position: absolute;top:50%;left:50%;margin:-13px 0 0 -15px;-webkit-transition:width 0.1s, height 0.1s,-webkit-transform 0.1s;}
+.formIconin-box{position:absolute;top:60px;bottom:0;left:5px;right:5px;z-index:200;text-align:center;overflow:hidden;}
+.formIconin-box li{display:inline-block;width:32%;padding:12px 0;text-align:center;color:#fff;font-size:1.3rem;border:1px solid #252626;transition:0.5s;-webkit-transition:0.5s;opacity: 1;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;background:#434448;box-shadow:0 0 2px #4d4e51 inset;margin:-4px;}
+.formIconin-box li span{display:block;width:50px;height:50px;margin:0 auto;margin-bottom:5px;border-radius:50em;position: relative;border:1px solid #36373b;}
+.formIconin-box li span .BtnIcon{width:30px;height:30px;background-size:26px;background-repeat:no-repeat;position: absolute;top:50%;left:50%;margin:-12px 0 0 -13px;-webkit-transition:width 0.1s, height 0.1s,-webkit-transform 0.1s;}
 .formIconin-box li.active{transform: rotateY(-180deg);-webkit-transform: rotateY(-180deg);transition:0.5s;-webkit-transition:0.5s;}
 .f-ico1{background-image: url(../img/f-ico1.png);}
 .f-ico2{background-image: url(../img/f-ico2.png);}
