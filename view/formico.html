@@ -10,21 +10,25 @@
 		<script type="text/javascript" src="../js/lAapp.js"></script>
 	</head>
 	<body>
-		<!--底部半圆按钮begin-->
-		<div class="BottomBtn current" id="cancelSendAction"><em class="BtnIcon plus"></em></div>
-		<!--底部半圆按钮over-->
 		<!--表单选择弹出 begin-->
 		<div class="formIcon">
-			<div class="formIconin">
-				<div class="form-top"></div>
-				<div class="form-bt"></div>
+			<!--header begin-->
+			<header class="header list-header clearfix" style="z-index:999;">
+				<div class="TopL"><span class="BtnIcon Back"></span></div>
+				<div class="TopM aligncenter"><span class="block font16">提交申请 </span></div>
+				<div class="TopR" id="Search"><span class="BtnIcon TopSer"></span></div>
 				<!--搜索框begin-->
-				<div class="SearchBox SearchBoxNomal nomar-t">
+				<div class="SearchBox">
 					<div class="SearchIn">
-						<input type="text" placeholder=""/>
+						<input type="text" placeholder="搜索"/>
+						<span class="BtnIcon clear"></span>
 					</div>
+					<div class="TopL" id="back_ser"><span class="BtnIcon Back"></span></div>
 				</div>
 				<!--搜索框over-->
+			</header>
+			<!--header over-->
+			<div class="formIconin">
 				<div class="formIconin-box current" id="wrapper">
 					<div id="scroller">
 						<ul>
