@@ -13,14 +13,14 @@
 	<script type="text/javascript" src="../js/lAapp.js"></script>
 </head>
 <body>
-	<div class="maskOver maskOverbg" style="display:">
+	<div class="maskOver maskOverbg" style="display:none;">
 		<div class="maskIN aligncenter">
 			<p><img src="../img/loading.gif" width="81"/></p>
 			<p class="color-8">努力加载中...</p>
 		</div>
 	</div><!--最上层的放置点击遮罩层-->
 	<!--侧边栏begin-->
-	<aside class="sidebar">
+	<aside class="sidebar show">
 		<ul>
 			<li class="userimg">
 				<span class="userimg"><img src="../img/cdm.jpg"></span>
@@ -35,44 +35,48 @@
 			<li><i class="BtnIcon Icon-pack"></i>我的经办<em class="prompt">99</em></li>
 		</ul>
 		<p class="LOut p-top50">
+			<span class="change"><i class="BtnIcon change-net"></i>切换网络</span>
 			<span class="quit current"><i class="BtnIcon Icon-out"></i>登出</span>
 			<span class="change"><i class="BtnIcon Icon-change"></i>切换账号</span>
-			<span class="change"><i class="BtnIcon Icon-change nobg"></i>查看更新</span>
+			<!--<span class="change"><i class="BtnIcon Icon-change nobg"></i>查看更新</span>-->
 		</p>
 	</aside>
 	<!--侧边栏over-->
 	<div class="view has_bg">
 		<!--header begin-->
-		<header class="header clearfix">
-			<div class="TopL"><span class="BtnIcon Calleft"><em class="prompt"></em></span></div>
-			<div class="TopM aligncenter"><span class="block font16" id="ToggleDown">待审核 <em class="BtnIcon Icon-toggle"></em></span></div>
+		<header class="header list-header clearfix">
+			<div class="TopL"><span class="BtnIcon Calleft has-message"></span></div><!--有心提示加has-message-->
+			<div class="TopM aligncenter"><span class="block font16">待审核 </span></div>
+			<div class="TopR"><span class="BtnIcon Topadd"></span></div>
 			<div class="TopR" id="Search"><span class="BtnIcon TopSer"></span></div>
+			<!--搜索框begin-->
+			<div class="SearchBox">
+				<div class="TopL"><span class="BtnIcon Back" id="back_ser"></span></div>
+				<div class="SearchIn">
+					<input type="text" placeholder="搜索"/>
+					<span class="BtnIcon clear"></span>
+				</div>
+			</div>
+			<!--搜索框over-->
 		</header>
 		<!--header over-->
 		<!--审核状态选择 弹出begin-->
 		<div class="TopDown">
 			<div class="TopDownIn">
 				<ul>
-					<!--<li class="current"><i class="BtnIcon Icon-wait"></i>待审核<em class="prompt" style="display: block;">1</em></li>-->
-					<li><i class="BtnIcon Icon-fj"></i>已否决<em class="prompt" style="display: none;">1</em></li>
-					<!--<li><i class="BtnIcon Icon-cross"></i>已通过<em class="prompt" style="display:none;">1</em></li>-->
-					<li><i class="BtnIcon Icon-history"></i>历史<em class="prompt" style="display:inline-block;">1</em></li>
-					<li><i class="BtnIcon Icon-sure"></i>确认<em class="prompt" style="display:none;">1</em></li>
+					<!--<li class="current">待审核<em class="prompt" style="display: block;">1</em></li>-->
+					<li class="current">已否决<em class="prompt" style="display: none;">1</em></li>
+					<!--<li>已通过<em class="prompt" style="display:none;">1</em></li>-->
+					<li>历史<em class="prompt" style="display:inline-block;">1</em></li>
+					<li>确认<em class="prompt" style="display:none;">1</em></li>
 				</ul>
 			</div>
 		</div>
 		<!--审核状态选择 弹出over-->
-		<!--搜索框begin-->
-		<div class="SearchBox">
-			<div class="SearchIn">
-				<input type="text" placeholder=""/>
-			</div>
-		</div>
-		<!--搜索框over-->
 		<!--content begin-->
-		<div class="content" id="wrapper">
+		<div class="content list-app" id="wrapper" style="left:">
 			<div id="scroller" style="display:block;">
-				<div class="aligncenter more wait" style="display:none">
+				<div class="aligncenter more wait" style="display:none;">
 					<span class="loading"></span>
 					<span>
 						<em class="font13">加载中...</em><br />
@@ -83,7 +87,7 @@
 					<li class="">
 						<div class="clearfix li_in">
 							<span class="BtnIcon arrow1"></span>
-							<span class="AppImg floatleft bg-04"><i class="BtnIcon f-ico1"></i></span>
+							<span class="AppImg floatleft bg-01"><i class="BtnIcon f-ico1"></i></span>
 							<p>
 								<span class="AppName font14">采购申请</span>
 								<span class="floatright">2014-06-13</span>
@@ -155,7 +159,7 @@
 					</li>
 					<li class="cross">
 						<div class="clearfix li_in">
-							<span class="AppImg floatleft bg-02"><i class="BtnIcon f-ico3"></i></span>
+							<span class="AppImg floatleft bg-03"><i class="BtnIcon f-ico3"></i></span>
 							<p>
 								<span class="AppName font14">采购申请</span>
 								<span class="floatright">2014-06-13</span>
@@ -168,7 +172,7 @@
 					</li>
 					<li class="cross">
 						<div class="clearfix li_in">
-							<span class="AppImg floatleft bg-02"><i class="BtnIcon f-ico4"></i></span>
+							<span class="AppImg floatleft bg-04"><i class="BtnIcon f-ico4"></i></span>
 							<p>
 								<span class="AppName font14">采购申请</span>
 								<span class="floatright">2014-06-13</span>
@@ -181,7 +185,72 @@
 					</li>
 					<li class="nocross">
 						<div class="clearfix li_in">
-							<span class="AppImg floatleft bg-03"><i class="BtnIcon f-ico5"></i></span>
+							<span class="AppImg floatleft bg-05"><i class="BtnIcon f-ico5"></i></span>
+							<p>
+								<span class="AppName font14">采购申请</span>
+								<span class="floatright">2014-06-13</span>
+							</p>
+							<p>
+								<span>CG-2014-0001</span>
+								<span class="floatright">已通过</span>
+							</p>
+						</div>
+					</li>
+					<li class="nocross">
+						<div class="clearfix li_in">
+							<span class="AppImg floatleft bg-06"><i class="BtnIcon f-ico5"></i></span>
+							<p>
+								<span class="AppName font14">采购申请</span>
+								<span class="floatright">2014-06-13</span>
+							</p>
+							<p>
+								<span>CG-2014-0001</span>
+								<span class="floatright">已通过</span>
+							</p>
+						</div>
+					</li>
+					<li class="nocross">
+						<div class="clearfix li_in">
+							<span class="AppImg floatleft bg-07"><i class="BtnIcon f-ico5"></i></span>
+							<p>
+								<span class="AppName font14">采购申请</span>
+								<span class="floatright">2014-06-13</span>
+							</p>
+							<p>
+								<span>CG-2014-0001</span>
+								<span class="floatright">已通过</span>
+							</p>
+						</div>
+					</li>
+					<li class="nocross">
+						<div class="clearfix li_in">
+							<span class="AppImg floatleft bg-08"><i class="BtnIcon f-ico5"></i></span>
+							<p>
+								<span class="AppName font14">采购申请</span>
+								<span class="floatright">2014-06-13</span>
+							</p>
+							<p>
+								<span>CG-2014-0001</span>
+								<span class="floatright">已通过</span>
+							</p>
+						</div>
+					</li>
+					<li class="nocross">
+						<div class="clearfix li_in">
+							<span class="AppImg floatleft bg-09"><i class="BtnIcon f-ico5"></i></span>
+							<p>
+								<span class="AppName font14">采购申请</span>
+								<span class="floatright">2014-06-13</span>
+							</p>
+							<p>
+								<span>CG-2014-0001</span>
+								<span class="floatright">已通过</span>
+							</p>
+						</div>
+					</li>
+					<li class="nocross">
+						<div class="clearfix li_in">
+							<span class="AppImg floatleft bg-10"><i class="BtnIcon f-ico5"></i></span>
 							<p>
 								<span class="AppName font14">采购申请</span>
 								<span class="floatright">2014-06-13</span>
@@ -199,7 +268,7 @@
 		</div>
 		<!--content over-->
 		<!--底部半圆按钮begin-->
-		<div class="BottomBtn" id="sendAction"><em class="BtnIcon plus"></em></div>
+		<!--<div class="BottomBtn" id="sendAction"><em class="BtnIcon plus"></em></div>-->
 		<!--底部半圆按钮over-->
 	</div>
 	<!--提示更新 begin-->

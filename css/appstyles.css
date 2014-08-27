@@ -98,9 +98,10 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .bg-04{background-color:#00cf77;}
 .bg-05{background-color:#3ab9f0;}
 .bg-06{background-color:#70d4d4;}
-/*.bg-07{background-color:#;}
-.bg-08{background-color:#;}
-.bg-09{background-color:#;}*/
+.bg-07{background-color:#970c69;}
+.bg-08{background-color:#006566;}
+.bg-09{background-color:#5f8c63;}
+.bg-10{background-color:#c594d5;}
 .more span{display: inline-block;color:#777;}
 .more .loading{width:25px;height:25px;background:url(../img/loading1.png) no-repeat center center;background-size:20px;margin-right:5px;-webkit-transition:0.3s;transition:0.3s;}
 .more.up .loading{-webkit-transform:rotate(-180deg);-webkit-transition:0.3s;transition:0.3s;}
@@ -118,15 +119,21 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .BtnOff span{border:1px solid #e6e6e6;width:24px;height:24px;top:1px;right:25px;padding:0!important;-webkit-transition:0.2s;box-shadow:-1px -1px 1px #e6e6e6;}
 /*icon*/
 .BtnIcon{font-size:0;line-height:0;display:inline-block;height:100%;cursor: pointer;}
-.Calleft,.TopSer,.Back{width:100%;background:url(../img/ico-01.png) no-repeat center center;background-size:18px;}
-.Back{background: url(../img/ico-back.png) no-repeat center center;background-size:18px;}
+.Calleft,.TopSer,.Back,.Topadd{width:100%;background:url(../img/ico-01.png) no-repeat center center;background-size:18px;}
+.Calleft{background-size:4px;}
+.Calleft.has-message{background-image:url(../img/ico-01-2.png);}
+.Back{background: url(../img/ico-back.png) no-repeat center center;background-size:9px;}
 .TopSer{background-image: url(../img/ico-02.png);}
-.plus{width:17px;height:17px;background-image:url(../img/ico-plus.png);background-size:17px;}
+.Topadd{background-image: url(../img/ico-plus.png);}
+.plus{width:17px;height:17px;background-image:url(../img/ico-plus.png);background-size:17px;position:relative;z-index: 20;}
+.clear{width:10px;height:10px;background-image:url(../img/clear.png);background-size:10px;position:absolute;right:10px;top:10px;}
+
 .Icon-pen,.Icon-paper,.Icon-pack{width:26px;height:26px;background-size:26px;background-image: url(../img/ico-pen.png);}
 .Icon-paper{background-image: url(../img/ico-paper.png);}
 .Icon-pack{background-image: url(../img/ico-pack.png);}
-.Icon-out,.Icon-change{width:12px;height:12px;background-size:12px;background-image: url(../img/ico-out.png);}
+.Icon-out,.Icon-change,.change-net{width:12px;height:12px;background-size:12px;background-image: url(../img/ico-out.png);}
 .Icon-change{background-image: url(../img/ico-m.png);}
+.change-net{width:13px;height:13px;background-image: url(../img/switch_net.png);background-size:13px;background-repeat: no-repeat;background-position:0 center;}
 .Icon-neex{width:12px;height:12px;background-image:url(../img/ico-annex.png);background-size:12px;vertical-align: -1px;margin-right:3px;}
 .edit{width:24px;height:24px;background-size:24px;background-image: url(../img/ico-pen2.png);margin:20px 0 0 20px;-webkit-transition:0.2s;}
 .Icon-ok{width:14px;height:14px;background-image: url(../img/ico-ok.png);background-size:14px;}
@@ -135,7 +142,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .Icon-turn{width:17px;height:12px;background-image: url(../img/ico-zs.png);background-size:17px;}
 .prompt{border-radius:60em;height:15px;line-height:15px;padding:0 6px;margin:0 0 0 31px;background:#777;font-size:1.1rem;display:inline-block;position:relative;top:-2px;}
 .Calleft .prompt{border-radius:50px;background-color:#e60012;margin:0;font-size:0;padding:0px;width:8px;height:8px;top:10px;left:10%;position:absolute;}
-.TopDown ul li .prompt{position:absolute;background: #e82827;color:#fff;padding:0 4px;top:30%;margin-top:-8px;left:33%;}
+.TopDown ul li .prompt{position:absolute;background: #e82827;color:#fff;padding:0 4px;top:50%;margin-top:-8px;left:36%;}
 .Icon-find{width:10px;height:10px;background: url(../img/ico-032.png) no-repeat;background-size:11px;}
 .view,.mask{width:100%;height:100%;position:relative;}
 .view{background:url(../img/bgre.jpg) repeat;background-size:15px;}
@@ -143,22 +150,25 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .maskOver{width:100%;height:100%;z-index:50;}
 .maskOverbg{background:0;opacity:1;overflow:hidden;}
 .maskIN{width:100%;height:100%;position:absolute;top:49px;background:url(../img/bgre.jpg) repeat;background-size:20px;padding-top:150px;}
-.header{width:100%;height:48px;box-shadow:-1px 1px 2px #57a5f3;background:#57a5f3;position:absolute;top:0;left:0;color: #fff;z-index:100;overflow:hidden;}
+.header{width:100%;height:48px;box-shadow:-1px 1px 2px #2d3039;background:#2d3039;position:absolute;top:0;left:0;color: #fff;z-index:100;overflow:hidden;}
 .TopL,.TopR,.TopM{width:15%;height:100%;float: left;}
-.TopR{float:right;}
+.TopR{float:right;z-index:20;position: relative;}
 .TopM{width:70%;float:left;text-align:center;line-height:50px;position: relative;}
+.TopR:active,.TopL:active{background-color:#333;}
+.list-header .TopM{position:absolute;left:50%;margin-left:-35%;}
 .quit{display:block;height:100%;line-height:54px;}
-.SearchBox{width:100%;height:30px;background-color:#fff;position:absolute;top:-49px;left:0;width:100%;z-index:20;padding-bottom:10px;border-bottom:1px solid #6b6b6b;transition:0.2s;-webkit-transition:0.2s;}
-.SearchIn{background-color:#dedddd;margin:5px 30px;border-radius:6px;}
-.SearchBox input{width:100%;height:100%;line-height:30px;border:0;background:none;color: #969698;text-align: center;font-size:1.3rem;background:url(../img/ico-03.png) no-repeat 50% center;background-size:20px;}
-.SearchBox input:focus{background:none;}
-.SearchBox.current{top:49px;transition:0.2s;-webkit-transition:0.2s;}
-.SearchBoxNomal{position:relative;top:0;border:0;background:none;}
+.SearchBox{width:100%;height:52px;background-color:#2d3039;position:absolute;top:0;right:-100%;width:100%;z-index:20;transition:0.4s;-webkit-transition:0.4s;}
+.SearchIn{background-color:#dedddd;border-radius:6px;width:62%;position:absolute;top:10px;left:50%;margin-left:-30%;}
+.SearchBox input{width:100%;height:100%;line-height:30px;border:0;background:none;color: #969698;text-align: center;font-size:1.3rem;}
+.SearchBox.current{right:0;transition:0.4s;-webkit-transition:0.4s;}
+.SearchBoxNomal{position:relative;top:10px;right:0;border:0;background:none;z-index:990;}
+.SearchBoxNomal .SearchIn{top:30px;width:80%;margin-left:-40%;}
 /*.SearchBox.current{display: block;}*/
 .Icon-toggle{width:8px;height:5px;background:url(../img/arrow2.png) 0 bottom;background-size:8px;position:relative;top:-2px;right:-4px;transition:0.4s;-webkit-transition:0.4s;}
 .current .Icon-toggle{background-position:0 0;-webkit-transition:0.4s;}
-.TopDown{width:100%;height:60px;position:absolute;top:-50px;left:0;background:#fff;border-bottom:1px solid #ccc;z-index:30;transition:0.2s;-webkit-transition:0.2s;text-align:center;}
-.TopDown ul li{display:inline-block;width:110px;padding-top:13px;text-align:center;color:#747c86;position: relative;}
+.TopDown{width:100%;height:40px;background:#f0f0ef;border-bottom:1px solid #ccc;z-index:30;transition:0.2s;-webkit-transition:0.2s;text-align:center;padding-top:50px;}
+.TopDown ul li{display:inline-block;width:110px;line-height:38px;text-align:center;color:#747c86;position: relative;height:38px;font-size:1.4rem;}
+.TopDown ul li.current{border-bottom:2.5px solid #2b97df;}
 .TopDown ul li.current,.TopDown ul li:active{color:#59a7f9;}
 .TopDown.active{top:48px;-webkit-transition:0.2s;}
 @media screen and (max-width:320px){
@@ -180,14 +190,15 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .current .Icon-cross,.TopDown ul li:active .Icon-cross{background-image: url(../img/ico-c2.png);}
 .current .Icon-history,.TopDown ul li:active .Icon-history{background-image: url(../img/history_hover.png);}
 .current .Icon-sure,.TopDown ul li:active .Icon-sure{background-image: url(../img/ico-cr2.png);}
-
 .content{position:absolute;top:49px;left:0;right:0;bottom:0;overflow:hidden;}
+.list-app{top:92px;}
 .list{background:#fff;}
-.list li{border-bottom:2px solid #ddd;border-top:1px solid #ddd;min-height:50px;margin-top:-1px;padding:0 35px 0 15px;background-image: url(../img/ico-04.png);background-position: 98% 18px;background-size:16px;background-repeat:no-repeat;color:#888;position: relative;transition:0.1s;-webkit-transition:0.1s;}
-.AppImg{width:24px;height:24px;border:1px solid #f9f9f9;border-radius:50em;text-align: center;position: relative;line-height: 24px;}
+.list li{border-bottom:1px solid #ddd;border-top:1px solid #ddd;min-height:50px;margin-top:-1px;padding:0 35px 0 15px;background-image: url(../img/ico-04.png);background-position: 98% 18px;background-size:16px;background-repeat:no-repeat;color:#888;position: relative;transition:0.1s;-webkit-transition:0.1s;}
+.AppImg{width:35px;height:35px;border:1px solid #f9f9f9;border-radius:50em;text-align: center;position: relative;line-height: 24px;}
+.mask-line{font-size:0;line-height:0;border-bottom:2px solid #000;position: absolute;left:0;top:59px;display: inline-block;width:20%;}
 .arrow1{width:12px;height:12px;background: url(../img/ico-05.png) no-repeat;position: absolute;background-size:12px;right:0;top:0;}
-.list li .AppImg{margin-top:13px;display:inline-block;margin-right:20px;}
-.list li .AppName{color:#444;width:55%;margin-top:-2px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;display:inline-block;}
+.list li .AppImg{margin-top:8px;display:inline-block;margin-right:20px;}
+.list li .AppName{color:#444;width:50%;margin-top:-2px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;display:inline-block;}
 .list li .AppName em{color:#888;}
 .list li.cross p:nth-child(4) span.floatright{color:#00cf77;}
 .list li.nocross p:nth-child(4) span.floatright{color:#e6004f;}
@@ -201,12 +212,12 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .app_list li{padding:0;position: relative;overflow: hidden;background: url(../img/li_bg.jpg) left top repeat-x;}
 .app_list li .Revoke{height:47px;}
 .app_list li .li_in{height:55px;margin:5px 35px 0 15px;}
-.preview{width:100%;height:0;background:url(../img/preview_bg.png) repeat;background-size:1px;position:relative;overflow: hidden;padding-top:0;transition:0.3s;-webkit-transition:0.3s;}
+.preview{width:100%;height:0;background:url(../img/preview_bg.png) repeat;background-size:2px;position:relative;overflow: hidden;padding-top:0;transition:0.3s;-webkit-transition:0.3s;}
 .btn_item{position:absolute;right:10px;bottom:15px;transition:0.6s;-webkit-transition:0.6s;z-index:-2;}
 .list li.show_preview .preview{padding-top:10px;min-height:85px;overflow: visible;transition:0.3s;-webkit-transition:0.3s;color:#fff;}
 .list li.show_preview .preview .btn_item{transition:0.6s;-webkit-transition:0.6s;z-index:2;}
-.btn_item a{display: block;width:58px;height:23px;line-height:23px;text-align:center;background-color:#05ce78;border:1px solid #089558;color:#fff;border-radius:2px;-webkitborder-radius:2px;}
-.btn_item a.De_btn{background:#fff;border-color:#888;color:#666;margin-top:10px;}
+.btn_item a{display: block;width:58px;height:23px;line-height:23px;text-align:center;background-color:#05ce78;border:1px solid #60605f;color:#fff;border-radius:3px;-webkit-border-radius:3px;}
+.btn_item a.De_btn{background:#69a3d9;margin-top:10px;}
 .preview table th{width:80px;text-align: right;line-height:25px;}
 .app_list li.current{background: url(../img/li_bg2.jpg) left top repeat-x;}
 /*login*/
@@ -291,7 +302,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 }
 
 /*弹出选择表单*/
-.BottomBtn{width:130px;height:50px;padding-top:9px;position:absolute;background:url(../img/Bottom-btn.png) no-repeat center bottom;bottom:0;left:50%;line-height:75px;margin-left:-65px;background-size:100px;z-index:30;text-align: center;}
+.BottomBtn{width:130px;height:50px;padding-top:9px;position:fixed;background:url(../img/Bottom-btn.png) no-repeat center bottom;bottom:0;left:50%;line-height:75px;margin-left:-65px;background-size:100px;z-index:99;text-align: center;}
 .BottomBtn .BtnIcon{-webkit-transform: rotate(0deg);-webkit-transition:0.2s;}
 .BottomBtn.current{background:url(../img/Bottom-btn2.png) no-repeat center bottom;background-size:100px;z-index:210;}
 .BottomBtn.current .BtnIcon{-webkit-transform: rotate(45deg);-webkit-transition:0.2s;}
@@ -302,7 +313,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .formIcon .SearchBox input:focus{background: none;}
 /*.formIcon .SearchBox input:focus{background: url(../img/ico-03-3.png) no-repeat 5% center;background-size:16px;text-indent:20px;}*/
 .formIconin{position:relative;width:100%;height:100%;}
-.formIconin-box{position:absolute;top:80px;bottom:70px;left:20px;right:20px;z-index:999; text-align:center;overflow: hidden;}
+.formIconin-box{position:absolute;top:17%;bottom:16%;left:20px;right:20px;z-index:200; text-align:center;overflow: hidden;}
 .formIconin-box li{display:inline-block;width:32%;text-align:center;color:#555;font-size:1.3rem;margin:10px 0 10px 0;-webkit-transition:width 0.1s, height 0.1s, -webkit-transform 0.1s;opacity: 0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
 .formIconin-box li span{display:block;width:65px;height:65px;margin:0 auto;margin-bottom:5px;border-radius:50em;position: relative;-webkit-transition:width 0.2s, height 0.2s, -webkit-transform 0.2s;}
 .formIconin-box li span .BtnIcon{width:30px;height:30px;background-size:30px;background-repeat:no-repeat;position: absolute;top:50%;left:50%;margin:-13px 0 0 -15px;-webkit-transition:width 0.1s, height 0.1s,-webkit-transform 0.1s;}
@@ -314,9 +325,12 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .f-ico5{background-image: url(../img/f-ico5.png);}
 .f-ico6{background-image: url(../img/f-ico6.png);}
 .formIconin-box.current li{opacity:1;-webkit-transition:0.2s;-transition:0.2s;}
-.list li .AppImg .BtnIcon{width:15px;height:15px;position:absolute;top:50%;left:50%;margin:-7px 0 0 -7px;background-size:15px;background-repeat: no-repeat;}
+.list li .AppImg .BtnIcon{width:17px;height:17px;position:absolute;top:50%;left:50%;margin:-8px 0 0 -9px;background-size:17px;background-repeat: no-repeat;}
 .nodata{position: absolute;text-shadow:1px 1px 1px #000;height:25px;width:200px;top:50%;left:50%;margin:-30px 0 0 -100px;}
 
+.form-top,.form-bt{width:100%;left:0;position:absolute;z-index:210;background-size:cover;height:26%;}
+.form-top{top:-20px;background: url(../img/form-top.png) 0 0 no-repeat;background-size:cover;}
+.form-bt{bottom:0;background: url(../img/form-bt.png) 0 0 no-repeat;background-size:cover;}
 /*form*/
 .formOut{padding:5px;}
 .formOut section.form{padding:10px;background-color:#fff;box-shadow: 2px 2px 2px #ccc;}

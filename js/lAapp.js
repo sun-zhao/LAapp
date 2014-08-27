@@ -2,22 +2,20 @@ var myScroll;
 $(document).ready(function(){
 	myScroll = new IScroll('#wrapper', { mouseWheel: true });
 	document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
-	//点击下拉出审核状态选择
-	$('#ToggleDown').off('touchstart').on('touchstart',function(){
-		$SearchBox = $('.SearchBox');
-		$TopDown = $('.TopDown');
-		$this = $(this);
-		$SearchBox.removeClass('current');
-		if($this.hasClass('current')){
-			$this.removeClass('current');
-			$TopDown.removeClass('active');
-		}else{
-			$this.addClass('current');
-			$TopDown.addClass('active');
-		}
-	});
 	//点击放大镜展开搜索框
 	$('#Search').off('touchstart').on('touchstart',function(){
+		$SearchBox = $('.SearchBox');
+		$TopDown = $('.TopDown');
+		$ToggleDown = $('#ToggleDown');
+		$TopDown.removeClass('active');
+		$ToggleDown.removeClass('current');
+		if($SearchBox.hasClass('current')){
+			$SearchBox.removeClass('current');
+		}else{
+			$SearchBox.addClass('current');	
+		}
+	});
+	$('#back_ser').off('touchstart').on('touchstart',function(){
 		$SearchBox = $('.SearchBox');
 		$TopDown = $('.TopDown');
 		$ToggleDown = $('#ToggleDown');
