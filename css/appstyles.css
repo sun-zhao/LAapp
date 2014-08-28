@@ -140,9 +140,10 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .Icon-no{width:14px;height:14px;background-image: url(../img/ico-fj.png);background-size:14px;}
 .Icon-return{width:16px;height:16px;background-image: url(../img/ico-yq.png);background-size:16px;}
 .Icon-turn{width:17px;height:12px;background-image: url(../img/ico-zs.png);background-size:17px;}
+.Icon-down{width:20px;height:12px;background-image: url(../img/arrow-bt.png);background-size:20px;}
 .prompt{border-radius:60em;height:15px;line-height:15px;padding:0 6px;margin:0 0 0 31px;background:#777;font-size:1.1rem;display:inline-block;position:relative;top:-2px;}
 .Calleft .prompt{border-radius:50px;background-color:#e60012;margin:0;font-size:0;padding:0px;width:8px;height:8px;top:10px;left:10%;position:absolute;}
-.TopDown ul li .prompt{position:absolute;background: #e82827;color:#fff;padding:0 4px;top:50%;margin-top:-8px;left:36%;}
+.TopDown ul li .prompt{position:absolute;background: #e82827;color:#fff;padding:0 4px;top:50%;margin-top:-8px;left:38%;}
 .Icon-find{width:10px;height:10px;background: url(../img/ico-032.png) no-repeat;background-size:11px;}
 .view,.mask{width:100%;height:100%;position:relative;}
 .view{background:url(../img/bgre.jpg) repeat;background-size:15px;}
@@ -150,16 +151,16 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .maskOver{width:100%;height:100%;z-index:50;}
 .maskOverbg{background:0;opacity:1;overflow:hidden;}
 .maskIN{width:100%;height:100%;position:absolute;top:49px;background:url(../img/bgre.jpg) repeat;background-size:20px;padding-top:150px;}
-.header{width:100%;height:48px;box-shadow:-1px 1px 2px #2d3039;background:#2d3039;position:absolute;top:0;left:0;color: #fff;z-index:100;overflow:hidden;}
+.header{width:100%;height:48px;background:#2d3039;position:absolute;top:0;left:0;color: #fff;z-index:100;overflow:hidden;}
 .TopL,.TopR,.TopM{width:15%;height:100%;float: left;}
 .TopL{width:13%;}
 .TopR{float:right;z-index:20;position: relative;}
 .TopM{width:70%;float:left;text-align:center;line-height:50px;position: relative;}
-.TopR:active,.TopL:active{background-color:#333;}
+.TopR:active,.TopL:active{background-color:#1f2228;}
 .list-header .TopM{position:absolute;left:50%;margin-left:-35%;}
 .quit{display:block;height:100%;line-height:54px;}
 .SearchBox{width:100%;height:52px;background-color:#2d3039;position:absolute;top:0;right:-100%;width:100%;z-index:20;transition:0.4s;-webkit-transition:0.4s;}
-.SearchIn{background-color:#dedddd;border-radius:6px;width:62%;position:absolute;top:10px;left:50%;margin-left:-30%;}
+.SearchIn{background-color:#dedddd;border-radius:6px;width:70%;position:absolute;top:10px;left:40%;margin-left:-30%;}
 .SearchBox input{width:100%;height:100%;line-height:30px;border:0;background:none;color: #969698;text-align: center;font-size:1.3rem;}
 .SearchBox.current{right:0;transition:0.4s;-webkit-transition:0.4s;}
 .SearchBoxNomal{position:relative;top:10px;right:0;border:0;background:none;z-index:990;}
@@ -222,6 +223,19 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .btn_item a.De_btn{background:#69a3d9;margin-top:10px;}
 .preview table th{width:80px;text-align: right;line-height:25px;}
 .app_list li.current{background: url(../img/li_bg2.jpg) left top repeat-x;}
+/*ios 底部菜单*/
+.ios-view .TopDown{display: none;}
+.ios-view .list-app{top:50px;bottom:30px;}
+.Tools{height:44px;background-color:#2f333c;position:absolute;width:100%;left:0;bottom:0;display:none;}
+.ios-view .Tools{display:block;}
+.Tool-bar{width: 100%;}
+.Tool-bar li{display:inline-block;width:32.5%;line-height:44px;color:#fff;text-align: center;}
+.Tool-bar li span{display:inline-block;line-height:22px;padding:2px 20px;border-radius:40px;color:#aaadb2;}
+.Tool-bar li.current span{background:#217dba;color:#fff;}
+.Tool-bar li.current{background: url(../img/tool-bg.png) no-repeat center bottom;background-size:70%;}
+.Tool-bar.two li{width:49%;}
+
+
 /*login*/
 .login{background: url(../img/login_bg.jpg) repeat;}
 .login .header{background: url(../img/loginheader.jpg) repeat;background-size:3px;height:50px;}
@@ -285,15 +299,12 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
     -webkit-transform: perspective(650px) rotateY(-50deg) translate3d(60%,0,0);
 }
 .sidebar.hide + .view{
-	
     -webkit-transition: -webkit-transform 400ms;
     -webkit-transform: translate3d(0,0,0);
     -webkit-transform: perspective(0) rotateY(0) translate3d(0,0,0);
     overflow: hidden;
 }
 .sidebar.showA + .view{
-	height: 90%;
-	top:5%;
 	overflow: hidden;
 	-webkit-transition: -webkit-transform 400ms;
     -webkit-transform: translate3d(70%,0,0);
@@ -308,18 +319,24 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .BottomBtn .BtnIcon{-webkit-transform: rotate(0deg);-webkit-transition:0.2s;}
 .BottomBtn.current{background:url(../img/Bottom-btn2.png) no-repeat center bottom;background-size:100px;z-index:210;}
 .BottomBtn.current .BtnIcon{-webkit-transform: rotate(45deg);-webkit-transition:0.2s;}
-.formIcon{width:100%;height:100%;position:absolute;top:0;left:0;background:#252626;z-index:200;}
+.formIcon{width:100%;height:100%;position:absolute;top:0;left:0;background:#fff;z-index:200;}
 .SearchBox .Back{transform: rotateY(-180deg);-webkit-transform: rotateY(-180deg);}
 /*.formIcon .SearchBox .SearchIn{display:block;background-color:#aaa;}
 .formIcon .SearchBox input{background:url(../img/ico-03-2-2.png) no-repeat 50% center;background-size:47px;color:#fff;text-indent:20px;}
 .formIcon .SearchBox input:focus{background: none;}*/
 /*.formIcon .SearchBox input:focus{background: url(../img/ico-03-3.png) no-repeat 5% center;background-size:16px;text-indent:20px;}*/
-.formIconin{position:relative;width:100%;height:100%;}
-.formIconin-box{position:absolute;top:60px;bottom:0;left:5px;right:5px;z-index:200;text-align:center;overflow:hidden;}
-.formIconin-box li{display:inline-block;width:32%;padding:12px 0;text-align:center;color:#fff;font-size:1.3rem;border:1px solid #252626;transition:0.5s;-webkit-transition:0.5s;opacity: 1;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;background:#434448;box-shadow:0 0 2px #4d4e51 inset;margin:-4px;}
-.formIconin-box li span{display:block;width:50px;height:50px;margin:0 auto;margin-bottom:5px;border-radius:50em;position: relative;border:1px solid #36373b;}
-.formIconin-box li span .BtnIcon{width:30px;height:30px;background-size:26px;background-repeat:no-repeat;position: absolute;top:50%;left:50%;margin:-12px 0 0 -13px;-webkit-transition:width 0.1s, height 0.1s,-webkit-transform 0.1s;}
-.formIconin-box li.active{transform: rotateY(-180deg);-webkit-transform: rotateY(-180deg);transition:0.5s;-webkit-transition:0.5s;}
+.formIconin{position:relative;width:100%;height:100%;background:url(../img/bgre.jpg) repeat;background-size:15px;}
+.formIconin-box{position:absolute;top:48px;bottom:0;left:0;right:0;z-index:200;text-align:center;overflow:hidden;}
+/*.formIconin-box li{display:inline-block;float:left;width:25%;padding:12px 0;text-align:center;color:#fff;font-size:1.2rem;outline:1px solid #252626;transition:0.5s;-webkit-transition:0.5s;opacity: 1;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;background:#434448;}
+.formIconin-box li span{display:block;width:40px;height:40px;margin:0 auto;margin-bottom:5px;border-radius:50em;position: relative;border:1px solid #36373b;}
+.formIconin-box li span .BtnIcon{width:20px;height:20px;background-size:20px;background-repeat:no-repeat;position: absolute;top:50%;left:50%;margin:-10px 0 0 -10px;-webkit-transition:width 0.1s, height 0.1s,-webkit-transform 0.1s;}*/
+.formIconin-box table{width:100%;}
+.formIconin-box td{width:33.3%;padding:12px 0;height:75px;text-align:center;font-size:1.2rem;border:1px solid #eee;background:#fff;transition:0.5s;-webkit-transition:0.5s;opacity: 1;overflow:hidden;color:#666;}
+.formIconin-box td span{display:block;width:34px;height:34px;margin:0 auto;margin-bottom:10px;border-radius:50em;position: relative;}
+.formIconin-box td span .BtnIcon{width:16px;height:16px;background-size:16px;background-repeat:no-repeat;position: absolute;top:50%;left:50%;margin:-8px 0 0 -8px;-webkit-transition:width 0.1s, height 0.1s,-webkit-transform 0.1s;}
+.formIconin-box td p{padding:0 15px;}
+.formIconin-box td.active{background:#ddd;transition:0.5s;-webkit-transition:0.5s;}
+
 .f-ico1{background-image: url(../img/f-ico1.png);}
 .f-ico2{background-image: url(../img/f-ico2.png);}
 .f-ico3{background-image: url(../img/f-ico3.png);}
@@ -344,23 +361,34 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .BottomRBtn{background-color:#69b0fa;width:103px;height:103px;border-radius:50px;position: absolute;z-index:999;right:-51px;bottom:-51px;box-shadow: -1px -1px 2px #8a99cc;opacity:0.9;}
 .BottomRBtn.current{background-color:#3674b5;box-shadow: -1px -1px 2px #4b5ea4;}
 .BottomRBtn.current .edit{-webkit-transform: rotate(80deg);-webkit-transition:0.2s;}
-.BottomRbox{width:360px;height:360px;position:absolute;-webkit-transform:rotate(90deg);right:-180px;bottom:-180px;-webkit-transition:0.3s;z-index:20;display: none;}
+.BottomRbox{width:100%;height:45%;position:absolute;left:0;bottom:-50%;transition:0.3s;-webkit-transition:0.3s;z-index:20;background: url(../img/screen-bg.png) no-repeat;background-size:cover;}
+.BottomRbox.show{bottom:0;transition:0.3s;-webkit-transition:0.3s;}
 .BottomRboxOut{opacity:0.8;width:360px;height:360px;position:absolute;right:-180px;bottom:-180px;z-index:10;-webkit-transform: rotate(100deg);-webkit-transition:0.6s;background:url(../img/rightbox.png) no-repeat left top;display:none;}
 .BottomRboxOut.current{z-index:20;-webkit-transform: rotate(0deg)!important;-webkit-transition:0.2s;-webkit-transform:scale(1.5);}
 .BottomRbox.current{-webkit-transform:rotate(0deg)!important;-webkit-transition:0.6s;-webkit-transform:scale(1.5);}
-.BottomRbox .btn{width:43px;height:43px;line-height:43px;border-radius:50em;position:absolute;text-align: center;font-size:1rem;color:#888;}
-.BottomRbox .btn1{background-color:#02cf77;top:15px;left:132px;}
-.BottomRbox .btn2{background-color:#ff502b;top:40px;left:85px;}
-.BottomRbox .btn3{background-color:#fea701;top:80px;left:45px;}
-.BottomRbox .btn4{background-color:#37b8ef;top:130px;left:18px;}
+.BottomIn{position:absolute;top:30px;right:30px;left:30px;bottom:0;}
+.BottomIn table{width:100%;position: absolute;}
+.BottomRbox .btn{width:43px;height:43px;margin:0 auto;line-height:43px;border-radius:50em;position:relative;text-align: center;font-size:1rem;color:#888;}
+.BottomRbox .btn1{background-color:#02cf77;}
+.BottomRbox .btn2{background-color:#ff502b;}
+.BottomRbox .btn3{background-color:#fea701;}
+.BottomRbox .btn4{background-color:#37b8ef;}
+.BottomRbox .btn5{background-color:#000;opacity:0.5;width:50px;height:50px;}
+
+.BottomIn table td:nth-child(1){padding-top:40px;}
+.BottomIn table td:nth-child(2){padding-top:10px;}
+.BottomIn table td:nth-child(3){padding-top:10px;}
+.BottomIn table td:nth-child(4){padding-top:40px;}
+
 .BottomRbox .btn .BtnIcon{top:2px;position:relative;-webkit-transition:0.2s;}
+.BottomRbox .btn5 .BtnIcon{top:7px;}
 .BottomRbox .btn1 .BtnIcon,.BottomRbox .btn2 .BtnIcon{top:4px;}
-.BottomRbox .btn span{position:absolute;width:40px;display:inline-block;line-height:20px;font-size:1.2rem;color:#fff;}
-.BottomRbox .btn1 span{top:52px;left:9px;}
-.BottomRbox .btn2 span{top:45px;left:15px;}
-.BottomRbox .btn3 span{top:40px;left:30px;}
-.BottomRbox .btn4 span{top:18px;left:40px;}
-.BottomRbox .btn:active .BtnIcon{-webkit-transform:rotate(30deg);-webkit-transition:0.2s;transform:rotate(30deg);transition:0.2s;}
+.BottomRbox .btn span{position:absolute;width:40px;display:inline-block;line-height:20px;font-size:1.2rem;color:#fff;top:50px;left:50%;margin-left:-20px;}
+/*.BottomRbox .btn1 span{top:52px;}
+.BottomRbox .btn2 span{top:45px;}
+.BottomRbox .btn3 span{top:40px;}
+.BottomRbox .btn4 span{top:18px;}*/
+/*.BottomRbox .btn:active .BtnIcon{-webkit-transform:rotate(30deg);-webkit-transition:0.2s;transform:rotate(30deg);transition:0.2s;}*/
 .BottomRBtn{background-color:#595a5e;width:103px;height:103px;border-radius:50px;position: absolute;z-index:45;right:-51px;bottom:-51px;box-shadow: -1px -1px 2px #000;opacity:0.9;}
 .BottomRBtnL.current{background-color:#3674b5;box-shadow: -1px -1px 2px #4b5ea4;}
 .BottomRBtnL.current .edit{-webkit-transform: rotate(80deg);-webkit-transition:0.2s;}

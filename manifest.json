@@ -11,7 +11,7 @@
 		"url": ""
 	},
 	"id": "H5E68F675",
-	"launch_path": "form.html",
+	"launch_path": "view/formico.html",
 	"license": {
 		"description": "",
 		"url": ""
@@ -126,10 +126,10 @@
 						"normal": "",
 						"retina": ""
 					},
-					"prerendered": ""
+					"prerendered": "false"
 				}
 			},
-			"orientation": [],
+			"orientation": ["portrait-primary"],
 			"splashscreen": {
 				"android": {
 					"hdpi": "",
