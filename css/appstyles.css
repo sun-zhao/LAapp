@@ -193,7 +193,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .current .Icon-cross,.TopDown ul li:active .Icon-cross{background-image: url(../img/ico-c2.png);}
 .current .Icon-history,.TopDown ul li:active .Icon-history{background-image: url(../img/history_hover.png);}
 .current .Icon-sure,.TopDown ul li:active .Icon-sure{background-image: url(../img/ico-cr2.png);}
-.content{position:absolute;top:49px;left:0;right:0;bottom:0;overflow:hidden;}
+.content{position:absolute;top:48px;left:0;right:0;bottom:0;overflow:hidden;}
 .list-app{top:92px;}
 .list{background:#fff;}
 .list li{border-bottom:1px solid #ddd;border-top:1px solid #ddd;min-height:50px;margin-top:-1px;padding:0 35px 0 15px;background-image: url(../img/ico-04.png);background-position: 98% 18px;background-size:16px;background-repeat:no-repeat;color:#888;position: relative;transition:0.1s;-webkit-transition:0.1s;}
@@ -321,6 +321,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .BottomBtn.current .BtnIcon{-webkit-transform: rotate(45deg);-webkit-transition:0.2s;}
 .formIcon{width:100%;height:100%;position:absolute;top:0;left:0;background:#fff;z-index:200;}
 .SearchBox .Back{transform: rotateY(-180deg);-webkit-transform: rotateY(-180deg);}
+.nav.current .ico-c{transform: rotateY(180deg);-webkit-transform: rotateY(180deg);transition:0.5s;-webkit-transition:0.5s;}
 /*.formIcon .SearchBox .SearchIn{display:block;background-color:#aaa;}
 .formIcon .SearchBox input{background:url(../img/ico-03-2-2.png) no-repeat 50% center;background-size:47px;color:#fff;text-indent:20px;}
 .formIcon .SearchBox input:focus{background: none;}*/
@@ -336,7 +337,6 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .formIconin-box td span .BtnIcon{width:16px;height:16px;background-size:16px;background-repeat:no-repeat;position: absolute;top:50%;left:50%;margin:-8px 0 0 -8px;-webkit-transition:width 0.1s, height 0.1s,-webkit-transform 0.1s;}
 .formIconin-box td p{padding:0 15px;}
 .formIconin-box td.active{background:#ddd;transition:0.5s;-webkit-transition:0.5s;}
-
 .f-ico1{background-image: url(../img/f-ico1.png);}
 .f-ico2{background-image: url(../img/f-ico2.png);}
 .f-ico3{background-image: url(../img/f-ico3.png);}
@@ -347,8 +347,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .list li .AppImg .BtnIcon{width:17px;height:17px;position:absolute;top:50%;left:50%;margin:-8px 0 0 -9px;background-size:17px;background-repeat: no-repeat;}
 .nodata{position: absolute;text-shadow:1px 1px 1px #000;height:25px;width:200px;top:50%;left:50%;margin:-30px 0 0 -100px;}
 /*form*/
-.formOut{padding:5px;}
-.formOut section.form{padding:10px;background-color:#fff;box-shadow: 2px 2px 2px #ccc;}
+.formOut section.form{width:100%;margin:5px;padding:10px;background-color:#fff;box-shadow: 2px 2px 2px #ccc;}
 .formOut section.form table{width:100%;}
 .formOut section.form table th{color:#888;height:30px;text-align: right;width:21%;vertical-align:top;}
 .formOut section.form table td{color:#666;text-align: left;padding-left:10px;vertical-align:top;}
@@ -357,6 +356,16 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .formOut section.form header span{display:inline-block;height:37px;line-height:37px;margin-right:10px;}
 .formOut section.form table.nowstep td{color:#59a7f9;}
 .formOut section.form:nth-child(2) table tr td:first-child{padding:0;}
+.form-top{width:100%;height:140px;background: url(../img/form-top.jpg) no-repeat;background-size:cover;position:relative;}
+.form-top.sidebar ul{padding:20px 0 0 20px;}
+.form-top.sidebar ul p{padding:0 0 0 100px;line-height:18px;font-size:1.2rem;}
+.form-top.sidebar ul p.font14{position:relative;top:-6px;}
+.form-top.sidebar ul li.userimg span.userimg{background:none;border:0;}
+.form-top.sidebar ul li.userimg span.userimg img{width:70px;height:70px;top:0;left:0;}
+.nav,.nav-mask{width:100%;height:30px;line-height:30px;position: absolute;left:0;bottom:0;color:#fff;z-index:10;}
+.nav-mask{background:#000;opacity:0.6;}
+.nav span{display:block;width:50%;text-align: center;float:left;}
+.ico-c{width:21px;height:15px;background: url(../img/ico-c.png) no-repeat;background-size:21px;position: absolute;top:50%;left:50%;margin:-7px 0 0 -10px;transition:0.5s;-webkit-transition:0.5s;}
 /*右侧扇形菜单*/
 .BottomRBtn{background-color:#69b0fa;width:103px;height:103px;border-radius:50px;position: absolute;z-index:999;right:-51px;bottom:-51px;box-shadow: -1px -1px 2px #8a99cc;opacity:0.9;}
 .BottomRBtn.current{background-color:#3674b5;box-shadow: -1px -1px 2px #4b5ea4;}
