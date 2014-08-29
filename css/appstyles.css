@@ -89,6 +89,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .color-9{color:#999;}
 .color-cb{color:#cbcbcb;}
 .color-c{color:#ccc!important;}
+.Important,.Important td,.Important th{color:#eb6100!important;}
 .error,.error span,.has-error,.has-error span{color:#bd2c00!important;}
 .nobg{background:none!important;}
 .nobgimg{background-image:none!important;}
@@ -147,9 +148,15 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .Icon-find{width:10px;height:10px;background: url(../img/ico-032.png) no-repeat;background-size:11px;}
 .view,.mask{width:100%;height:100%;position:relative;}
 .view{background:url(../img/bgre.jpg) repeat;background-size:15px;}
-.mask,.maskOver{background-color:#444;opacity:0;position:fixed;top:0;left:0;z-index:20;display:none;}
-.maskOver{width:100%;height:100%;z-index:50;}
+.mask,.maskOver{background-color:#000;opacity:0;position:fixed;top:0;left:0;z-index:200;display:none;}
+.maskOver{width:100%;height:100%;z-index:200;}
 .maskOverbg{background:0;opacity:1;overflow:hidden;}
+.help-mask{opacity:1;background:none;}
+.help-mask .nextstep{position:absolute;bottom:25%;left:30px;right:30px;margin:0;background:#53b4df;text-shadow:0 0 1px #000;}
+.help-box{border:2px dashed #9a9a9a;border-radius:5px;-webkit-border-radius:5px;position:absolute;bottom:38%;left:15px;right:15px;top:30%;}
+.help-box table{width:100%;height:100%;color:#fff;}
+
+
 .maskIN{width:100%;height:100%;position:absolute;top:49px;background:url(../img/bgre.jpg) repeat;background-size:20px;padding-top:150px;}
 .header{width:100%;height:44px;background:#2d3039;position:absolute;top:0;left:0;color: #fff;z-index:100;overflow:hidden;}
 .TopL,.TopR,.TopM{width:15%;height:100%;float: left;}
@@ -266,7 +273,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .loginBtnIn{width:100%;height:35px;background-color:#efefef;border-radius:40px;position:absolute;top:0px;left:0px;line-height:35px;text-align: center;}
 .Icon-login{width:70px;height:70px;background: url(../img/loginarrow.png) no-repeat center 20px;background-size:35px;position:absolute;right:-18px;top:-20px;}
 .Logintext{color:#7cb9fa;height:35px;line-height:35px;position: absolute;left:50%;margin-left:-20px;width:70px;font-size:1.2rem;}
-.choosenet{width:270px;background:#fff;position:absolute;left:50%;margin-left:-135px;z-index:40;border-radius:5px;top:27%;}
+.choosenet{width:270px;background:#fff;position:absolute;left:50%;margin-left:-135px;z-index:300;border-radius:5px;top:27%;}
 .choosenet ul li{margin:0 13px;border-bottom:1px solid #ccc;height:50px;line-height:50px;font-size:1.4rem;text-indent:5px;position:relative;}
 .choosenet ul li:last-child{border-bottom: 0;}
 .choosenet .quitBtn{display:block;height:40px;line-height:40px;font-size:1.5rem;color:#fff;background:#4587c4;border-radius:4px;margin:10px;position:relative;z-index:100;}
@@ -355,6 +362,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .list li .AppImg .BtnIcon{width:17px;height:17px;position:absolute;top:50%;left:50%;margin:-8px 0 0 -9px;background-size:17px;background-repeat: no-repeat;}
 .nodata{position: absolute;text-shadow:1px 1px 1px #000;height:25px;width:200px;top:50%;left:50%;margin:-30px 0 0 -100px;}
 /*form*/
+.formOut{position: relative;transition:0.5s;-webkit-transition:0.5s;}
 .formOut section.form{margin:5px;padding:10px;background-color:#fff;box-shadow: 2px 2px 2px #ccc;}
 .formOut section.form table{width:100%;}
 .formOut section.form table th{color:#888;height:30px;text-align: right;width:21%;vertical-align:top;}
@@ -375,7 +383,8 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .nav-mask{background:#000;opacity:0.6;}
 .nav span{display:block;width:50%;text-align: center;float:left;}
 .ico-c{width:21px;height:15px;background: url(../img/ico-c.png) no-repeat;background-size:21px;position: absolute;top:50%;left:50%;margin:-7px 0 0 -10px;transition:0.5s;-webkit-transition:0.5s;}
-.form-view{top:186px;}
+.form-view{position:absolute;top:186px;right:0;left:0;bottom: 0;overflow: hidden;}
+.form-view .content{top:0;position:relative;}
 /*右侧扇形菜单*/
 .BottomRBtn{background-color:#69b0fa;width:103px;height:103px;border-radius:50px;position: absolute;z-index:999;right:-51px;bottom:-51px;box-shadow: -1px -1px 2px #8a99cc;opacity:0.9;}
 .BottomRBtn.current{background-color:#3674b5;box-shadow: -1px -1px 2px #4b5ea4;}
@@ -393,7 +402,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .BottomRbox .btn3{background-color:#fea701;}
 .BottomRbox .btn4{background-color:#37b8ef;}
 .BottomRbox .btn5{background-color:#000;width:50px;height:50px;opacity:0;overflow:hidden;transition:0.6s;-webkit-transition:0.6s;}
-.BottomRbox .btn5.current{opacity:1;transition:0.6s;-webkit-transition:0.6s;}
+.BottomRbox .btn5.current,.BottomRbox.android-bar.current .btn5{opacity:0.5;transition:0.6s;-webkit-transition:0.6s;}
 
 .BottomIn table td:nth-child(1){padding-top:40px;}
 .BottomIn table td:nth-child(2){padding-top:10px;}
@@ -404,6 +413,10 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .BottomRbox .btn5 .BtnIcon{top:7px;}
 .BottomRbox .btn1 .BtnIcon,.BottomRbox .btn2 .BtnIcon{top:4px;}
 .BottomRbox .btn span{position:absolute;width:40px;display:inline-block;line-height:20px;font-size:1.2rem;color:#fff;top:50px;left:50%;margin-left:-20px;}
+.BottomRbox.android-bar{opacity:0;transition:0.3s;-webkit-transition:0.3s;}
+.BottomRbox.android-bar .BottomIn{top:30px;}
+.BottomRbox.android-bar.current{opacity: 1;z-index:40;transition:0.3s;-webkit-transition:0.3s;}
+
 /*.BottomRbox .btn1 span{top:52px;}
 .BottomRbox .btn2 span{top:45px;}
 .BottomRbox .btn3 span{top:40px;}
