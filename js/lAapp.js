@@ -195,6 +195,51 @@ $(document).ready(function(){
 		event.preventDefault();
 		back();
 	});
+	//表单详情页面滑动展开按钮组
+	$('.content').off('touchstart').on('touchstart',function(){
+		event.preventDefault();
+		var startTouch  = event.touches[0];
+		startX = startTouch.pageX;
+		startY = startTouch.pageY;
+		var endX=startX;
+		var BottomRbox = $('.BottomRbox');
+		var BottomIn = $('.BottomIn');
+		var btn5 = $('.btn5');
+		$(this).off('touchmove').on('touchmove',function(){
+			event.preventDefault();
+			var moveTouch  = event.touches[0];
+			endX = moveTouch.pageX;
+			endY = moveTouch.pageY;
+		});
+		$(this).off('touchend').on('touchend',function(){
+			event.preventDefault();
+			x = endX - startX;
+			y = endY - startY;
+			if(Math.abs(x) < Math.abs(y)){
+				if(y<-20){
+					BottomRbox.addClass('show');
+					BottomIn.stop().animate({top:30},300);
+				    setTimeout(function(){
+				    	btn5.addClass('current');
+				    },800);
+				}
+			}
+		});
+	});
+	$btn5 = $('.btn5');
+	$btn5.off('touchend').on('touchend',function(){
+		event.preventDefault();
+		var BottomRbox = $('.BottomRbox');
+		var BottomIn = $('.BottomIn');
+		$btn5.removeClass('current');
+		BottomIn.stop().animate({top:430},200);
+//		setTimeout(function(){
+//	    	BottomIn.stop().animate({top:430});
+//	    },400);
+	    setTimeout(function(){
+	    	BottomRbox.removeClass('show');
+	    },400);
+	});
 });
 
 
