@@ -15,30 +15,44 @@
 			<header class="header clearfix">
 				<div class="TopL"><span class="BtnIcon Back"></span></div>
 				<div class="TopM aligncenter"><span class="font17">Ray的出差申请</span></div>
-				<div class="TopR" id="Search"><span class="BtnIcon TopSer"></span></div>
+				<div class="TopR" id="Search"><span class="BtnIcon pencil current"></span></div>
 			</header>
 			<!--header over-->
 			<section class="form-top sidebar">
 				<ul>
-					<li class="userimg">
+					<li class="userimg clearfix">
 						<span class="userimg"><img src="../img/cdm.jpg"></span>
-						<p class="font14">王振佳</p>
+						<p class="font14"><em class="color-3"></em>王振佳</p>
 						<p>申请编号：<span>BT-2014-0006</span></p>
 						<p>申请日期：<span>2014-6-16</span></p>
 					</li>
 				</ul>
-				<div class="nav-mask"></div>
-				<div class="nav current clearfix">
-					<i class="Icon ico-c"></i>
-					<span>申请内容</span>
-					<span>审批详情</span>
-				</div>
 			</section>
-			<div class="form-view" id="wrapper">
-				<div class="content" id="scroller">
+			<!--安卓审批菜单begin-->
+			<div class="BottomRbox android-bar" style="display:block;">
+				<div class="BottomIn">
+					<table>
+						<tr>
+							<td><div class="btn btn1 current"><i class="BtnIcon Icon-ok"></i><span>通过</span></div></td>
+							<td><div class="btn btn2"><i class="BtnIcon Icon-no"></i><span>否决</span></div></td>
+							<td><div class="btn btn3"><i class="BtnIcon Icon-return"></i><span>回退</span></div></td>
+							<td><div class="btn btn4"><i class="BtnIcon Icon-turn"></i><span>转审</span></div></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<!--安卓审批菜单over-->
+			<table class="nav clearfix">
+				<tr>
+					<td class="current"><span>申请内容</span></td>
+					<td><span>审批详情</span></td>
+				</tr>
+			</table>
+			<div class="form-view android-view" id="wrapper">
+				<div class="content" id="scroller" style="width:400%;">
 					<!--form begin-->
-					<div class="formOut clearfix" style="width:400%;">
-						<section class="form floatleft">
+					<div class="formOut floatleft" style="width:320px;">
+						<section class="form">
 							<table>
 								<tr>
 									<th>申请编号 :</th>
@@ -88,13 +102,13 @@
 								</tr>
 							</table>
 						</section>
-						<section class="form floatleft">
+						<section class="form">
 								<header class="nopadding clearfix">
-									<span class="nopadding color-6">审批流程</span>
+									<span class="color-6 marl10">审批流程</span>
 								</header>
 								<table>
 									<tr>
-										<td width="30%">Ray.Zhang</td>
+										<th width="30%">Ray.Zhang</th>
 										<td width="30%">进行审批</td>
 										<td width="40%">2014-02-17 09:35</td>
 									</tr>
@@ -109,24 +123,24 @@
 								</table>
 								<table class="mart5">
 									<tr>
-										<td width="25%">刘德华</td>
+										<th width="25%">刘德华</th>
 										<td width="20%">进行审批</td>
 										<td width="50%">2014-02-17 09:35</td>
 									</tr>
 									<tr>
-										<td width="25%">Ray.Zhang</td>
+										<th width="25%">Ray.Zhang</th>
 										<td>进行审批</td>
 										<td>2014-02-17 09:35</td>
 									</tr>
 								</table>
 								<table class="mart5 nowstep">
 									<tr>
-										<td width="25%">Ray.Zhang</td>
+										<th width="25%">Ray.Zhang</th>
 										<td width="20%">进行审批</td>
 										<td width="50%">2014-02-17 09:35</td>
 									</tr>
 									<tr>
-										<td></td>
+										<th></th>
 										<td colspan="2">继续努力继续努力继续努力继续努力继续努力继续努力</td>
 									</tr>
 								</table>
@@ -136,9 +150,7 @@
 				</div>
 			</div>
 			<!--右侧扇形菜单 begin-->
-			<!--<div class="BottomRBtn"><em class="BtnIcon edit"></em></div>-->
-			<!--<div class="BottomRboxOut maskB"></div>-->
-			<div class="BottomRbox android-bar" style="display: none;">
+			<div class="BottomRbox" style="display:block;">
 				<div class="BottomIn">
 					<table>
 						<tr>
@@ -150,13 +162,11 @@
 						<tr><td colspan="4"><div class="btn btn5"><i class="BtnIcon Icon-down"></i></div></td></tr>
 					</table>
 				</div>
-				
-				<!--<div class="btn btn1 current"><i class="BtnIcon Icon-ok"></i><span>通过</span></div>
-				<div class="btn btn2"><i class="BtnIcon Icon-no"></i><span>否决</span></div>
-				<div class="btn btn3"><i class="BtnIcon Icon-return"></i><span>回退</span></div>
-				<div class="btn btn4"><i class="BtnIcon Icon-turn"></i><span>转审</span></div>-->
 			</div>
 			<!--右侧扇形菜单 over-->
+			<!--底部半圆按钮begin-->
+			<div class="BottomBtn current"></div>
+			<!--底部半圆按钮over-->
 		</div>
 		<div class="mask" style="opacity:0.7;display:none;"></div>
 		<div class="maskOver help-mask" style="display:none;">

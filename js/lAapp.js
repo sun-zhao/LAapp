@@ -216,7 +216,7 @@ $(document).ready(function(){
 			x = endX - startX;
 			y = endY - startY;
 			if(Math.abs(x) < Math.abs(y)){
-				if(y<-20){
+				if(y<-50){
 					BottomRbox.addClass('show');
 					BottomIn.stop().animate({top:30},300);
 				    setTimeout(function(){
