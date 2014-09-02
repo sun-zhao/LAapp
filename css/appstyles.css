@@ -307,7 +307,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .LOut span{padding:0;text-shadow: none;}
 .LOut span.current{background-color:#42a6fc;}
 .LOut span .BtnIcon{margin:0 8px 0 25px;position:relative;top:1px;}
-.sidebar.show + .view{box-shadow: -1px -1px 1px #fff;}
+.sidebar.show + .view{box-shadow: -1px -1px 1px #fff;z-index:2;}
 .sidebar.show + .view,#RemoveLeft{
 	height: 80%;
 	top:10%;
