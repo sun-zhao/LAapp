@@ -363,12 +363,12 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .nodata{position: absolute;text-shadow:1px 1px 1px #000;height:25px;width:200px;top:50%;left:50%;margin:-30px 0 0 -100px;}
 /*form*/
 .formOut{position: relative;transition:0.5s;-webkit-transition:0.5s;padding-top:20px;background-color:#fff;}
-.formOut section.form{border-bottom:1px solid #efeeed;padding-bottom:10px;}
+.formOut section.form{border-bottom:1px solid #dddfe2;padding-bottom:10px;}
 .formOut section.form table{width:100%;}
 .formOut section.form table th{color:#333;height:35px;text-align:right;width:21%;vertical-align:top;}
 .formOut section.form table td{color:#666;text-align:left;padding:0 10px;vertical-align:top;}
 .formOut section.form table td:nth-child(3){color:#aaa;}
-.formOut section.form header{padding:5px 0;position:relative;top:-5px;font-size:1.4rem;font-weight: bold;}
+.formOut section.form header{padding:5px 0 0 0;position:relative;font-size:1.4rem;background:#f8f6f7;border-bottom:1px solid #dddfe2;text-align: center;margin-bottom:20px;}
 .formOut section.form header img{width:37px;height:37px;border-radius:50px;}
 .formOut section.form header span{display:inline-block;height:37px;line-height:37px;margin-right:10px;}
 .formOut section.form table.nowstep td,.formOut section.form table.nowstep th{color:#59a7f9;}
@@ -380,8 +380,8 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .form-top.sidebar ul p.font14{position:relative;top:6px;padding-bottom:15px;padding-top:5px;}
 .form-top.sidebar ul li.userimg span.userimg{border-radius:50%;width:70px;height:70px;background:url(../img/circle2.png);background-size:cover;}
 .form-top.sidebar ul li.userimg span.userimg img{width:64px;height:64px;top:3px;left:3px;border:0;border-radius:50%;}
-.nav{width:100%;}
-.nav td{text-align: center;background-color:#fff;line-height:40px;border:1px solid #d1d4d7;font-size:14px;}
+table.nav{width:100%;height:40px;}
+.nav td{text-align: center;background-color:#fff;line-height:40px;border:1px solid #aeb1b3;font-size:14px;}
 .nav td:first,.nav td:last-child{border-left:0;}
 .nav td.current{color:#59a7f9;line-height:38px;border-bottom:2px solid #59a7f9;}
 .ico-c{width:21px;height:15px;background: url(../img/ico-c.png) no-repeat;background-size:21px;position: absolute;top:50%;left:50%;margin:-7px 0 0 -10px;transition:0.5s;-webkit-transition:0.5s;}
