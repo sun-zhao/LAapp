@@ -329,7 +329,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .sidebar.showA + .view{
 	overflow: hidden;
 	-webkit-transition: -webkit-transform 400ms;
-    -webkit-transform: translate3d(-70%,0,0);
+    -webkit-transform: translate3d(-40%,0,0);
 }
 .sidebar.hideA + .view{
     -webkit-transition: -webkit-transform 400ms;
