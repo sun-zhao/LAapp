@@ -19,33 +19,10 @@
 			<p class="color-8">努力加载中...</p>
 		</div>
 	</div><!--最上层的放置点击遮罩层-->
-	<!--侧边栏begin-->
-	<aside class="sidebar show">
-		<ul>
-			<li class="userimg">
-				<span class="userimg"><img src="../img/cdm.jpg"></span>
-				<p class="font14">andy.zhao</p>
-				<p>北京研发中心</p>
-				<p>产品经理 / UI设计</p>
-			</li>
-		</ul>
-		<ul class="nopadding">
-			<li class="current"><i class="BtnIcon Icon-pen"></i>我的申请<em class="prompt">1</em></li>
-			<li><i class="BtnIcon Icon-paper"></i>我的审批<em class="prompt">10</em></li>
-			<li><i class="BtnIcon Icon-pack"></i>我的经办<em class="prompt">99</em></li>
-		</ul>
-		<p class="LOut p-top50">
-			<span class="change"><i class="BtnIcon change-net"></i>切换网络</span>
-			<span class="quit current"><i class="BtnIcon Icon-out"></i>登出</span>
-			<span class="change"><i class="BtnIcon Icon-change"></i>切换账号</span>
-			<!--<span class="change"><i class="BtnIcon Icon-change nobg"></i>查看更新</span>-->
-		</p>
-	</aside>
-	<!--侧边栏over-->
 	<div class="view has_bg">
 		<!--header begin-->
 		<header class="header list-header clearfix">
-			<div class="TopL"><span class="BtnIcon Calleft has-message"></span></div><!--有心提示加has-message-->
+			<div class="TopL"><span class="BtnIcon Back"></span></div>
 			<div class="TopM aligncenter"><span class="block font16">待审核 </span></div>
 			<div class="TopR"><span class="BtnIcon Topadd"></span></div>
 			<div class="TopR" id="Search"><span class="BtnIcon TopSer"></span></div>
@@ -280,7 +257,7 @@
 		<!--ios 底部菜单over-->
 	</div>
 	<!--提示更新 begin-->
-	<div class="choosenet update" style="display:block;">
+	<div class="choosenet update" style="display:none;">
 		<div class="choosenetin">
 			<p class="font14">目前有新版本，是否升级？</p>
 			<p>最新版本：v1.01</p>
@@ -297,7 +274,7 @@
 	</div>
 	<!--提示更新 over-->
 	<div class="mask" id="RemoveLeft"></div>
-	<div class="mask" style="opacity:0.5;display:block;"></div>
+	<div class="mask" style="opacity:0.5;display:none;"></div>
 	<div class="maskOver" style="display:none;"></div><!--最上层的放置点击遮罩层-->
 </body>
 </html>
