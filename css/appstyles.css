@@ -602,7 +602,7 @@ ul.contactBox li.word-title{background: none;border:0;padding-left: 10px;}
 .home-main .formIconin-box.move{opacity: 0.4;}
 .page dd{display: inline-block;width:5px;height:5px;border:1px solid #aaa;border-radius:50%;-webkit-border-radius:50%;margin:0 3px;}
 .page dd.current{border-color:#2b97df;background:#2b97df;}
-.theme{background:url(../img/form-top.jpg);backgroud-size:cover;border-bottom-color:#fff;}
+.theme{background:url(../img/form-top.jpg);background-size:cover;border-bottom-color:#fff;}
 .theme .form-top.sidebar ul p{color:#55627c;}
 .theme .mask-bar{opacity:0.3;background:#000;}
 .theme .nav-bar ul li:nth-child(2){border-color:#bbc4d2;}
