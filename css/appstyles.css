@@ -169,7 +169,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .Icon-name,.Icon-password{width:14px;height:14px;background:url(../img/user_name.png) no-repeat;background-size:14px;position:absolute;top:10px;left:5px;}
 .Icon-password{background-image:url(../img/password_ico.png);top:11px;}
 .maskIN{width:100%;height:100%;position:absolute;top:49px;background:url(../img/bgre.jpg) repeat;background-size:20px;padding-top:150px;}
-.header{width:100%;height:44px;background:#272c44;position:absolute;top:0;left:0;color: #fff;z-index:100;overflow:hidden;}
+.header{width:100%;height:44px;background:#2d3039;position:absolute;top:0;left:0;color: #fff;z-index:100;overflow:hidden;}
 .TopL,.TopR,.TopM{width:15%;height:100%;float: left;}
 .TopL{width:13%;}
 .TopR{float:right;z-index:20;position: relative;}
@@ -249,7 +249,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 /*ios 底部菜单*/
 .TopDown,.Tools{display: none;}
 .ios-view .list-app{top:44px;bottom:30px;}
-.Tools{height:44px;background-color:#272c44;position:absolute;width:100%;left:0;bottom:0;display:none;}
+.Tools{height:44px;background-color:#2d3039;position:absolute;width:100%;left:0;bottom:0;display:none;}
 .ios-view .Tools,.android-view .TopDown{display:block;}
 .Tool-bar{width: 100%;position:relative;z-index:2;}
 .Tool-bar li{display:inline-block;width:32.5%;line-height:44px;color:#fff;text-align: center;font-size:1.4rem;}
