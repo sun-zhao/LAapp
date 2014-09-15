@@ -6,29 +6,19 @@
 	    <title>登录</title>
 	    <link rel="stylesheet" type="text/css" href="../css/appstyles.css">
 		<script type="text/javascript" src="../js/jquery.js"></script>
-		<script type="text/javascript">
-		//判断输入框获得焦点，然后改变页面的margin-top
-//			$(function(){
-//				$Int = $('.loginInt input');
-//				$Int.focus(function(){
-//					$('.view').addClass('totop');
-//				});
-//				$Int.blur(function(){
-//					$('.view').removeClass('totop');
-//				});
-			});
-		</script>
+		<script type="text/javascript" src="../js/iscroll.js"></script>
+		<script type="text/javascript" src="../js/lAapp.js"></script>
 	</head>																																			
 	<body>
 		<div class="view login">
-			<table class="logintab load" width="100%" style="display:;">
+			<table class="logintab load" width="100%" style="display:none;">
 				<tr>
 					<td class="aligncenter p-top50"><span><img src="../img/logo.png" width="100" class="p-top20"></span></td>
 				</tr>
 				<tr><td class="aligncenter p-top80" style="color:#6a6363;">上海万企明道科技有限公司</td></tr>
 			</table>
 			<!--<span class="logo_gif"><img src="../img/loading_login.gif" width="60"></span>-->
-			<table class="logintab" width="100%"  style="display:none;">
+			<table class="logintab" width="100%"  style="display:;">
 				<tr><td class="p-top20"><p class="aligncenter"><img src="../img/logo.png" width="82px"></p></td></tr>
 				<tr>
 					<td class="p-bt20">
@@ -55,20 +45,22 @@
 			</table>
 		</div>
 		<!--选择网络弹出begin-->
-		<div class="choosenet" style="display:none;">
-			<div class="choosenetin">
-				<ul>
-					<li class="current">Mingdao Plus</li>
-					<li>梅花和明道</li>
-					<li>Mingdao Plus</li>
-					<li>梅花和明道</li>
-					<li>Mingdao Plus</li>
-					<li>梅花和明道</li>
-				</ul>
+		<div class="choosenet">
+			<div class="choosenet_out" id="wrapper">
+				<div class="choosenetin" id="scroller">
+					<ul>
+						<li class="current">Mingdao Plus</li>
+						<li>梅花和明道</li>
+						<li>Mingdao Plus</li>
+						<li>梅花和明道</li>
+						<li>Mingdao Plus</li>
+						<li>梅花和明道</li>
+					</ul>
+				</div>
 			</div>
 			<span class="quitBtn aligncenter">取消</span>
 		</div>
 		<!--选择网络弹出over-->
-		<div class="mask" style="opacity:0.5;display:none;"></div>
+		<div class="mask" style="opacity:0.5;display:block;"></div>
 	</body>
 </html>
