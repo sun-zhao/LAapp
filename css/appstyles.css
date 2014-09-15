@@ -352,11 +352,11 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .formIcon .SearchBox input:focus{background: none;}*/
 /*.formIcon .SearchBox input:focus{background: url(../img/ico-03-3.png) no-repeat 5% center;background-size:16px;text-indent:20px;}*/
 .formIconin{position:relative;width:100%;height:100%;}
-.formIconin-box{position:absolute;top:44px;bottom:0;left:8px;right:8px;z-index:200;text-align:center;overflow:hidden;}
+.formIconin-box{position:absolute;top:44px;bottom:0;z-index:200;text-align:center;overflow:hidden;}
 /*.formIconin-box li{display:inline-block;float:left;width:25%;padding:12px 0;text-align:center;color:#fff;font-size:1.2rem;outline:1px solid #252626;transition:0.5s;-webkit-transition:0.5s;opacity: 1;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;background:#434448;}
 .formIconin-box li span{display:block;width:40px;height:40px;margin:0 auto;margin-bottom:5px;border-radius:50em;position: relative;border:1px solid #36373b;}
 .formIconin-box li span .BtnIcon{width:20px;height:20px;background-size:20px;background-repeat:no-repeat;position: absolute;top:50%;left:50%;margin:-10px 0 0 -10px;-webkit-transition:width 0.1s, height 0.1s,-webkit-transform 0.1s;}*/
-.formIconin-box table{width:100%;margin-right:8px;}
+.formIconin-box table{width:100%;}
 .formIconin-box td{width:33.3%;padding:12px 0;height:75px;text-align:center;font-size:1.2rem;border:1px solid #eee;background:#fff;transition:0.5s;-webkit-transition:0.5s;opacity: 1;overflow:hidden;color:#666;}
 .formIconin-box td span{display:block;width:34px;height:34px;margin:0 auto;margin-bottom:10px;border-radius:50em;position: relative;}
 .formIconin-box td span .BtnIcon{width:16px;height:16px;background-size:16px;background-repeat:no-repeat;position: absolute;top:50%;left:50%;margin:-8px 0 0 -8px;-webkit-transition:width 0.1s, height 0.1s,-webkit-transform 0.1s;}
@@ -600,8 +600,8 @@ ul.contactBox li.word-title{background: none;border:0;padding-left: 10px;}
 .hastips span i{color:#e60012;}
 .nav-bar .BtnIcon{width:17px;height:17px;background-size:17px;position:relative;top:4px;margin-right:8px;}
 .nav-bar ul li:nth-child(3){border:0;}
-.home-main{top:255px;bottom:40px;}
-.home-title{height:30px;line-height:30px;padding:0 8px;}
+.home-main{top:255px;bottom:40px;right:8px;left:8px;}
+.home-title{height:30px;line-height:30px;}
 .home-main .formIconin-box{top:0;position: relative;width:9999px;transition:0.5s;-webkit-transition:0.5s;}
 .home-main .formIconin-box.move{opacity: 0.4;}
 .page dd{display:inline-block;width:5px;height:5px;border:1px solid #aaa;border-radius:50%;-webkit-border-radius:50%;margin:0 3px;}
@@ -611,7 +611,7 @@ ul.contactBox li.word-title{background: none;border:0;padding-left: 10px;}
 .theme .mask-bar{opacity:0.3;background:#000;}
 .theme .nav-bar ul li:nth-child(2){border-color:#bbc4d2;}
 .theme .nav-bar ul li.current{color:#55627c;}
-.toogle-box{width:100px;height:120px;border:1px solid #000;position:absolute;z-index:20;background:#282b34;top:44px;right:-102px;}
+.toogle-box{width:100px;height:120px;border:1px solid #000;position:absolute;z-index:2000;background:#282b34;top:44px;right:-102px;}
 .toogle-box span{display:block;color:#fff;height:40px;line-height:40px;padding-left:10px;border-bottom:1px solid #16171c;}
 .toogle-box span:last-child{border:0;}
 .toogle-box span .BtnIcon{margin-right:8px;vertical-align:-2px;}
