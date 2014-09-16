@@ -588,12 +588,13 @@ ul.contactBox li.word-title{background: none;border:0;padding-left: 10px;}
 .header-top .form-top.sidebar ul li.userimg span.userimg{width:58px;height:58px;}
 .header-top .form-top.sidebar ul li.userimg span.userimg img{width:56px;height:56px;top:1px;left:1px;}
 .header-top .form-top.sidebar ul p{color:#fff;padding-left:90px;}
-.nav-bar ul li{display:block;color:#666;position: relative;z-index:10;height:39px;line-height:39px;border-bottom:1px solid #ddd;padding:0 40px 0 10px;background: url(../img/ico-04.png) no-repeat 97% center;background-size:16px;}
+.nav-bar ul li{display:block;color:#666;position: relative;z-index:10;height:39px;line-height:39px;border-bottom:1px solid #ddd;padding:0 40px 0 10px;background: url(../img/ico-04.png) no-repeat 97% center;background-size:16px;transition:0.3s;-webkit-transition:0.3s;}
 .nav-bar ul li span i{padding-right:5px;}
 .hastips span{color:#0051e1;}
 .hastips span i{color:#e60012;}
 .nav-bar .BtnIcon{width:17px;height:17px;background-size:17px;position:relative;top:4px;margin-right:8px;}
 .nav-bar ul li:nth-child(3){border:0;}
+.nav-bar ul li.active{background-color:#f1f1f1;transition:0.3s;-webkit-transition:0.3s;}
 .home-main{top:255px;bottom:40px;right:8px;left:8px;}
 .home-title{height:30px;line-height:30px;}
 .home-title span{background: url(../img/ico-042.png) no-repeat right center;background-size:12px;padding-right:14px;color:#0065e5;}
@@ -606,14 +607,14 @@ ul.contactBox li.word-title{background: none;border:0;padding-left: 10px;}
 .theme .mask-bar{opacity:0.3;background:#000;}
 .theme .nav-bar ul li:nth-child(2){border-color:#bbc4d2;}
 .theme .nav-bar ul li.current{color:#55627c;}
-.toogle-box{width:130px;height:150px;border:1px solid #000;border-width:0 0 1px 1px;position:absolute;z-index:2000;background:#282b34;top:44px;right:-135px;}
+.toogle-box{width:130px;height:150px;border:1px solid #000;border-width:1px 0 1px 1px;position:absolute;z-index:2000;background:#2d3039;top:44px;right:-135px;}
 .toogle-box span{display:block;color:#fff;height:50px;line-height:50px;padding-left:20px;border-bottom:1px solid #16171c;font-size:1.4rem;}
 .toogle-box span:last-child{border:0;}
 .toogle-box span .BtnIcon{width:14px;height:14px;margin-right:15px;vertical-align:-2px;background-size:14px;}
 /*.toogle-box.current{right:0;top:44px;transition:0.5s;}*/
-.ico-set:active,.Icon-return:active,.Back:active,.Topadd:active,.TopSer:active{background-size:13px;}
-.Back:active{background-size:6px;}
-.quit:active{font-size:1.3rem;}
+.ico-set.active,.Icon-return.active,.Back.active,.Topadd.active,.TopSer.active{background-size:13px;}
+.Back.active{background-size:6px;}
+.quit.active{font-size:1.3rem;}
 
 
 
