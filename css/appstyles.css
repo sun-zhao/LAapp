@@ -294,8 +294,6 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .update .bottomB span.quitBtn:last-child{border-radius:0 0 4px 0;border-left:1px solid #aaa;position:absolute;top:0;right:0;}
 .logintab{height:100%;}
 .view.totop .logintab{margin-top:-30%;transition:0.5s;-webkit-transition:0.5s;}
-.load{background:#fff;}
-.load tbody{width:100%;}
 /*侧边栏*/
 .sidebar{width:40%;height:100%;position:absolute;right:0;top:0;background:#333;}
 .sidebar ul{padding-top:60px;}
