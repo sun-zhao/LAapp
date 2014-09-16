@@ -156,8 +156,6 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .Icon-find{width:10px;height:10px;background: url(../img/ico-032.png) no-repeat;background-size:11px;}
 .ico-set{width:100%;height:100%;background: url(../img/ico-set.png) center center no-repeat;background-size:16px;}
 .header-top .ico-set{position:absolute;top:10px;right:15px;}
-
-
 .view,.mask{width:100%;height:100%;position:relative;}
 .view{background:#f8f6f7;}
 .mask,.maskOver{background-color:#000;opacity:0;position:fixed;top:0;left:0;z-index:200;display:none;}
@@ -175,16 +173,14 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .TopL{width:13%;}
 .TopR{float:right;z-index:20;position: relative;}
 .TopM{width:70%;float:left;text-align:center;line-height:44px;position: relative;}
-.TopR:active,.TopL:active{background-color:#1f2228;}
 .list-header .TopM{position:absolute;left:50%;margin-left:-35%;}
-.quit{display:block;height:100%;line-height:54px;}
+.quit{display:block;height:100%;line-height:44px;font-size:1.4rem;}
 .SearchBox{width:100%;height:44px;background-color:#2d3039;position:absolute;top:0;right:-100%;width:100%;z-index:20;transition:0.4s;-webkit-transition:0.4s;}
-.SearchIn{background-color:#dedddd;border-radius:6px;width:70%;position:absolute;top:7px;left:40%;margin-left:-30%;}
+.SearchIn{background-color:#dedddd;border-radius:6px;width:80%;position:absolute;top:7px;left:40%;margin-left:-33%;}
 .SearchBox input{width:100%;height:100%;line-height:30px;border:0;background:none;color: #969698;text-align: center;font-size:1.3rem;}
 .SearchBox.current{right:0;transition:0.4s;-webkit-transition:0.4s;}
 .SearchBoxNomal{position:relative;top:10px;right:0;border:0;background:none;z-index:990;}
 .SearchBoxNomal .SearchIn{top:0px;width:80%;}
-
 /*.SearchBox.current{display: block;}*/
 .Icon-toggle{width:8px;height:5px;background:url(../img/arrow2.png) 0 bottom;background-size:8px;position:relative;top:-2px;right:-4px;transition:0.4s;-webkit-transition:0.4s;}
 .current .Icon-toggle{background-position:0 0;-webkit-transition:0.4s;}
@@ -600,7 +596,7 @@ ul.contactBox li.word-title{background: none;border:0;padding-left: 10px;}
 .nav-bar ul li:nth-child(3){border:0;}
 .home-main{top:255px;bottom:40px;right:8px;left:8px;}
 .home-title{height:30px;line-height:30px;}
-.home-title span{background: url(../img/ico-04.png) no-repeat right center;background-size:12px;padding-right:14px;}
+.home-title span{background: url(../img/ico-042.png) no-repeat right center;background-size:12px;padding-right:14px;color:#0065e5;}
 .home-main .formIconin-box{top:0;position: relative;width:9999px;transition:0.5s;-webkit-transition:0.5s;}
 .home-main .formIconin-box.move{opacity: 0.4;}
 .page dd{display:inline-block;padding:3px;border:1px solid #ccc;border-radius:50%;-webkit-border-radius:50%;margin:0 3px;}
@@ -610,14 +606,14 @@ ul.contactBox li.word-title{background: none;border:0;padding-left: 10px;}
 .theme .mask-bar{opacity:0.3;background:#000;}
 .theme .nav-bar ul li:nth-child(2){border-color:#bbc4d2;}
 .theme .nav-bar ul li.current{color:#55627c;}
-.toogle-box{width:100px;height:120px;border:1px solid #000;position:absolute;z-index:2000;background:#282b34;top:44px;right:-102px;}
-.toogle-box span{display:block;color:#fff;height:40px;line-height:40px;padding-left:10px;border-bottom:1px solid #16171c;}
+.toogle-box{width:130px;height:150px;border:1px solid #000;border-width:0 0 1px 1px;position:absolute;z-index:2000;background:#282b34;top:44px;right:-135px;}
+.toogle-box span{display:block;color:#fff;height:50px;line-height:50px;padding-left:20px;border-bottom:1px solid #16171c;font-size:1.4rem;}
 .toogle-box span:last-child{border:0;}
-.toogle-box span .BtnIcon{margin-right:8px;vertical-align:-2px;}
+.toogle-box span .BtnIcon{width:14px;height:14px;margin-right:15px;vertical-align:-2px;background-size:14px;}
 /*.toogle-box.current{right:0;top:44px;transition:0.5s;}*/
-
-
-
+.ico-set:active,.Icon-return:active,.Back:active,.Topadd:active,.TopSer:active{background-size:13px;}
+.Back:active{background-size:6px;}
+.quit:active{font-size:1.3rem;}
 
 
 
