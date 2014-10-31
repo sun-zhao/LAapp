@@ -92,7 +92,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .color-cb{color:#cbcbcb;}
 .color-c{color:#ccc!important;}
 .Important,.Important td,.Important th{color:#eb6100!important;}
-.error,.error span,.has-error,.has-error span{color:#bd2c00!important;}
+.error,.error span{color:#bd2c00!important;}
 .nobg{background:none!important;}
 .nobgimg{background-image:none!important;}
 .bg-01{background-color:#ff1f5e;}
@@ -131,7 +131,6 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .pencil{background-image: url(../img/pencil.png);background-size:16px;}
 .pencil.current{background-image: url(../img/close.png);background-size:14px;}
 .plus{width:17px;height:17px;background-image:url(../img/arrow-top.png);background-size:17px;position:relative;z-index: 20;}
-.clear{width:20px;height:20px;background-image:url(../img/clear.png);background-size:10px;position:absolute;right:10px;top:5px;background-repeat:no-repeat;background-position:center center;}
 
 .Icon-pen,.Icon-paper,.Icon-pack{width:26px;height:26px;background-size:26px;background-image: url(../img/ico-pen.png);}
 .Icon-paper{background-image: url(../img/ico-paper.png);}
@@ -150,9 +149,9 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .Icon-return{width:16px;height:16px;background-image: url(../img/ico-yq.png);background-size:16px;}
 .Icon-turn{width:17px;height:12px;background-image: url(../img/ico-zs.png);background-size:17px;}
 .Icon-down{width:20px;height:12px;background-image: url(../img/arrow-bt.png);background-size:20px;}
-.prompt{border-radius:60em;height:15px;line-height:15px;padding:0 6px;margin:0 0 0 31px;background:#777;font-size:1.1rem;display:inline-block;position:relative;top:-2px;}
-.Calleft .prompt{border-radius:50px;background-color:#e60012;margin:0;font-size:0;padding:0px;width:8px;height:8px;top:10px;left:10%;position:absolute;}
-.TopDown ul li .prompt{position:absolute;background: #e82827;color:#fff;padding:0 4px;top:50%;margin-top:-8px;left:41%;}
+.prompt{border-radius:50%;height:15px;line-height:15px;padding:0 6px;margin:0 0 0 31px;background:#777;font-size:1.1rem;display:inline-block;position:relative;top:-2px;}
+/*.Calleft .prompt{border-radius:50px;background-color:#e60012;margin:0;font-size:0;padding:0px;width:8px;height:8px;top:10px;left:10%;position:absolute;}*/
+.TopDown ul li .prompt{position:absolute;background: #e82827;color:#fff;padding:0 4.5px;top:50%;margin-top:-8px;left:41%;}
 .Icon-find{width:10px;height:10px;background: url(../img/ico-032.png) no-repeat;background-size:11px;}
 .ico-set{width:100%;height:100%;background: url(../img/ico-set.png) center center no-repeat;background-size:16px;}
 .header-top .ico-set{position:absolute;top:10px;right:15px;}
@@ -169,10 +168,10 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .Icon-password{background-image:url(../img/password_ico.png);top:11px;}
 .maskIN{width:100%;height:100%;position:absolute;top:49px;background:url(../img/bgre.jpg) repeat;background-size:20px;padding-top:150px;}
 .header{width:100%;height:44px;background:#2d3039;position:absolute;top:0;left:0;color: #fff;z-index:100;overflow:hidden;}
-.TopL,.TopR,.TopM{width:15%;height:100%;float: left;}
+.TopL,.TopR,.TopM{width:15%;height:100%;float: left;line-height:44px;text-align:center;}
 .TopL{width:13%;}
-.TopR{float:right;z-index:20;position: relative;}
-.TopM{width:70%;float:left;text-align:center;line-height:44px;position: relative;}
+.TopR{float:right;z-index:20;position: relative;line-height:55px;}
+.TopM{width:70%;float:left;text-align:center;position:relative;line-height:46px;}
 .list-header .TopM{position:absolute;left:50%;margin-left:-35%;}
 .quit{display:block;height:100%;line-height:44px;font-size:1.4rem;}
 .SearchBox{width:100%;height:44px;background-color:#2d3039;position:absolute;top:0;right:-100%;width:100%;z-index:20;transition:0.4s;-webkit-transition:0.4s;}
@@ -211,7 +210,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .current .Icon-history,.TopDown ul li:active .Icon-history{background-image: url(../img/history_hover.png);}
 .current .Icon-sure,.TopDown ul li:active .Icon-sure{background-image: url(../img/ico-cr2.png);}
 .content{position:absolute;top:44px;left:0;right:0;bottom:0;overflow:hidden;}
-.list-app{top:88px;}
+.list-app{top:87px;}
 .list{background:#fff;}
 .list li{border-bottom:1px solid #ddd;border-top:1px solid #ddd;min-height:50px;margin-top:-1px;padding:0 35px 0 15px;background-image: url(../img/ico-04.png);background-position: 98% 18px;background-size:16px;background-repeat:no-repeat;color:#888;position: relative;transition:0.1s;-webkit-transition:0.1s;}
 .AppImg{width:35px;height:35px;border:1px solid #f9f9f9;border-radius:50em;text-align: center;position: relative;line-height: 24px;}
@@ -250,14 +249,14 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .ios-view .Tools,.android-view .TopDown{display:block;}
 .Tool-bar{width: 100%;position:relative;z-index:2;}
 .Tool-bar li{display:inline-block;width:32.5%;line-height:44px;color:#fff;text-align: center;font-size:1.4rem;}
-.Tool-bar li span{display:inline-block;padding:2px 20px;border-radius:40px;color:#aaadb2;}
-.Tool-bar li.current{background: url(../img/tool-bg.png) no-repeat center bottom;background-size:70%;color:#fff;}
-.Tool-bar li.current span{color:#fff;}
+.Tool-bar li span{display:inline-block;padding:2px 20px;color:#aaadb2;}
+.Tool-bar li.current{color:#347cdc;}
+.Tool-bar li.current span{color:#347cdc;}
 .Tool-bar.two li{width:49%;}
-.Tools li .prompt{position: absolute;margin:0;background:#e82827;font-size:1rem;padding:0 5px;top:6px;}
-.Tools .bar{display:block;width:16%;height:22px;background:#217dba;color:#fff;padding:2px 20px;border-radius:40px;position:absolute;z-index:1;top:50%;margin-top:-11px;}
+.Tools li .prompt{position: absolute;margin:0;background:#e82827;color:#fff;font-size:1rem;padding:0 5px;top:6px;}
+.Tools .bar{display:block;width:16%;height:100%;background:#24262e;padding:0 20px;position:absolute;z-index:1;top:0;}
 .Tools .bar-move{transition:0.3s;-webkit-transition:0.3s;}
-.TopDown .bar{display:block;border-bottom:2px solid #2b97df;z-index:1;position:absolute;bottom:-1px;}
+.TopDown .bar{display:block;border-bottom:2px solid #3371c5;z-index:1;position:absolute;bottom:-1px;}
 
 /*login*/
 .login{background:#fff;}
@@ -461,16 +460,20 @@ table.nav{width:100%;height:40px;position: relative;z-index:20;}
 .BottomRboxL .btn:active .Icon-return,.BottomRboxL .btn.current .Icon-return{width:18px;height:11.5px;background-image: url(../img/ico-ht.png);background-size:18px;}
 .BottomRboxL .btn:active .Icon-turn,.BottomRboxL .btn.current .Icon-turn{width:17px;height:12px;background-image: url(../img/ico-zs.png);background-size:17px;}
 /*表单填写*/
-.editList li{margin-top:-1px;}
+.editList li{margin-top:-1px;overflow:hidden;}
 .LiOut{height:40px;line-height:40px;background: #fff;border:1px solid #ccc;border-width:1px 0;position:relative;}
 .editList li input,.editList li textarea,.editList li .article{background:transparent;width:100%;line-height:30px;border:0;position: relative;z-index:5;text-indent:12px;color:#888;overflow-y:visible;}
 .editList li textarea{min-height:30px;line-height:20px;height:80px;}
-.editList li .article{min-height:30px;line-height:20px;}
-.editList li .Inmask{width:100%;height:40px;line-height:40px;text-align: right;position:absolute;top:0;left:0;font-size:1.4rem;background-color: #fff;z-index:10;}
-.editList li .Inmask span{color:#ccc;padding-right:10px;}
-.editList li .Inmask span.floatleft{padding:0 0 0 10px;color:#888;}
+.editList li .article{min-height:30px;line-height:20px;font-size:1.4rem;padding-left:9px;text-indent:0;}
+.editList li .Inmask{width:100%;height:40px;line-height:40px;position:absolute;top:0;left:0;font-size:1.4rem;background-color: #fff;z-index:10;}
+.editList li .Inmask span{color:#ccc;}
+.editList li .Inmask span.floatleft{color:#888;width:30%;text-indent:10px;}
+.editList li .Inmask span.text_int{width:66%;padding-right:10px;float: right;}
+.editList li .Inmask span.text_int input{text-align:right;height:40px;line-height:normal;font-size:1.4rem;}
+.editList li .has-error .Inmask span,.editList li .has-error .article{color:#bd2c00!important;}
+.editList li .has-error{border-color:#fb7d79;}
 .editList li textarea + .Inmask{height:80px;}
-.LiOut.hideInmask .Inmask,.LiOut.hideInmask .textnumber,.LiOut.has-error .Inmask,.LiOut.error .Inmask.Txterror,.LiOut .Inmask.Txterror{display: none;}/*隐藏默认信息*/
+.LiOut.hideInmask .Inmask,.LiOut.hideInmask .textnumber,.LiOut.error .Inmask.Txterror,.LiOut .Inmask.Txterror{display: none;}/*隐藏默认信息*/
 .LiOut.has-error .Inmask.Txterror{display: block;text-align: left;padding-left: 10px;}
 .editList li.choose .Inmask{width:90%;}
 .editList li.choose .LiOut{background:#fff url(../img/arrow.png) no-repeat 96% 15px;background-size:8px;}
@@ -482,7 +485,7 @@ table.nav{width:100%;height:40px;position: relative;z-index:20;}
 .uploadimg img{width:44px;height:44px;margin-right:2px;}
 .uploadimg img:last-child{margin-right:0;}
 .editList li.upimg .LiOut .Inmask{position:relative;}
-.nextstep{display:block;margin:0 40px;background:#0065e5;border-radius:4px;height:45px;line-height: 45px;color:#fff;}
+.nextstep{display:block;margin:0 20px;background:#4587c4;border-radius:4px;height:45px;line-height: 45px;color:#fff;}
 /*.logintab .nextstep{text-shadow:1px 0 0.5px #000;}*/
 .Submitstep{background: #2ecd71;}
 .process li{position: relative;}
@@ -588,7 +591,7 @@ ul.contactBox li.word-title{background: none;border:0;padding-left: 10px;}
 .header-top .form-top.sidebar ul li.userimg span.userimg{width:58px;height:58px;}
 .header-top .form-top.sidebar ul li.userimg span.userimg img{width:56px;height:56px;top:1px;left:1px;}
 .header-top .form-top.sidebar ul p{color:#fff;padding-left:90px;}
-.nav-bar ul li{display:block;color:#666;position: relative;z-index:10;height:39px;line-height:39px;border-bottom:1px solid #ddd;padding:0 40px 0 10px;background: url(../img/ico-04.png) no-repeat 97% center;background-size:16px;transition:0.3s;-webkit-transition:0.3s;}
+.nav-bar ul li{display:block;color:#666;position: relative;z-index:10;height:39px;line-height:40px;border-bottom:1px solid #ddd;padding:0 40px 0 10px;background: url(../img/ico-04.png) no-repeat 97% center;background-size:16px;transition:0.3s;-webkit-transition:0.3s;}
 .nav-bar ul li span i{padding-right:5px;}
 .hastips span{color:#0051e1;}
 .hastips span i{color:#e60012;}
@@ -616,13 +619,69 @@ ul.contactBox li.word-title{background: none;border:0;padding-left: 10px;}
 .Back.active{background-size:6px;}
 .quit.active{font-size:1.3rem;}
 
+/*fontico*/
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?w524lj');
+	src:url('../fonts/icomoon.eot?#iefixw524lj') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?w524lj') format('woff'),
+		url('../fonts/icomoon.ttf?w524lj') format('truetype'),
+		url('../fonts/icomoon.svg?w524lj#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
 
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
 
+.icon-search:before {
+	content: "\e036";
+}
+.icon-plus:before {
+	content: "\e114";
+}
+.icon-pencil:before {
+	content: "\e601";
+}
+.icon-cog:before {
+	content: "\e602";
+}
+.icon-suitcase:before {
+	content: "\e603";
+}
+.icon-cross:before {
+	content: "\e604";
+}
+.icon-text:before {
+	content: "\e606";
+}
+.icon-arrow-right:before {
+	content: "\e607";
+}
+.icon-arrow-left:before {
+	content: "\e608";
+}
+.icon-uniE609:before {
+	content: "\e609";
+}
 
-
-
-
-
+.nav-bar ul li em{display:inline-block;width:20px;height:20px;line-height:20px;border:1px solid #666;border-radius:50%;margin-right:8px;text-align: center;}
+.icon-pencil,.icon-text,.icon-suitcase{font-size:1.2rem;position: relative;vertical-align: -2px;color:#666;}
+.icon-arrow-left,.icon-plus,.icon-search{font-size:1.8rem;vertical-align: middle;}
+.icon-plus{font-size:1.8rem;vertical-align:1px;font-weight:100;}
+.icon-search,.icon-uniE609{font-size:1.7rem;vertical-align:1px;}
+.icon-cross{position:absolute;right:10px;top:7px;font-size:1.6rem;color:#888;}
+.icon-uniE609{font-size:1.8rem;vertical-align: middle;}
 
 
 
