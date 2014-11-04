@@ -683,7 +683,8 @@ ul.contactBox li.word-title{background: none;border:0;padding-left: 10px;}
 .icon-search,.icon-uniE609{font-size:1.7rem;vertical-align:1px;}
 .icon-cross{position:absolute;right:10px;top:7px;font-size:1.6rem;color:#888;}
 .icon-uniE609{font-size:1.8rem;vertical-align: middle;}
-
+.word_current{width:36px;height:36px;background:#000;opacity: 0.3;border:1px solid #9a9a9a;border-radius:5px;-webkit-border-radius:5px;position: absolute;top:50%;margin-top:-18px;right:20px;line-height:36px;text-align: center;color: #fff;font-size:1.6rem;}
+.word_current img{width:20px;position: relative;top:4px;}
 
 
 
