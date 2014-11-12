@@ -23,8 +23,8 @@ a:hover{text-decoration:none;}
 .floatleft{float:left!important;}
 .floatright{float:right!important;}
 .aligncenter{text-align:center;}
-.alignright{text-align:right;}
-.alignleft{text-align:left;}
+.alignright{text-align:right!important;}
+.alignleft{text-align:left!important;}
 .forcewrap{word-wrap:break-word;word-break:break-all;text-overflow:hidden;overflow:hidden;}
 .borderless{border: none;}
 label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
@@ -468,16 +468,16 @@ table.nav{width:100%;height:40px;position: relative;z-index:20;}
 .editList li .article{min-height:30px;line-height:20px;font-size:1.4rem;padding-left:9px;text-indent:0;}
 .editList li .Inmask{width:100%;height:40px;line-height:40px;position:absolute;top:0;left:0;font-size:1.4rem;background-color: #fff;z-index:10;}
 .editList li .Inmask span{color:#ccc;}
-.editList li .Inmask span.floatleft{color:#888;width:30%;text-indent:10px;}
-.editList li .Inmask span.text_int{width:66%;padding-right:10px;float: right;}
-.editList li .Inmask span.text_int input{text-align:right;height:40px;line-height:normal;font-size:1.4rem;}
-.editList li .has-error .Inmask span,.editList li .has-error .article{color:#bd2c00!important;}
+.editList li .Inmask span.floatleft{color:#888;width:90px;text-indent:10px;float: none;}
+.editList li .Inmask span.text_int{display:block;height:40px;margin-left: 100px;margin-right:30px;}
+.editList li .Inmask span.text_int input{text-align:right;height:40px;line-height:normal;font-size:1.4rem;text-indent:0;}
+.editList li .has-error .Inmask span,.editList li .has-error .article,.editList li .has-error .Inmask span.text_int input{color:#bd2c00!important;}
 .editList li .has-error{border-color:#fb7d79;}
 .editList li textarea + .Inmask{height:80px;}
 .LiOut.hideInmask .Inmask,.LiOut.hideInmask .textnumber,.LiOut.error .Inmask.Txterror,.LiOut .Inmask.Txterror{display: none;}/*隐藏默认信息*/
 .LiOut.has-error .Inmask.Txterror{display: block;text-align: left;padding-left: 10px;}
-.editList li.choose .Inmask{width:90%;}
-.editList li.choose .LiOut{background:#fff url(../img/arrow.png) no-repeat 96% 15px;background-size:8px;}
+.editList li.choose .Inmask{background:#fff url(../img/arrow.png) no-repeat 96% 15px;background-size:8px;}
+.editList li.choose span.text_int{text-align: right;}
 .editList li.autoHeight div.LiOut{height:auto;min-height:40px;}
 .editList li .color-9{text-align:center;}
 .Inmask select{width:70%;color:#888;font-size:1.4rem;position:relative;top:-1px;}
