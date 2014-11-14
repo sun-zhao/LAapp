@@ -68,7 +68,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .p-bt10{padding-bottom:10px!important;}
 .p-bt20{padding-bottom:20px!important;}
 /*font-size*/
-.font9{font-size:0.9rem!important;}
+.font9{font-size:9px!important;}
 .font12{font-size:12px!important;}
 .font13{font-size:13px!important;}
 .font14{font-size:14px!important;}
@@ -486,7 +486,7 @@ table.nav{width:100%;height:40px;position: relative;z-index:20;}
 .uploadimg img{width:44px;height:44px;margin-right:2px;}
 .uploadimg img:last-child{margin-right:0;}
 .editList li.upimg .LiOut .Inmask{position:relative;}
-.nextstep{display:block;margin:0 20px;background:#4587c4;border-radius:4px;height:45px;line-height: 45px;color:#fff;}
+.nextstep{display:block;margin:0 40px;background:#4587c4;border-radius:4px;height:45px;line-height: 45px;color:#fff;}
 /*.logintab .nextstep{text-shadow:1px 0 0.5px #000;}*/
 .Submitstep{background: #2ecd71;}
 .process li{position: relative;}
@@ -685,7 +685,7 @@ ul.contactBox li.word-title{background: none;border:0;padding-left: 10px;}
 .icon-uniE609{font-size:18px;vertical-align:middle;}
 .word_current{width:36px;height:36px;background:#000;opacity: 0.3;border:1px solid #9a9a9a;border-radius:5px;-webkit-border-radius:5px;position: absolute;top:50%;margin-top:-18px;right:20px;line-height:36px;text-align: center;color: #fff;font-size:16px;}
 .word_current img{width:20px;position:relative;top:4px;}
-
+.slogan img{width:30%;max-width: 124px;}
 
 
 
