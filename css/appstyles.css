@@ -12,7 +12,8 @@ h1, h2, h3, h4, h5, h6{font-size:100%;font-weight:normal;vertical-align:baseline
 input, textarea, select, button{font-size: 1.2rem;font-weight:inherit; vertical-align:middle;outline:none;}
 input[type=radio], input[type=checkbox]{vertical-align: middle; margin-right:5px;}
 textarea{resize:none;}
-input[type=text],input[type=password],textarea, input[type=text]:focus, input[type=password]:focus, textarea:focus, button, button:focus, input[type=number]:focus,input[type=number]{appearance: none;appearance:none;-webkit-appearance:none;-tap-highlight-color: rgba(0, 0, 0, 0);-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+input[type=text],input[type=password],textarea, input[type=text]:focus, input[type=password]:focus, textarea:focus, button, button:focus, input[type=number]:focus,input[type=number]{appearance: none;appearance:none;-webkit-appearance:none;-tap-highlight-color: rgba(0, 0, 0, 0);
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
 /*base*/
 a{text-decoration:none; color:#333;}
 a:focus{outline-style:none;outline-width:0;}
